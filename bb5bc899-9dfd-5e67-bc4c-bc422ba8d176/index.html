@@ -1,0 +1,745 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="やりたいことAngular CLI使って、MEANスタック(MongoDB + Express + Angular + NodeJS)のアプリを作りたい。どうせならサーバ側もTypeScriptで作りたい。フロント側とサーバ側の両方をweb..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/130/path---bb-5-bc-899-9-dfd-5-e-67-bc-4-c-bc-422-ba-8-d-176-ad-1-32d-EnCkYU0I2njt8qzmayqZDFl3d8c.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その１. ビルド編</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2017-07-19T02:06:59+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div>
+<h2>
+<span id="やりたいこと" class="fragment"></span><a href="#%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8"><i class="fa fa-link"></i></a>やりたいこと</h2>
+
+<ul>
+<li>Angular CLI使って、MEANスタック(<strong>M</strong>ongoDB + <strong>E</strong>xpress + <strong>A</strong>ngular + <strong>N</strong>odeJS)のアプリを作りたい。どうせならサーバ側もTypeScriptで作りたい。</li>
+<li>フロント側とサーバ側の両方をwebpack、gulpなどは使わずにnpm scriptsだけでビルド、テストできるようにしたい。</li>
+<li>Dockerを使ってアプリを簡単に配布したい。</li>
+</ul>
+
+<p>これらを達成するための最小構成プロジェクトの作り方を３回に分けて紹介します。</p>
+
+<ul>
+<li>その１. ビルド編　⇦　今回はココ</li>
+<li><a href="http://qiita.com/Takumon/items/b4211fcabad740baa551" id="reference-b35cd1a7f8ba1daaecd8">その２. テスト編</a></li>
+<li>その３. Dockerビルド編</li>
+</ul>
+
+<h2>
+<span id="その１-ビルド編" class="fragment"></span><a href="#%E3%81%9D%E3%81%AE%EF%BC%91-%E3%83%93%E3%83%AB%E3%83%89%E7%B7%A8"><i class="fa fa-link"></i></a>その１. ビルド編</h2>
+
+<p>Angular CLIで作成したプロジェクトをベースに、<br>
+MongoDBに登録したメッセージを画面に一覧で表示するアプリを作成していきます。<br>
+メッセージを登録すると一覧に追加されていくようなアプリです。</p>
+
+<p><a href="https://camo.qiitausercontent.com/69f548fea654db9cdc39f80b3ff36129a4e0be22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33303138373561362d313131362d363066332d313161392d6466366562353566353463322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/69f548fea654db9cdc39f80b3ff36129a4e0be22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33303138373561362d313131362d363066332d313161392d6466366562353566353463322e706e67" alt="アプリ概要.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/301875a6-1116-60f3-11a9-df6eb55f54c2.png"></a></p>
+
+<h3>
+<span id="プロジェクト構成" class="fragment"></span><a href="#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%A7%8B%E6%88%90"><i class="fa fa-link"></i></a>プロジェクト構成</h3>
+
+<p>今回のチュートリアル終了すると下記のようなプロジェクトの構成になります。<br>
+<a href="https://github.com/Takumon/angular4-express4-typescritp2/tree/build" rel="nofollow noopener" target="_blank">リポジトリ</a>も用意しているので詳細はそちらを参照してください。</p>
+
+<div class="code-frame" data-lang="">
+<div class="code-lang"><span class="bold">プロジェクトの構成（完成イメージ）</span></div>
+<div class="highlight"><pre>.
+├── dist                ・・・(1) コンパイル資産出力先
+│   └── server　　　　　　　　      ・・・(1-1)　コンパイルされたサーバ資産
+│       ├── app.js
+│       ├── app.js.map
+│       ├── bin
+│       │   ├── www.js
+│       │   └── www.js.map
+│       ├── config.js
+│       ├── config.js.map
+│       ├── models
+│       │   ├── message.js
+│       │   └── message.js.map
+│       ├── public      ・・・(1-2) コンパイルされたクライアント資産
+│       │   ├── favicon.ico
+│       │   ├── index.html
+│       │   ├── inline.bundle.js
+│       │   ├── inline.bundle.js.map
+│       │   ├── main.bundle.js
+│       │   ├── main.bundle.js.map
+│       │   ├── polyfills.bundle.js
+│       │   ├── polyfills.bundle.js.map
+│       │   ├── styles.bundle.js
+│       │   ├── styles.bundle.js.map
+│       │   ├── vendor.bundle.js
+│       │   └── vendor.bundle.js.map
+│       └── routes
+│           ├── message.js
+│           └── message.js.map
+├── node_modules
+│   ├── ...
+│   ...
+│
+├── e2e
+│   ├── app.e2e-spec.ts
+│   ├── app.po.ts
+│   └── tsconfig.e2e.json
+├── server               ・・・(2)　サーバ資産
+│   ├── app.ts
+│   ├── bin
+│   │   └── www.ts
+│   ├── config.ts
+│   ├── models
+│   │   └── message.ts
+│   ├── routes
+│   │   └── message.ts
+│   └── tsconfig.server.json
+├── src                   ・・・(3)　クライアント資産
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   └── message
+│   │       └── message.service.ts
+│   ├── assets
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.css
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── karma.conf.js
+├── package-lock.json
+├── package.json
+├── protractor.conf.js
+├── proxy.conf.json    ・・・(4) 
+├── tsconfig.json
+├── tslint.json
+└── README.md
+</pre></div>
+</div>
+
+<h4>
+<span id="各資産について" class="fragment"></span><a href="#%E5%90%84%E8%B3%87%E7%94%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><i class="fa fa-link"></i></a>各資産について</h4>
+
+<h5>
+<span id="1-dist" class="fragment"></span><a href="#1-dist"><i class="fa fa-link"></i></a>(1) dist</h5>
+
+<p>コンパイルした資産の出力先フォルダ</p>
+
+<h5>
+<span id="1-1-distserver" class="fragment"></span><a href="#1-1-distserver"><i class="fa fa-link"></i></a>(1-1) dist/server</h5>
+
+<p>ここにサーバ側のコンパイルされたjsファイルが出力されます。<br>
+serverフォルダを設けているのは本資産とテスト資産を分離したかったからです。<br>
+その２. テスト編で説明しますが、サーバ側テスト用jsファイルはdist配下のserver_testフォルダに出力されるようにしています。</p>
+
+<h5>
+<span id="1-2-distserverpublic" class="fragment"></span><a href="#1-2-distserverpublic"><i class="fa fa-link"></i></a>(1-2) dist/server/public</h5>
+
+<p>コンパイルされたクライアント資産。<br>
+サーバ側アプリの資産の一部としてコンパイルされるようにしています。<br>
+Expressのアプリでは静的資産をpublicフォルダに置くのが一般的なのでこうしました。</p>
+
+<h5>
+<span id="2-server" class="fragment"></span><a href="#2-server"><i class="fa fa-link"></i></a>(2) server</h5>
+
+<p>サーバ資産を格納するためのディレクトリ。<br>
+いろいろ悩みましたが、TypeScript資産をコンパイルすることとテストすることを考慮してこのような構成にしました。</p>
+
+<h5>
+<span id="3-src" class="fragment"></span><a href="#3-src"><i class="fa fa-link"></i></a>(3) src</h5>
+
+<p>フロントの実行資産とテスト資産を格納するためのディレクリ。<br>
+Angular CLIでプロジェクトを作成するとデフォルトで作成されます。<br>
+ビルドやアプリ起動は<code>ng</code>コマンドで実施します。</p>
+
+<h5>
+<span id="4-proxyconfjson" class="fragment"></span><a href="#4-proxyconfjson"><i class="fa fa-link"></i></a>(4) proxy.conf.json</h5>
+
+<p><code>npm start</code>でフロント側とサーバ側を同時に起動した時に、クライアント側からサーバ側へのリクエストを送れるようにするためのプロキシ設定です。</p>
+
+<h2>
+<span id="構築手順" class="fragment"></span><a href="#%E6%A7%8B%E7%AF%89%E6%89%8B%E9%A0%86"><i class="fa fa-link"></i></a>構築手順</h2>
+
+<h3>
+<span id="1-プロジェクト作成" class="fragment"></span><a href="#1-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>1. プロジェクト作成</h3>
+
+<ul>
+<li>
+<p>Angular CLIをインストール</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm install -g @angular/cli
+</pre></div></div>
+</li>
+<li>
+<p>プロジェクトを生成、Angular CLIであらかじめ定義している依存ライブラリをインストール</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ ng new sample
+$ cd sample
+$ npm install
+</pre></div></div>
+</li>
+<li>
+<p>Angular CLIであらかじめ定義している依存ライブラリの他に必要なものををインストール<br>
+</p>
+<dd>
+<br>
+</dd>
+<dt>
+<a href="https://www.npmjs.com/package/express" rel="nofollow noopener" target="_blank"><code>express</code></a><br>
+    </dt>
+<dd>Webアプリケーションフレームワーク<br>
+</dd>
+<dt>
+<a href="https://www.npmjs.com/package/body-parser" rel="nofollow noopener" target="_blank"><code>body-parser</code></a><br>
+    </dt>
+<dd>リクエストボディのパーサー<br>
+</dd>
+<dt>
+<a href="https://www.npmjs.com/package/mongoose" rel="nofollow noopener" target="_blank"><code>mongoose</code></a><br>
+    </dt>
+<dd>MongoDBへのアクセスを簡単にしてくれるAPI<br>
+</dd>
+<dt>
+<a href="https://www.npmjs.com/package/nodemon" rel="nofollow noopener" target="_blank"><code>nodemon</code></a><br>
+    </dt>
+<dd>node実行時にソースの変更を自動反映してくれるツール<br>
+</dd>
+<dt>
+<a href="https://www.npmjs.com/package/npm-run-all" rel="nofollow noopener" target="_blank"><code>npm-run-all</code></a><br>
+    </dt>
+<dd>npm-scripts の連結実行を管理するためのパッケージ<br>
+</dd>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm install --save express body-parser mongoose
+$ npm install --save-dev @types/mongoose nodemon npm-run-all
+</pre></div></div>
+</li>
+</ul>
+
+<h3>
+<span id="2-サーバ側を作成" class="fragment"></span><a href="#2-%E3%82%B5%E3%83%BC%E3%83%90%E5%81%B4%E3%82%92%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>2. サーバ側を作成</h3>
+
+<p>Angular CLIで作ったプロジェクトの直下に<code>server</code>フォルダを作って、その中にサーバ側の処理を書いていきます。</p>
+
+<h4>
+<span id="servermodelsmessagets" class="fragment"></span><a href="#servermodelsmessagets"><i class="fa fa-link"></i></a>server/models/message.ts</h4>
+
+<p>MongoDBにアクセスするためのモデルを定義します。<br>
+DBアクセスにはmangoosを使います。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">message.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">mongoose</span> <span class="k">from</span> <span class="s1">'mongoose'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">Message</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">'messages'</span><span class="p">,</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">message</span><span class="p">:</span> <span class="p">{</span><span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">}</span>
+<span class="p">}));</span>
+
+<span class="k">export</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="serverroutesmessagets" class="fragment"></span><a href="#serverroutesmessagets"><i class="fa fa-link"></i></a>server/routes/message.ts</h4>
+
+<p>エンドポイントごとの処理を記述するルータを定義します。<br>
+メッセージの取得と登録には<code>server/models/message.ts</code>を使います。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">message.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">http</span> <span class="k">from</span> <span class="s1">'http'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Router</span><span class="p">,</span> <span class="nx">Response</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'express'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'../models/message'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">messageRouter</span><span class="p">:</span> <span class="nx">Router</span> <span class="o">=</span> <span class="nx">Router</span><span class="p">();</span>
+
+<span class="c1">// 全てのメッセージを取得する</span>
+<span class="nx">messageRouter</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">Message</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">doc</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+          <span class="na">title</span><span class="p">:</span> <span class="s1">'エラーが発生しました。'</span><span class="p">,</span>
+          <span class="na">error</span><span class="p">:</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span>
+      <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span><span class="na">messages</span><span class="p">:</span> <span class="nx">doc</span><span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// メッセージを登録する</span>
+<span class="nx">messageRouter</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Message</span><span class="p">({</span>
+    <span class="na">message</span><span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">message</span>
+  <span class="p">});</span>
+
+  <span class="nx">message</span><span class="p">.</span><span class="nx">save</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+          <span class="na">title</span><span class="p">:</span> <span class="s1">'エラーが発生しました。'</span><span class="p">,</span>
+          <span class="na">error</span><span class="p">:</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span>
+      <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+      <span class="na">message</span><span class="p">:</span> <span class="s1">'メッセージを登録しました。'</span><span class="p">,</span>
+      <span class="na">obj</span><span class="p">:</span> <span class="nx">result</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="k">export</span> <span class="p">{</span> <span class="nx">messageRouter</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="serverappts" class="fragment"></span><a href="#serverappts"><i class="fa fa-link"></i></a>server/app.ts</h4>
+
+<p>Expressで使用するルータと依存モジュールを定義するためのファイルを作成します。<br>
+メッセージAPIのエンドポイントは<code>/api/messages</code>に設定し、<br>
+mongooseを使ってMongoDBへの接続設定をしています。<br>
+クライアント資産はビルドするとpublicフォルダ配下に出力されるようにしているので、<br>
+静的資産へのルーティングはpublicフォルダを指定しています。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">express</span> <span class="k">from</span> <span class="s1">'express'</span><span class="p">;</span>
+<span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">path</span> <span class="k">from</span> <span class="s1">'path'</span><span class="p">;</span>
+<span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">bodyParser</span> <span class="k">from</span> <span class="s1">'body-parser'</span><span class="p">;</span>
+<span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">mongoose</span> <span class="k">from</span> <span class="s1">'mongoose'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">messageRouter</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./routes/message'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MONGO_URL</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./config'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">App</span> <span class="p">{</span>
+  <span class="kr">public</span> <span class="nx">express</span><span class="p">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">middleware</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">routes</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="kr">private</span> <span class="nx">middleware</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">bodyParser</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">bodyParser</span><span class="p">.</span><span class="nx">urlencoded</span><span class="p">({</span> <span class="na">extended</span><span class="p">:</span> <span class="kc">false</span> <span class="p">}));</span>
+    <span class="c1">// 接続する MongoDB の設定</span>
+    <span class="nx">mongoose</span><span class="p">.</span><span class="nb">Promise</span> <span class="o">=</span> <span class="nb">global</span><span class="p">.</span><span class="nb">Promise</span><span class="p">;</span>
+    <span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">MONGO_URL</span> <span class="o">||</span> <span class="nx">MONGO_URL</span><span class="p">,</span> <span class="p">{</span>
+      <span class="na">useMongoClient</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">});</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'SIGINT'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span> <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="kr">private</span> <span class="nx">routes</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="c1">// 静的資産へのルーティング</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'public'</span><span class="p">)));</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">,</span> <span class="nx">messageRouter</span><span class="p">);</span>
+
+    <span class="c1">// その他のリクエストはindexファイルにルーティング</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">express</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'*'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">res</span><span class="p">.</span><span class="nx">sendFile</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'public/index.html'</span><span class="p">));</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="k">new</span> <span class="nx">App</span><span class="p">().</span><span class="nx">express</span><span class="p">;</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="serverbinwwwts" class="fragment"></span><a href="#serverbinwwwts"><i class="fa fa-link"></i></a>server/bin/www.ts</h4>
+
+<p>Node.js でサーバを起動するための設定ファイルを作成します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">www.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">http</span> <span class="k">from</span> <span class="s1">'http'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">SERVER_PORT</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'../config'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">app</span> <span class="k">from</span> <span class="s1">'../app'</span><span class="p">;</span>
+
+
+
+<span class="c1">// ポートの設定.</span>
+<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">normalizePort</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="nx">SERVER_PORT</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'port'</span><span class="p">,</span> <span class="nx">port</span><span class="p">);</span>
+
+
+<span class="c1">// HTTPサーバ生成.</span>
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`API running on localhost:</span><span class="p">${</span><span class="nx">port</span><span class="p">}</span><span class="s2">`</span><span class="p">));</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span> <span class="nx">onError</span><span class="p">);</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'listening'</span><span class="p">,</span> <span class="nx">onListening</span><span class="p">);</span>
+
+<span class="c1">// ポートを正規化.</span>
+<span class="kd">function</span> <span class="nx">normalizePort</span><span class="p">(</span><span class="nx">val</span><span class="p">):</span> <span class="nx">number</span><span class="o">|</span><span class="nx">string</span><span class="o">|</span><span class="kr">boolean</span>  <span class="p">{</span>
+
+  <span class="kd">const</span> <span class="nx">normalizedPort</span><span class="p">:</span> <span class="nx">number</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">val</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">)</span>
+    <span class="p">?</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">val</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="p">:</span> <span class="nx">val</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">normalizedPort</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">val</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">normalizedPort</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">normalizedPort</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// エラーハンドラー.</span>
+<span class="kd">function</span> <span class="nx">onError</span><span class="p">(</span><span class="nx">error</span><span class="p">):</span> <span class="k">void</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">syscall</span> <span class="o">!==</span> <span class="s1">'listen'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="nx">error</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">bind</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">port</span> <span class="o">===</span> <span class="s1">'string'</span>
+    <span class="p">?</span> <span class="s1">'Pipe '</span> <span class="o">+</span> <span class="nx">port</span>
+    <span class="p">:</span> <span class="s1">'Port '</span> <span class="o">+</span> <span class="nx">port</span><span class="p">;</span>
+
+  <span class="k">switch</span> <span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s1">'EACCES'</span><span class="p">:</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">bind</span> <span class="o">+</span> <span class="s1">' requires elevated privileges'</span><span class="p">);</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s1">'EADDRINUSE'</span><span class="p">:</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">bind</span> <span class="o">+</span> <span class="s1">' is already in use'</span><span class="p">);</span>
+      <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="nl">default</span><span class="p">:</span>
+      <span class="k">throw</span> <span class="nx">error</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// サーバ起動時のリスナー.</span>
+<span class="kd">function</span> <span class="nx">onListening</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">addr</span> <span class="o">=</span> <span class="nx">server</span><span class="p">.</span><span class="nx">address</span><span class="p">();</span>
+  <span class="kd">const</span> <span class="nx">bind</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">addr</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">)</span>
+    <span class="p">?</span> <span class="s2">`pipe </span><span class="p">${</span><span class="nx">addr</span><span class="p">}</span><span class="s2">`</span>
+    <span class="p">:</span> <span class="s2">`port </span><span class="p">${</span><span class="nx">addr</span><span class="p">.</span><span class="nx">port</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="serverconfigts" class="fragment"></span><a href="#serverconfigts"><i class="fa fa-link"></i></a>server/config.ts</h4>
+
+<p>サーバ側の設定ファイルを作成します。<br>
+ポートとMongoDBのURLを定義しています。<br>
+今回MongoDBはローカルにポート27017で立てる想定です。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">config.ts</span></div>
+<div class="highlight"><pre><span class="k">export</span> <span class="kd">const</span> <span class="nx">SERVER_PORT</span> <span class="o">=</span> <span class="mi">3000</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">MONGO_URL</span> <span class="o">=</span> <span class="s1">'mongodb://localhost:27017/test'</span><span class="p">;</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="3-クライアント側を作成" class="fragment"></span><a href="#3-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E5%81%B4%E3%82%92%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>3. クライアント側を作成</h3>
+
+<p>Angular CLIでプロジェクトを作成すると最低限のクライアント資産が生成されるので、<br>
+ここでは修正が必要なファイル、新規作成するファイルのみ紹介します。</p>
+
+<h4>
+<span id="srcappmessagemessageservicets" class="fragment"></span><a href="#srcappmessagemessageservicets"><i class="fa fa-link"></i></a>src/app/message/message.service.ts</h4>
+
+<p>サーバ側からメッセージを取得するためのサービスを新規作成します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">message.service.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Http</span><span class="p">,</span> <span class="nx">Response</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/http'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'rxjs/Rx'</span><span class="p">;</span>
+<span class="k">import</span> <span class="s1">'rxjs/Rx'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MessageService</span> <span class="p">{</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">http</span><span class="p">:</span> <span class="nx">Http</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">getAll</span><span class="p">():</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+        <span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="na">response</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+            <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="na">error</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">Observable</span><span class="p">.</span><span class="k">throw</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">json</span><span class="p">()));</span>
+  <span class="p">}</span>
+
+  <span class="nx">regist</span><span class="p">(</span><span class="na">message</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+      <span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">,</span> <span class="p">{</span><span class="na">message</span><span class="p">:</span> <span class="nx">message</span><span class="p">})</span>
+      <span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="na">response</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+            <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+      <span class="p">})</span>
+      <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="na">error</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">Observable</span><span class="p">.</span><span class="k">throw</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">json</span><span class="p">()));</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="srcappappcomponentts" class="fragment"></span><a href="#srcappappcomponentts"><i class="fa fa-link"></i></a>src/app/app.component.ts</h4>
+
+<p>既存のファイルを修正して、messagesを保持するようにします。<br>
+MessageServiceを使ってメッセージを取得します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.component.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MessageService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./message/message.service'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="p">:</span> <span class="s1">'app-root'</span><span class="p">,</span>
+  <span class="na">templateUrl</span><span class="p">:</span> <span class="s1">'./app.component.html'</span><span class="p">,</span>
+  <span class="na">styleUrls</span><span class="p">:</span> <span class="p">[</span><span class="s1">'./app.component.css'</span><span class="p">],</span>
+  <span class="na">providers</span><span class="p">:</span> <span class="p">[</span> <span class="nx">MessageService</span> <span class="p">]</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">AppComponent</span> <span class="p">{</span>
+  <span class="nl">messages</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="nl">message</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="kr">private</span> <span class="nx">messageService</span><span class="p">:</span> <span class="nx">MessageService</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">getMessages</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">getMessages</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">messageService</span>
+      <span class="p">.</span><span class="nx">getAll</span><span class="p">()</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">res</span><span class="p">:</span> <span class="nx">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">messages</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">messages</span><span class="p">;</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">registerMessage</span><span class="p">():</span> <span class="k">void</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">messageService</span>
+      <span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">res</span><span class="p">:</span> <span class="nx">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">message</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">getMessages</span><span class="p">();</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="srcappappcomponenthtml" class="fragment"></span><a href="#srcappappcomponenthtml"><i class="fa fa-link"></i></a>src/app/app.component.html</h4>
+
+<p>既存のファイルの修正して、メッセージ一覧と登録のUIに書き換えます。</p>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">app.component.html</span></div>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>メッセージ一覧<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"getMessagesButton"</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">getMessages</span><span class="err">()"</span><span class="nt">&gt;</span>メッセージ一覧を最新化<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"messageList"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="err">*</span><span class="na">ngFor=</span><span class="s">"let item of messages"</span><span class="nt">&gt;</span>
+        {{item.message}}
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>メッセージ登録<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"registerMessage"</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]="</span><span class="na">message</span><span class="err">"</span> <span class="na">placeholder=</span><span class="s">"登録するメッセージを入力してください。"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">id=</span><span class="s">"registerMessageButton"</span> <span class="err">(</span><span class="na">click</span><span class="err">)='</span><span class="na">registerMessage</span><span class="err">()'</span><span class="nt">&gt;</span>登録<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="srcappappmodulets" class="fragment"></span><a href="#srcappappmodulets"><i class="fa fa-link"></i></a>src/app/app.module.ts</h4>
+
+<p>HttpModule、FormsModule、MessageServiceを追加します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.module.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">BrowserModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/platform-browser'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HttpModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/http'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">FormsModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/forms'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">AppComponent</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./app.component'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MessageService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./message/message.service'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">NgModule</span><span class="p">({</span>
+  <span class="na">declarations</span><span class="p">:</span> <span class="p">[</span>
+    <span class="nx">AppComponent</span>
+  <span class="p">],</span>
+  <span class="na">imports</span><span class="p">:</span> <span class="p">[</span>
+    <span class="nx">BrowserModule</span><span class="p">,</span>
+    <span class="nx">HttpModule</span><span class="p">,</span>
+    <span class="nx">FormsModule</span>
+  <span class="p">],</span>
+  <span class="na">providers</span><span class="p">:</span> <span class="p">[</span><span class="nx">MessageService</span><span class="p">],</span>
+  <span class="na">bootstrap</span><span class="p">:</span> <span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">AppModule</span> <span class="p">{</span> <span class="p">}</span>
+
+
+</pre></div>
+</div>
+
+<h3>
+<span id="4-ビルドまわり環境を整備" class="fragment"></span><a href="#4-%E3%83%93%E3%83%AB%E3%83%89%E3%81%BE%E3%82%8F%E3%82%8A%E7%92%B0%E5%A2%83%E3%82%92%E6%95%B4%E5%82%99"><i class="fa fa-link"></i></a>4. ビルドまわり環境を整備</h3>
+
+<h4>
+<span id="pakcagejson" class="fragment"></span><a href="#pakcagejson"><i class="fa fa-link"></i></a>pakcage.json</h4>
+
+<p>スクリプトを下記のように修正します。<br>
+(npm scriptsは便利ですが、コメントが記述できないのが残念だなーと思いました。)</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">package.json</span></div>
+<div class="highlight"><pre><span class="w">
+  </span><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"npm-run-all -s build:server -p start:*"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start:client"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ng serve --aot=true --progress=false --proxy-config proxy.conf.json"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start:server"</span><span class="p">:</span><span class="w"> </span><span class="s2">"run-p watch:server boot:server"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"watch:server"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tsc -w -p ./server/tsconfig.server.json"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"boot:server"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nodemon ./dist/server/bin/www.js"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"run-s build:server build:client"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"build:client"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ng build --output-path=./dist/server/public"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"build:server"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tsc -p ./server/tsconfig.server.json"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"buildRun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"run-s build boot:server"</span><span class="p">,</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span></pre></div>
+</div>
+
+<ul>
+<li>
+<strong>start</strong>でクライアント資産とサーバ資産の両方を起動します。</li>
+<li>
+<strong>start:client</strong>でクライアント資産をコンパイルして起動します。Angular CLIのngコマンドにお任せしています。なおstartではクライアント資産とサーバ資産で二つのサーバを起動するので、クライアントからサーバへ（リクエストを送れるようにプロキシ設定を行っています。プロキシ設定ファイルについては下で触れます。</li>
+<li>
+<strong>start:server</strong>でサーバ資産をコンパイルしてExpressを起動します。</li>
+<li>
+<strong>watch:server</strong>でサーバ側のTypeScriptをウォッチして変更があればコンパイルするようにします。</li>
+<li>
+<strong>boot:server</strong>でコンパイルしたサーバ側資産を起動します。nodeではなくnodemonを使うことでコンパイルしたサーバ資産に更新があった場合でも即座に更新を反映するようにしています。</li>
+<li>
+<strong>build</strong>クライアント資産とサーバ資産の両方をコンパイルします。</li>
+<li>
+<strong>build:server</strong>でサーバ資産をコンパイルしています。コンパイル時の設定は下で触れる<code>/server/tsconfig.server.json</code>を使います。</li>
+<li>
+<strong>build:client</strong>でクライアント資産をコンパイルしています。出力先はサーバ側資産の静的ファイル格納フォルダ（<code>dist/server/public</code>）を指定しています。</li>
+<li>
+<strong>buildRun</strong>でクライアント資産とサーバ資産の両方をコンパイルしサーバ資産を起動します。とりあえずデプロイするアプリを起動したい時の便利コマンドです。</li>
+</ul>
+
+<h4>
+<span id="servertsconfigserverjson" class="fragment"></span><a href="#servertsconfigserverjson"><i class="fa fa-link"></i></a>server/tsconfig.server.json</h4>
+
+<p>サーバ資産コンパイルときの設定ファイルを作成します。<br>
+<code>outDir</code>で出力先をdist/serverに指定しています。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">tsconfig.server.json</span></div>
+<div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="s2">"extends"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../tsconfig.json"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"compilerOptions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"preserveConstEnums"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"outDir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../dist/server"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mapRoot"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../dist/server"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"module"</span><span class="p">:</span><span class="w"> </span><span class="s2">"commonjs"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<h4>
+<span id="proxyconfjson" class="fragment"></span><a href="#proxyconfjson"><i class="fa fa-link"></i></a>proxy.conf.json</h4>
+
+<p><code>start</code>でクライアントとサーバの２つを起動した時に、クラ<br>
+イアントからサーバへのリクエストを送れるようにするためのプロキシ設定ファイルを作成します。<br>
+<code>/api</code>始まるリクエストをサーバへのリクエストとみなしてプロキシ設定を行います。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">proxy.conf.json</span></div>
+<div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="s2">"/api"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://localhost:3000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"secure"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<h4>
+<span id="mongodbをローカルで立ち上げる" class="fragment"></span><a href="#mongodb%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B"><i class="fa fa-link"></i></a>MongoDBをローカルで立ち上げる</h4>
+
+<p>具体的な方法について触れませんが、Dockerでもなんでもいいのでローカルにポート27017でMongoDBを立ち上げておいてください。DB、テーブルの作成などは不要です。</p>
+
+<h3>
+<span id="5-試してみる" class="fragment"></span><a href="#5-%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>5. 試してみる</h3>
+
+<h4>
+<span id="アプリを起動してみる" class="fragment"></span><a href="#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>アプリを起動してみる</h4>
+
+<ul>
+<li>
+<p>プロジェクト直下で下記コマンドを実行するとアプリが起動します。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm start 
+</pre></div></div>
+</li>
+<li><p>起動したら<code>http://localhost:4200</code>にアクセスしてみます。すると下記のようにメッセージ一覧画面が表示され、メッセージを登録すると適宜一覧に追加されていきます。</p></li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/69f548fea654db9cdc39f80b3ff36129a4e0be22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33303138373561362d313131362d363066332d313161392d6466366562353566353463322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/69f548fea654db9cdc39f80b3ff36129a4e0be22/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33303138373561362d313131362d363066332d313161392d6466366562353566353463322e706e67" alt="アプリ概要.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/301875a6-1116-60f3-11a9-df6eb55f54c2.png"></a></p>
+
+<ul>
+<li>試しにクライアント資産かサーバ資産を修正してみると、コンンパイルされてアプリに変更がリアルタイムに反映されることがわかります。</li>
+</ul>
+
+<h4>
+<span id="アプリをビルドしてみる" class="fragment"></span><a href="#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>アプリをビルドしてみる</h4>
+
+<ul>
+<li>
+<p>プロジェクト直下で下記コマンドを実行するとアプリがビルドされdistフォルダ配下に出力されます。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm run build
+</pre></div></div>
+</li>
+</ul>
+
+<h4>
+<span id="アプリをビルドして起動してみる" class="fragment"></span><a href="#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%A6%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>アプリをビルドして起動してみる</h4>
+
+<ul>
+<li>プロジェクト直下で下記コマンドを実行するとアプリがビルドされdistフォルダ配下に出力された後に起動されます。
+ビルドしたアプリは<code>http://localhost:3000</code>でアクセスできます。
+<code>
+$ npm run buildRun
+</code>
+</li>
+</ul>
+
+<h2>
+<span id="終わりに" class="fragment"></span><a href="#%E7%B5%82%E3%82%8F%E3%82%8A%E3%81%AB"><i class="fa fa-link"></i></a>終わりに</h2>
+
+<p>今回はAngular CLIベースのプロジェクトをベースにしてMEANスタックの最小構成プロジェクトを構築する方法を紹介しました。プロジェクトを起動、ビルドすることはできるようになったので、次回「<a href="http://qiita.com/Takumon/items/b4211fcabad740baa551">その２. テスト編</a>」ではテストコードの作成とテスト実施環境の構築について紹介しようと思います。</p>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/270e2fae-ed90-5539-8c90-a2ed93ebba83/">← <!-- -->Fessを使用して、Asciidoctorで簡単に全文検索できるようにする</a></li><li><a rel="next" href="/gatsby-starter-qiita/5644c24e-eade-50ca-aa11-83a4eaeba122/">Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その２. テスト編<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"bb-5-bc-899-9-dfd-5-e-67-bc-4-c-bc-422-ba-8-d-176-ad1","path":"/bb5bc899-9dfd-5e67-bc4c-bc422ba8d176/"};window.dataPath="130/path---bb-5-bc-899-9-dfd-5-e-67-bc-4-c-bc-422-ba-8-d-176-ad-1-32d-EnCkYU0I2njt8qzmayqZDFl3d8c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

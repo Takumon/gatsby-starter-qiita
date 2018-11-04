@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="Asciidoctorを使うと、技術文書や手順書などのドキュメントを簡単にHTMLで公開できますが、ドキュメントが多くなると自分の調べたいキーワードが、どのドキュメントに載っているのか探すのが困難になってきます。そこで今回は、Dockerで..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/847/path---270-e-2-fae-ed-90-5539-8-c-90-a-2-ed-93-ebba-83-461-611-Lmdy8urUO9rPWbcaXNS8xpQhsk8.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>Fessを使用して、Asciidoctorで簡単に全文検索できるようにする</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2017-06-26T00:21:37+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div><p><a href="http://asciidoctor.org/" rel="nofollow noopener" target="_blank">Asciidoctor</a>を使うと、技術文書や手順書などのドキュメントを簡単にHTMLで公開できますが、ドキュメントが多くなると自分の調べたいキーワードが、どのドキュメントに載っているのか探すのが困難になってきます。</p>
+
+<p>そこで今回は、Dockerで全文検索サーバの<a href="http://fess.codelibs.org/ja/" rel="nofollow noopener" target="_blank">Fess</a>を立てて、<br>
+ドキュメントからJavaScript経由でFessのJSON APIを呼び出すことで、<br>
+全文検索を簡単に導入する方法をご紹介します。</p>
+
+<p>導入するとドキュメントの右上に検索窓が出てきて全文検索できるようになります。<br>
+<a href="https://camo.qiitausercontent.com/e020d2b6619c0b7ce4332c80ea15b89a6efb895e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f31323365633737312d666237372d653464632d646637652d6134623430373739323735392e676966" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e020d2b6619c0b7ce4332c80ea15b89a6efb895e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f31323365633737312d666237372d653464632d646637652d6134623430373739323735392e676966" alt="6月-24-2017 19-05-32.gif" title="6月-24-2017 19-05-32.gif" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/123ec771-fb77-e4dc-df7e-a4b407792759.gif"></a></p>
+
+<h2>
+<span id="fessとは" class="fragment"></span><a href="#fess%E3%81%A8%E3%81%AF"><i class="fa fa-link"></i></a>Fessとは</h2>
+
+<p><a href="http://fess.codelibs.org/ja/" rel="nofollow noopener" target="_blank">Fess</a>は<strong>「5 分で簡単に構築可能な全文検索サーバー」</strong>です。<br>
+Javaベースで構築されており、Apacheライセンスで提供されるオープンソース製品で、無料で使用できます。<br>
+自分でクローラを設定して、自分だけの検索エンジンがつくれるようなイメージです。<br>
+デフォルトで検索画面を提供していますが、JSON APIも提供しているので、様々なシステムと連携可能です。</p>
+
+<h2>
+<span id="全体像" class="fragment"></span><a href="#%E5%85%A8%E4%BD%93%E5%83%8F"><i class="fa fa-link"></i></a>全体像</h2>
+
+<p>ドキュメント用Webサーバに全文検索用のJavaScriptファイルとCSSファイルを追加し、Dockerで全文検索用のFessサーバを立てます。<br>
+Fessサーバはドキュメント用Webサーバをクロールし、その情報を保存しておきます。<br>
+ドキュメントで全文検索を実施すると、JavaScript経由でFessサーバのJSON AIPを呼び出して、全文検索結果をドキュメントに表示します。</p>
+
+<p><a href="https://camo.qiitausercontent.com/6fe043176da6b6451722114a3d0418bc40ac8c99/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f31306338616334362d323135352d386562372d613565642d3763313363653534346563322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/6fe043176da6b6451722114a3d0418bc40ac8c99/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f31306338616334362d323135352d386562372d613565642d3763313363653534346563322e706e67" alt="0_Fess_全体像_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/10c8ac46-2155-8eb7-a5ed-7c13ce544ec2.png"></a></p>
+
+<p><a href="https://camo.qiitausercontent.com/729e46c74903de7be597a6ac4adea0c03cd8559f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34306531643435362d323633352d326165642d333333642d3862316165633434373933312e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/729e46c74903de7be597a6ac4adea0c03cd8559f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34306531643435362d323633352d326165642d333333642d3862316165633434373933312e706e67" alt="0_Fess_全体像_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/40e1d456-2635-2aed-333d-8b1aec447931.png"></a></p>
+
+<h2>
+<span id="導入手順" class="fragment"></span><a href="#%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86"><i class="fa fa-link"></i></a>導入手順</h2>
+
+<p>この導入手順は、下記のような環境（ローカルPCのDocker上にドキュメント用WebサーバとFessサーバが立っている環境）を作った時のものです。<br>
+Dockerを使わなくても、ローカルPC以外でも、導入可能です。導入手順は適宜読み替えてください。</p>
+
+<p><a href="https://camo.qiitausercontent.com/a94911642557c486b240ffa8c3c184c64bfabc2c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30626164623864322d316135382d323262362d343537632d3132626563663361383931312e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/a94911642557c486b240ffa8c3c184c64bfabc2c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30626164623864322d316135382d323262362d343537632d3132626563663361383931312e706e67" alt="0_Fess_全体像_3.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/0badb8d2-1a58-22b6-457c-12becf3a8911.png"></a></p>
+
+<h3>
+<span id="fessのインストール" class="fragment"></span><a href="#fess%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><i class="fa fa-link"></i></a>Fessのインストール</h3>
+
+<p>Docker Hubの<a href="https://hub.docker.com/r/codelibs/fess/" rel="nofollow noopener" target="_blank">codelibs/fess</a>を使用します。今回ポートは10084で公開します。<br>
+Dockerを使わない場合は<a href="http://fess.codelibs.org/ja/11.2/install/index.html" rel="nofollow noopener" target="_blank">Fess インストールガイド</a>を参考にしてください。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ docker run -d -p 10084:8080 --name fess codelibs/fess:latest
+</pre></div></div>
+
+<h3>
+<span id="fessの設定" class="fragment"></span><a href="#fess%E3%81%AE%E8%A8%AD%E5%AE%9A"><i class="fa fa-link"></i></a>Fessの設定</h3>
+
+<h4>
+<span id="クローラの設定" class="fragment"></span><a href="#%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%A9%E3%81%AE%E8%A8%AD%E5%AE%9A"><i class="fa fa-link"></i></a>クローラの設定</h4>
+
+<p><code>http://[PCのローカルIPアドレス]:10084/login</code>にアクセスするとログイン画面が表示されます。<br>
+デフォルトのID/PASS　<code>admin/admin</code>でログインしましょう。<br>
+<a href="https://camo.qiitausercontent.com/d173fd5ce7a76eb7b5a6ef053a670dd6551d720c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65373930656361392d353037332d393438652d336534332d6437353436643537666165352e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/d173fd5ce7a76eb7b5a6ef053a670dd6551d720c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65373930656361392d353037332d393438652d336534332d6437353436643537666165352e706e67" alt="1_Fess管理者_ログイン画面.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/e790eca9-5073-948e-3e43-d7546d57fae5.png"></a><br>
+<br></p>
+
+<p>ログインするとダッシュボードが表示されます。左ペインの<code>クローラ</code> &gt; <code>Web</code>　を選択しましょう。<br>
+<a href="https://camo.qiitausercontent.com/cbfee37bd5d06381615f013da8587b1af91c35aa/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f61636662653935302d666137342d643063622d336365652d3565386462346465356237342e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/cbfee37bd5d06381615f013da8587b1af91c35aa/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f61636662653935302d666137342d643063622d336365652d3565386462346465356237342e706e67" alt="2_Fess管理者_ダッシュボード.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/acfbe950-fa74-d0cb-3cee-5e8db4de5b74.png"></a><br>
+<br></p>
+
+<p>Webクローラにはまだ何も登録されていないので、左上の<code>+　新規作成</code>ボタンをクリックしましょう。<br>
+<a href="https://camo.qiitausercontent.com/e60be4a90df24cb1275c165752de363b15859b87/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36333130333762342d616162322d386530642d663961612d3364323365633931376132392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e60be4a90df24cb1275c165752de363b15859b87/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36333130333762342d616162322d386530642d663961612d3364323365633931376132392e706e67" alt="3_Fess管理者_Webクロール設定_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/631037b4-aab2-8e0d-f9aa-3d23ec917a29.png"></a><br>
+<br></p>
+
+<p>Webクロール情報入力画面が表示されます。<br>
+<a href="https://camo.qiitausercontent.com/62cd6f97bb7dfebb163873f26b5fda4fabcf89c5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65653561303963392d376363652d336665632d373838342d3132353863333266613931612e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/62cd6f97bb7dfebb163873f26b5fda4fabcf89c5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65653561303963392d376363652d336665632d373838342d3132353863333266613931612e706e67" alt="3_Fess管理者_Webクロール設定_2.png" title="3_Fess管理者_Webクロール設定_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/ee5a09c9-7cce-3fec-7884-1258c32fa91a.png"></a></p>
+
+<p>設定項目は色々ありますが、とりあえず下記項目だけ設定しましょう。</p>
+
+<ul>
+<li>名前 
+
+<ul>
+<li>任意の名前を設定してください。</li>
+</ul>
+</li>
+<li>URL 
+
+<ul>
+<li>ドキュメント用Webサーバにおいてドキュメントが格納されているルートフォルダのURLを指定してください。末尾に<code>/</code>を付けてください。</li>
+</ul>
+</li>
+<li>クロール対象とするURL 
+
+<ul>
+<li>正規表現で値を設定します。上記<code>URL</code>で設定したルートフォルダ配下の全資産を対象とするために、<code>URLで設定した値</code> + <code>.*</code> を指定してください。</li>
+</ul>
+</li>
+<li>検索対象とするURL
+
+<ul>
+<li>正規表現で値を設定します。HTMLのみを検索対象にしたい（JS、CSSなどは除外したい）ので、<code>URLで設定した値</code> + <code>.+\.html$</code> を指定してください。
+<br>
+<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>値を設定したら、画面を下にスクロールして<code>+　作成</code>ボタンをクリックします。<br>
+すると下記のようにWebクロールのデータが１件登録されます。<br>
+<a href="https://camo.qiitausercontent.com/8302d25592df90b2bdf59fbf3b43e31ecf106b3e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33643030626635612d663133312d643336372d646535332d6166313062623336383339642e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/8302d25592df90b2bdf59fbf3b43e31ecf106b3e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33643030626635612d663133312d643336372d646535332d6166313062623336383339642e706e67" alt="3_Fess管理者_Webクロール設定_4.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/3d00bf5a-f131-d367-de53-af10bb36839d.png"></a><br>
+<br></p>
+
+<h4>
+<span id="クローラの実行" class="fragment"></span><a href="#%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%A9%E3%81%AE%E5%AE%9F%E8%A1%8C"><i class="fa fa-link"></i></a>クローラの実行</h4>
+
+<p>左ペインで　<code>システム</code> &gt; <code>スケジューラ</code> を選択してジョブスケジューラを開きます。<br>
+ジョブスケジューラで <code>Default Crawler</code>を選択します。<br>
+<a href="https://camo.qiitausercontent.com/52e6c84dc635dabd786a05e2dc2dbc01bbcd62b3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f62306165636130642d363461342d343364612d373832622d3061316130636437306238332e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/52e6c84dc635dabd786a05e2dc2dbc01bbcd62b3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f62306165636130642d363461342d343364612d373832622d3061316130636437306238332e706e67" alt="4_Fess管理者_スケジューラ_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/b0aeca0d-64a4-43da-782b-0a1a0cd70b83.png"></a><br>
+<br></p>
+
+<p><code>今すぐ開始</code>をクリックします。<br>
+<a href="https://camo.qiitausercontent.com/15c56153ff7878a59bfda2bab0ac3b8b6182fa23/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30306537363932302d626661642d656562312d636239392d3732346533613933393261392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/15c56153ff7878a59bfda2bab0ac3b8b6182fa23/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30306537363932302d626661642d656562312d636239392d3732346533613933393261392e706e67" alt="4_Fess管理者_スケジューラ_1.1.png" title="4_Fess管理者_スケジューラ_1.1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/00e76920-bfad-eeb1-cb99-724e3a9392a9.png"></a><br>
+<br></p>
+
+<p>するとクロールが実行されます。<br>
+<a href="https://camo.qiitausercontent.com/b34d527efb0b07d2b04cabccebe97f0e1e4b594c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37323564333030662d303766352d373234642d636539332d3865316339373532653130652e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/b34d527efb0b07d2b04cabccebe97f0e1e4b594c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37323564333030662d303766352d373234642d636539332d3865316339373532653130652e706e67" alt="4_Fess管理者_スケジューラ_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/725d300f-07f5-724d-ce93-8e1c9752e10e.png"></a><br>
+<br></p>
+
+<p>しばらくして<code>F5</code>キーを押してブラウザを更新してください。<br>
+クロールが終了すると、スケジューラの状態が<code>実行中</code>から<code>有効</code>になります。<br>
+<a href="https://camo.qiitausercontent.com/2d860e111077a3a0b63a44b45e14e0e18b02fcb1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65653466353237372d616163332d616437652d636465622d3431643339623733336331662e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/2d860e111077a3a0b63a44b45e14e0e18b02fcb1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65653466353237372d616163332d616437652d636465622d3431643339623733336331662e706e67" alt="4_Fess管理者_スケジューラ_3.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/ee4f5277-aac3-ad7e-cdeb-41d39b733c1f.png"></a><br>
+<br></p>
+
+<h4>
+<span id="クローラ実行結果の確認" class="fragment"></span><a href="#%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%A9%E5%AE%9F%E8%A1%8C%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E8%AA%8D"><i class="fa fa-link"></i></a>クローラ実行結果の確認</h4>
+
+<p>左ペインの<code>システム情報</code>&gt;<code>クロール情報</code>を選択すると、先ほど実行したクロールの結果が表示されています。その行を選択します。<br>
+<a href="https://camo.qiitausercontent.com/e35eccd76c8d85dcc368298adfebb71871f083a7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39326633313062352d383366362d646564612d343438642d6166613863356230663130342e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e35eccd76c8d85dcc368298adfebb71871f083a7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39326633313062352d383366362d646564612d343438642d6166613863356230663130342e706e67" alt="5_Fess管理者_システム情報_クロール情報_1.png" title="5_Fess管理者_システム情報_クロール情報_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/92f310b5-83f6-deda-448d-afa8c5b0f104.png"></a><br>
+<br></p>
+
+<p>セッションIDを選択します。<br>
+<a href="https://camo.qiitausercontent.com/341936c3d088fb04a1029cc6c891a35253a079da/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34653830636431342d333633342d663636352d623434382d3862346234653761386432312e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/341936c3d088fb04a1029cc6c891a35253a079da/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34653830636431342d333633342d663636352d623434382d3862346234653761386432312e706e67" alt="5_Fess管理者_システム情報_クロール情報_2.png" title="5_Fess管理者_システム情報_クロール情報_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/4e80cd14-3634-f665-b448-8b4b4e7a8d21.png"></a><br>
+<br></p>
+
+<p>ここにドキュメント用Webサーバのドキュメントが全て表示されればOKです。<br>
+<a href="https://camo.qiitausercontent.com/767e79c91f7521caf880a890deee50513f520ea9/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36306238366263342d663730662d343263382d613031372d3566313338623362383865332e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/767e79c91f7521caf880a890deee50513f520ea9/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36306238366263342d663730662d343263382d613031372d3566313338623362383865332e706e67" alt="5_Fess管理者_システム情報_クロール情報_3.png" title="5_Fess管理者_システム情報_クロール情報_3.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/60b86bc4-f70f-42c8-a017-5f138b3b88e3.png"></a><br>
+<br></p>
+
+<h3>
+<span id="ドキュメント用webサーバに全文検索用資産を配置" class="fragment"></span><a href="#%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E7%94%A8web%E3%82%B5%E3%83%BC%E3%83%90%E3%81%AB%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2%E7%94%A8%E8%B3%87%E7%94%A3%E3%82%92%E9%85%8D%E7%BD%AE"><i class="fa fa-link"></i></a>ドキュメント用Webサーバに全文検索用資産を配置</h3>
+
+<p>全文検索用の資産は<code>full-text-search.js</code>と<code>full-text-search.css</code>の２つです。<br>
+<code>full-text-search.js</code>の変数 FESS_JSON_ENDPOINT(FESSサーバのJSON APIのエンドポイント) は適時置き換えてください。<br>
+これらの資産をドキュメント用Webサーバのドキュメントのルートフォルダ直下に配置してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">full-text-search.js</span></div>
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="s1">'use strict'</span><span class="p">;</span>
+
+    <span class="c1">// FESSサーバのJSON APIのエンドポイント（FessサーバのIPアドレス + /json）</span>
+    <span class="kd">var</span> <span class="nx">FESS_JSON_ENDPOINT</span> <span class="o">=</span> <span class="s1">'http://192.168.1.5:10084/json'</span><span class="p">;</span>
+
+    <span class="c1">// １ページあたりの検索結果表示件数</span>
+    <span class="kd">var</span> <span class="nx">COUNT_PAR_PAGE</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+
+    <span class="c1">// 目次の</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#toc'</span><span class="p">)</span>
+        <span class="c1">// 一番上に検索条件入力エリアを挿入</span>
+        <span class="p">.</span><span class="nx">prepend</span><span class="p">(</span>
+            <span class="s1">'&lt;div id="search-area"&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;form id="search-form"&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;div class="search-input-area"&gt;'</span> <span class="o">+</span>
+                        <span class="s1">'&lt;i class="fa fa-search left-icon"&gt;&lt;/i&gt;'</span> <span class="o">+</span>
+                        <span class="s1">'&lt;input id="search-query" placeholder="全文検索" /&gt;'</span> <span class="o">+</span>
+                        <span class="s1">'&lt;i class="fa fa-close right-icon"&gt;&lt;/i&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;/div&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;input id="search-start" type="hidden" value="0"/&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;input id="search-num" type="hidden" value="'</span> <span class="o">+</span> <span class="nx">COUNT_PAR_PAGE</span> <span class="o">+</span> <span class="s1">'"/&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;form&gt;'</span> <span class="o">+</span>
+            <span class="s1">'&lt;/div&gt;'</span><span class="p">)</span>
+        <span class="c1">// イベント登録</span>
+        <span class="p">.</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">$searchArea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+            <span class="c1">// 入力項目の検索条件でEnterを押したら、検索処理を実行する</span>
+            <span class="nx">$searchArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'#search-form'</span><span class="p">).</span><span class="nx">submit</span><span class="p">({</span><span class="na">navi</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="nx">doSearch</span><span class="p">);</span>
+
+            <span class="c1">// 虫眼鏡アイコン押下したら、検索処理を実行する</span>
+            <span class="nx">$searchArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s2">".left-icon"</span><span class="p">).</span><span class="nx">click</span><span class="p">({</span><span class="na">navi</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="nx">doSearch</span><span class="p">);</span>
+
+            <span class="c1">// 検索条件入力したら、</span>
+            <span class="nx">$searchArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s2">"#search-query"</span><span class="p">).</span><span class="nx">keyup</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+              <span class="kd">var</span> <span class="nx">$this</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+              <span class="kd">var</span> <span class="nx">$rightIcon</span> <span class="o">=</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">parent</span><span class="p">().</span><span class="nx">find</span><span class="p">(</span><span class="s2">".right-icon"</span><span class="p">);</span>
+
+              <span class="k">if</span><span class="p">(</span><span class="nx">$this</span><span class="p">.</span><span class="nx">val</span><span class="p">().</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                 <span class="c1">// 検索条件に値がある場合は×アイコンの色を濃くする</span>
+                 <span class="nx">$rightIcon</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="s1">'color'</span><span class="p">,</span><span class="s1">'#555'</span><span class="p">);</span>
+              <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                 <span class="c1">// 検索条件に値がない場合は×アイコンの色を薄くする</span>
+                 <span class="nx">$rightIcon</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="s1">'color'</span><span class="p">,</span><span class="s1">'#ccc'</span><span class="p">);</span>
+              <span class="p">}</span>
+            <span class="p">});</span>
+
+            <span class="c1">// ×アイコン押下したら、</span>
+            <span class="nx">$searchArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s2">".right-icon"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+              <span class="c1">// ×アイコンの色を薄くして</span>
+              <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'color'</span><span class="p">,</span><span class="s1">'#ccc'</span><span class="p">)</span>
+                      <span class="c1">// 検索条件をクリアする</span>
+                     <span class="p">.</span><span class="nx">parent</span><span class="p">().</span><span class="nx">find</span><span class="p">(</span><span class="s2">"input"</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+            <span class="p">});</span>
+        <span class="p">});</span>
+
+    <span class="c1">// ドキュメントタイトルの</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#header&gt;h1'</span><span class="p">)</span>
+        <span class="c1">// 直下に検索結果エリアを挿入</span>
+        <span class="p">.</span><span class="nx">before</span><span class="p">(</span>
+            <span class="s1">'&lt;div id="search-result-area"&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;div id="search-result-subheader"&gt;&lt;/div&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;div id="search-result-content"&gt;&lt;/div&gt;'</span> <span class="o">+</span>
+            <span class="s1">'&lt;/div&gt;'</span><span class="p">)</span>
+        <span class="c1">// イベント登録</span>
+        <span class="p">.</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+                <span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'#search-result-area'</span><span class="p">)</span>
+                    <span class="c1">// 検索結果エリアのバツアイコンをクリックしたら、</span>
+                    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="s1">'#remove-search-result'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                      <span class="kd">var</span> <span class="nx">$searchResultArea</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">delegateTarget</span><span class="p">)</span>
+                      <span class="c1">// 検索結果エリアを非表示モードにする</span>
+                      <span class="nx">$searchResultArea</span><span class="p">.</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+                      <span class="c1">// 検索結果エリアの中身を削除する</span>
+                      <span class="nx">$searchResultArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'#search-result-subheader'</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+                      <span class="nx">$searchResultArea</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'#search-result-content'</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+                    <span class="p">})</span>
+                    <span class="c1">// 前ページリンクをクリックしたら、１ページ前を検索する</span>
+                    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="s2">"#prevPageLink"</span><span class="p">,</span> <span class="p">{</span><span class="na">navi</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="nx">doSearch</span><span class="p">)</span>
+                    <span class="c1">// 次ページリンクをクリックしたら、１ページ後を検索する</span>
+                    <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="s2">"#nextPageLink"</span><span class="p">,</span> <span class="p">{</span><span class="na">navi</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span> <span class="nx">doSearch</span><span class="p">);</span>
+        <span class="p">});</span>
+
+
+
+    <span class="cm">/**
+     * 検索処理
+     *
+     * @param  {eventObject} event
+     * @return {boolean}  submit処理を中断させるために必ずfalseを返却する
+     */</span>
+    <span class="kd">function</span> <span class="nx">doSearch</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+      <span class="c1">// 検索フィールドの値をトリムして取得</span>
+      <span class="kd">var</span> <span class="nx">searchQuery</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#search-query'</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+      <span class="c1">// 空の場合は検索処理を実行しない</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">searchQuery</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+      <span class="p">}</span>
+
+
+      <span class="c1">// 表示開始位置、表示件数の取得</span>
+      <span class="kd">var</span> <span class="nx">start</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#search-start'</span><span class="p">).</span><span class="nx">val</span><span class="p">()),</span>
+          <span class="nx">num</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#search-num'</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+      <span class="c1">// 表示開始位置のチェック</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">start</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c1">// 表示件数のチェック</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="nx">num</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">num</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c1">// 表示ページ情報の取得</span>
+      <span class="k">switch</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">navi</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+          <span class="c1">// 前のページの場合</span>
+          <span class="nx">start</span> <span class="o">-=</span> <span class="nx">num</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+          <span class="c1">// 次のページの場合</span>
+          <span class="nx">start</span> <span class="o">+=</span> <span class="nx">num</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="nl">default</span><span class="p">:</span>
+        <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>
+          <span class="nx">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+
+
+      <span class="c1">// URLを構築</span>
+      <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">FESS_JSON_ENDPOINT</span> <span class="o">+</span> <span class="s1">'?callback=?'</span> <span class="o">+</span> <span class="c1">// 別ドメインを想定してJSONP形式でリクエストを送信する</span>
+                                     <span class="s1">'&amp;q='</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">searchQuery</span><span class="p">)</span> <span class="o">+</span>
+                                     <span class="s1">'&amp;start='</span> <span class="o">+</span> <span class="nx">start</span> <span class="o">+</span>
+                                     <span class="s1">'&amp;num='</span> <span class="o">+</span> <span class="nx">num</span><span class="p">;</span>
+
+      <span class="c1">// 検索リクエスト送信</span>
+      <span class="c1">// 別ドメインを想定してJSONP形式でリクエストを送信する</span>
+      <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+          <span class="na">url</span><span class="p">:</span> <span class="nx">url</span><span class="p">,</span>
+          <span class="na">dataType</span><span class="p">:</span> <span class="s1">'jsonp'</span><span class="p">,</span>
+          <span class="na">success</span><span class="p">:</span> <span class="nx">renderSearchResult</span>
+      <span class="p">});</span>
+
+
+      <span class="c1">// ページ情報の更新</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'#searchNum'</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+
+      <span class="c1">// ページ表示を上部に移動</span>
+      <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+      <span class="c1">// サブミットを抑止するためにfalseを返す</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">};</span>
+
+
+    <span class="cm">/**
+     * 検索成功時に検索結果を描画する
+     *
+     * @param  {Anything} data レスポンスデータ
+     */</span>
+    <span class="kd">function</span> <span class="nx">renderSearchResult</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 検索結果処理</span>
+      <span class="kd">var</span> <span class="nx">dataResponse</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">response</span><span class="p">;</span>
+      <span class="c1">// ステータスチェック</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">dataResponse</span><span class="p">.</span><span class="nx">status</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"検索中に問題が発生しました。"</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// 検索結果領域を表示する</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'#search-result-area'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+
+      <span class="kd">var</span> <span class="nx">$searchResultSubheader</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#search-result-subheader'</span><span class="p">),</span>
+          <span class="nx">$searchResultContent</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#search-result-content'</span><span class="p">),</span>
+          <span class="nx">record_count</span> <span class="o">=</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">record_count</span><span class="p">;</span>
+
+      <span class="c1">// 検索結果がない場合</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">record_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// サブヘッダーに出力</span>
+        <span class="nx">$searchResultSubheader</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">innerHTML</span> <span class="o">=</span>  <span class="s1">'&lt;div id="remove-search-result" style="float:right;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/div&gt;'</span><span class="p">;</span>
+
+        <span class="c1">// 結果領域に出力</span>
+        <span class="nx">$searchResultContent</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;b&gt;'</span> <span class="o">+</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">q</span> <span class="o">+</span> <span class="s1">'&lt;/b&gt;に一致する情報は見つかりませんでした。'</span><span class="p">;</span>
+
+        <span class="k">return</span><span class="p">;</span>
+      <span class="p">}</span>
+
+
+      <span class="c1">// 検索にヒットした場合</span>
+      <span class="kd">var</span> <span class="nx">page_number</span> <span class="o">=</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">page_number</span><span class="p">,</span>
+          <span class="nx">page_size</span> <span class="o">=</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">page_size</span><span class="p">,</span>
+          <span class="nx">page_count</span> <span class="o">=</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">page_count</span><span class="p">,</span>
+          <span class="nx">startRange</span> <span class="o">=</span> <span class="p">(</span><span class="nx">page_number</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="nx">page_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="nx">endRange</span> <span class="o">=</span> <span class="nx">page_number</span> <span class="o">*</span> <span class="nx">page_size</span><span class="p">,</span>
+          <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+          <span class="nx">max</span><span class="p">,</span>
+          <span class="nx">offset</span> <span class="o">=</span> <span class="nx">startRange</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'#search-start'</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="nx">offset</span><span class="p">);</span>
+
+
+      <span class="c1">// サブヘッダーに出力</span>
+      <span class="nx">$searchResultSubheader</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;b&gt;'</span> <span class="o">+</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">q</span> <span class="o">+</span> <span class="s1">'&lt;/b&gt; の検索結果 '</span> <span class="o">+</span>
+                                <span class="nx">record_count</span> <span class="o">+</span> <span class="s2">" 件中 "</span> <span class="o">+</span>  <span class="nx">startRange</span> <span class="o">+</span> <span class="s1">' - '</span> <span class="o">+</span>
+                                <span class="nx">endRange</span> <span class="o">+</span> <span class="s1">' 件目 ('</span> <span class="o">+</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">exec_time</span> <span class="o">+</span> <span class="s1">' 秒)'</span> <span class="o">+</span>
+                               <span class="s1">'&lt;div id="remove-search-result" style="float:right;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/div&gt;'</span>
+
+      <span class="c1">// 検索結果領域のクリア</span>
+      <span class="nx">$searchResultContent</span><span class="p">.</span><span class="nx">empty</span><span class="p">();</span>
+
+
+      <span class="c1">// 検索結果の出力</span>
+      <span class="kd">var</span> <span class="nx">$resultBody</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;ol/&gt;"</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">results</span> <span class="o">=</span> <span class="nx">dataResponse</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+      <span class="k">for</span><span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">results</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">max</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span>
+            <span class="s1">'&lt;li&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;h4 class="title"&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;a href="'</span> <span class="o">+</span><span class="nx">results</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">url_link</span> <span class="o">+</span> <span class="s1">'"&gt;'</span> <span class="o">+</span> <span class="nx">results</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span> <span class="o">+</span> <span class="s1">'&lt;/a&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;/h4&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;div class="body"&gt;'</span> <span class="o">+</span>
+                    <span class="nx">results</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">content_description</span> <span class="o">+</span>
+                    <span class="s1">'&lt;br/&gt;'</span> <span class="o">+</span>
+                    <span class="s1">'&lt;cite&gt;'</span> <span class="o">+</span> <span class="nx">results</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">site</span> <span class="o">+</span> <span class="s1">'&lt;/cite&gt;'</span> <span class="o">+</span>
+                <span class="s1">'&lt;/div&gt;'</span> <span class="o">+</span>
+            <span class="s1">'&lt;/li&gt;'</span><span class="p">;</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">$resultBody</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="nx">$resultBody</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">$searchResultContent</span><span class="p">);</span>
+
+
+      <span class="c1">// ページ番号情報の出力</span>
+      <span class="kd">var</span> <span class="nx">pageArea</span> <span class="o">=</span> <span class="p">[];</span>
+      <span class="nx">pageArea</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;div id="pageInfo"&gt;'</span><span class="p">,</span> <span class="nx">page_number</span><span class="p">,</span> <span class="s1">'ページ目&lt;br/&gt;'</span><span class="p">);</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">page_number</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 前のページへのリンク</span>
+        <span class="nx">pageArea</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;a id="prevPageLink" href="#"&gt;&amp;lt;&amp;lt;前ページへ&lt;/a&gt; '</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">page_number</span> <span class="o">&lt;</span> <span class="nx">page_count</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 次のページへのリンク</span>
+        <span class="nx">pageArea</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;a id="nextPageLink" href="#"&gt;次ページへ&amp;gt;&amp;gt;&lt;/a&gt;'</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="nx">pageArea</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;/div&gt;'</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="nx">pageArea</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">)).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">$searchResultContent</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="css">
+<div class="code-lang"><span class="bold">full-text-search.css</span></div>
+<div class="highlight"><pre><span class="k">@charset</span> <span class="s1">"UTF-8"</span><span class="p">;</span>
+
+<span class="nf">#search-area</span> <span class="p">{</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.search-input-area</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* 入力項目 */</span>
+<span class="nf">#search-query</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0.7em</span> <span class="m">2em</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">arial</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.search-input-area</span> <span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#4d90fe</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* アイコンは入力項目の左と右に配置する */</span>
+<span class="nc">.search-input-area</span> <span class="nc">.left-icon</span><span class="o">,</span>
+<span class="nc">.search-input-area</span> <span class="nc">.right-icon</span> <span class="p">{</span>
+    <span class="c">/* 縦方向の中央寄せ */</span>
+    <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">-0.5em</span><span class="p">;</span>
+    <span class="py">font-sise</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="c">/* 要素にマウスを合わせたら、マウスポインタのマークを変える */</span>
+    <span class="nl">cursor</span><span class="p">:</span><span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.search-input-area</span> <span class="nc">.left-icon</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0.7em</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span><span class="m">#444</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.search-input-area</span> <span class="nc">.right-icon</span> <span class="p">{</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0.7em</span><span class="p">;</span>
+    <span class="c">/* 最初は、グレーアウトしておく */</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* アイコンにマウスを合わせたら、サイズを大きくする */</span>
+<span class="nc">.search-input-area</span> <span class="nc">.left-icon</span><span class="nd">:hover</span><span class="o">,</span>
+<span class="nc">.search-input-area</span> <span class="nc">.right-icon</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.4em</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nc">.search-input-area</span> <span class="nc">.left-icon</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nc">.search-input-area</span> <span class="nc">.right-icon</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* 検索結果表示時に適用するスタイル */</span>
+<span class="nf">#search-result-area</span><span class="nc">.show</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#f8f8f7</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">0px</span> <span class="nb">solid</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0.5em</span><span class="p">;</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+
+<h3>
+<span id="ドキュメントに全文検索用資産の読み込み処理を追加" class="fragment"></span><a href="#%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AB%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2%E7%94%A8%E8%B3%87%E7%94%A3%E3%81%AE%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E5%87%A6%E7%90%86%E3%82%92%E8%BF%BD%E5%8A%A0"><i class="fa fa-link"></i></a>ドキュメントに全文検索用資産の読み込み処理を追加</h3>
+
+<p>前手順でドキュメント用Webサーバに配置した<code>full-text-search.js</code>と<code>full-text-search.css</code>を、<br>
+各ドキュメントから読み込むようにします。<br>
+<code>full-text-search.js</code>はjQueryに依存しているので、<br>
+既存のドキュメントで読み込んでいない場合はjQueryも読み込みも追加してください。</p>
+
+<p>ドキュメント用Webサーバがこのようなフォルダ構成だとしたら、</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>ドキュメント用Webサーバのドキュメントルート
+├── full-text-search.css
+├── full-text-search.js
+└── asciidoctor-sample
+    └── asciidoctor-sample.html
+</pre></div></div>
+
+<p><code>asciidoctor-sample.adoc</code>には下記を追加します。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>++++
+&lt;link rel="stylesheet" href="../full-text-search.css"&gt;&lt;/link&gt;
+&lt;script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="../full-text-search.js"&gt;&lt;/script&gt;
+++++
+</pre></div></div>
+
+<h3>
+<span id="全文検索ができるかの確認" class="fragment"></span><a href="#%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8B%E3%81%AE%E7%A2%BA%E8%AA%8D"><i class="fa fa-link"></i></a>全文検索ができるかの確認</h3>
+
+<p>以上の手順を実施すると、Asdciidoctorで全文検索ができるようになります。<br>
+ドキュメントをブラウザで見ると、目次上部に検索窓が追加されています。<br>
+<a href="https://camo.qiitausercontent.com/daf3699de0e01b28ba4d3c2a8b8b535d3c54a2ab/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39393039336364362d353865382d376364652d613364382d3562656332613032303636382e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/daf3699de0e01b28ba4d3c2a8b8b535d3c54a2ab/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39393039336364362d353865382d376364652d613364382d3562656332613032303636382e706e67" alt="7_全文検索イメージ_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/99093cd6-58e8-7cde-a3d8-5bec2a020668.png"></a><br>
+<br></p>
+
+<p>検索条件を入力し、虫眼鏡アイコンをクリックすると、検索結果が表示されます。<br>
+<a href="https://camo.qiitausercontent.com/5d8e0c5f2db223d5f021d484351b0c840010bb4f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63646533643865612d643838332d613636622d663838642d3961353934313032366263392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/5d8e0c5f2db223d5f021d484351b0c840010bb4f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63646533643865612d643838332d613636622d663838642d3961353934313032366263392e706e67" alt="7_全文検索イメージ_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/cde3d8ea-d883-a66b-f88d-9a5941026bc9.png"></a><br>
+<br></p>
+
+<h2>
+<span id="まとめ" class="fragment"></span><a href="#%E3%81%BE%E3%81%A8%E3%82%81"><i class="fa fa-link"></i></a>まとめ</h2>
+
+<p>FessのREST APIを使用してAsciidoctorで全文検索できるようにする方法を紹介しました。<br>
+FessのREST APIを使えば、Asciidoctorに限らず、様々なシステムに全文検索機能を導入できそうです。</p>
+
+<h2>
+<span id="参考" class="fragment"></span><a href="#%E5%8F%82%E8%80%83"><i class="fa fa-link"></i></a>参考</h2>
+
+<ul>
+<li><a href="http://fess.codelibs.org/ja/articles/article-4.html#js" rel="nofollow noopener" target="_blank">Fess で作るApache Solrベースの検索サーバー 〜 REST API 編</a></li>
+<li><a href="http://qiita.com/cookienote/items/1f2443be25630a78d946" id="reference-69c989703115d994be84">全文検索サーバー Fess を Docker で動かす</a></li>
+</ul>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/94324d66-4d90-51bd-8970-5e5fce7ed13c/">← <!-- -->Jenkins PipelineでYamlを設定ファイルとして使う方法</a></li><li><a rel="next" href="/gatsby-starter-qiita/bb5bc899-9dfd-5e67-bc4c-bc422ba8d176/">Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その１. ビルド編<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"270-e-2-fae-ed-90-5539-8-c-90-a-2-ed-93-ebba-83-461","path":"/270e2fae-ed90-5539-8c90-a2ed93ebba83/"};window.dataPath="847/path---270-e-2-fae-ed-90-5539-8-c-90-a-2-ed-93-ebba-83-461-611-Lmdy8urUO9rPWbcaXNS8xpQhsk8";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

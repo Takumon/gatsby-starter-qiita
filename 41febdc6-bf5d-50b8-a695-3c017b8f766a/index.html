@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="なにこれAngularで状態管理する方法をざっくり把握するためのチュートリアルです。@ngrx/storeベースの簡単なアプリ（数をカウントするアプリ）を作成します。作るだけなら10分程度で出来上がるので、とりあえず手を動かしてngrxを最..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/800/path---41-febdc-6-bf-5-d-50-b-8-a-695-3-c-017-b-8-f-766-a-de-7-724-Dcxjg0kBTD2gs4Z9Pnz9i9cnk.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>10分でできる！ @ngrx/storeチュートリアル with @ngrx/schematics</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2018-07-30T18:01:02+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div>
+<h2>
+<span id="なにこれ" class="fragment"></span><a href="#%E3%81%AA%E3%81%AB%E3%81%93%E3%82%8C"><i class="fa fa-link"></i></a>なにこれ</h2>
+
+<p>Angularで状態管理する方法をざっくり把握するためのチュートリアルです。<a href="http://ngrx.github.io/" rel="nofollow noopener" target="_blank">@ngrx/store</a>ベースの簡単なアプリ（数をカウントするアプリ）を作成します。作るだけなら10分程度で出来上がるので、とりあえず手を動かしてngrxを最低限を把握したい人向けです。ソースコードも<a href="https://github.com/Takumon/ngrx-tutorial/tree/with-ngrx" rel="nofollow noopener" target="_blank">GitHub</a>に置いているので参考にしてください。<br>
+ngrxを使うとボイラープレートが非常に多くなりますが、今回のチュートリアルでは<a href="https://github.com/ngrx/platform/tree/master/docs/schematics" rel="nofollow noopener" target="_blank">@ngrx/schematics</a> を使い、ボイラープレートを自動生成することで極力手間を省いています。</p>
+
+<h2>
+<span id="アプリの完成イメージ" class="fragment"></span><a href="#%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E5%AE%8C%E6%88%90%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8"><i class="fa fa-link"></i></a>アプリの完成イメージ</h2>
+
+<ul>
+<li>
+<code>+</code>ボタンをクリックするとCountが+1される</li>
+<li>
+<code>-</code> ボタンをクリックするとCountが- 1される
+<a href="https://camo.qiitausercontent.com/b480b8a4f23b0ad498a61f36f69be9fae9cef250/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f38653666363435652d613733342d646238642d656336622d3134346330666465653162302e676966" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/b480b8a4f23b0ad498a61f36f69be9fae9cef250/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f38653666363435652d613733342d646238642d656336622d3134346330666465653162302e676966" alt="counterapp.gif" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/8e6f645e-a734-db8d-ec6b-144c0fdee1b0.gif"></a>
+</li>
+</ul>
+
+<h2>
+<span id="やることやらないこと" class="fragment"></span><a href="#%E3%82%84%E3%82%8B%E3%81%93%E3%81%A8%E3%82%84%E3%82%89%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8"><i class="fa fa-link"></i></a>やること/やらないこと</h2>
+
+<ul>
+<li>やる
+
+<ul>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/store/README.md" rel="nofollow noopener" target="_blank">@ngrx/store</a>の使い方
+
+<ul>
+<li>Storeの作り方</li>
+<li>Stateの作り方</li>
+<li>Reducerの作り方</li>
+<li>Actionsの作り方</li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/schematics/README.md" rel="nofollow noopener" target="_blank">@ngrx/schematics</a>の使い方
+
+<ul>
+<li>オプションなどを使い極力手間を減らす方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>やらない （下記を理解するには<a href="#%E5%8F%82%E8%80%83">参考</a>のQiitaの記事を見てください。）
+
+<ul>
+<li>状態管理の説明</li>
+<li>Reduxの説明</li>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/router-store/README.md" rel="nofollow noopener" target="_blank">@ngrx/router-store</a>の使い方</li>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/entity/README.md" rel="nofollow noopener" target="_blank">@ngrx/entity</a>の使い方</li>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/effects/README.md" rel="nofollow noopener" target="_blank">@ngrx/effect</a>の使い方<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<span id="チュートリアル概要" class="fragment"></span><a href="#%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%A6%82%E8%A6%81"><i class="fa fa-link"></i></a>チュートリアル概要</h2>
+
+<p>段階を踏んで、ステップごとに動作確認しながら作成していきます。<br>
+各ステップ終了時点のソースコードはGitHubに用意しています。参考にしてください。<br>
+大部分はSchematicsを使ってngコマンドでボイラープレートを自動生成し、メイン部分のみ実装という感じです。</p>
+
+<ol>
+<li>Angularアプリを生成（1分）  ※<a href="https://github.com/Takumon/ngrx-tutorial/tree/generated-with-angualr-cli" rel="nofollow noopener" target="_blank">終了時点のソース</a>
+</li>
+<li>ngrxを使わずにカウント処理実装（2分）※<a href="https://github.com/Takumon/ngrx-tutorial/tree/no-ngrx" rel="nofollow noopener" target="_blank">終了時点のソース</a>
+</li>
+<li>ngrxインストール、初期設定（2分） ※<a href="https://github.com/Takumon/ngrx-tutorial/tree/after-ngrx-setting" rel="nofollow noopener" target="_blank">終了時点のソース</a>
+</li>
+<li>ngrxを使ってカウント処理実装（5分） ※<a href="https://github.com/Takumon/ngrx-tutorial/tree/with-ngrx" rel="nofollow noopener" target="_blank">終了時点のソース</a>
+</li>
+</ol>
+
+<h2>
+<span id="前提条件" class="fragment"></span><a href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><i class="fa fa-link"></i></a>前提条件</h2>
+
+<ul>
+<li>
+<a href="https://nodejs.org/ja/" rel="nofollow noopener" target="_blank">Node.js</a>インストール済み</li>
+<li>
+<a href="https://cli.angular.io/" rel="nofollow noopener" target="_blank">Angular CLI</a>グローバルインストール済み</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> npm i <span class="nt">-g</span> @angular/cli
+</pre></div></div>
+
+<ul>
+<li>
+<a href="https://cli.angular.io/" rel="nofollow noopener" target="_blank">@ngrx/schematics</a>グローバルインストール済み</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> npm i <span class="nt">-g</span> @ngrx/schematics
+</pre></div></div>
+
+<h2>
+<span id="1-angularアプリを生成1分" class="fragment"></span><a href="#1-angular%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E7%94%9F%E6%88%901%E5%88%86"><i class="fa fa-link"></i></a>1. Angularアプリを生成（1分）</h2>
+
+<ul>
+<li>ng newコマンドを実行します。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng new ngrx-tutorial
+</pre></div></div>
+
+<ul>
+<li>生成されたアプリ配下に移動し、一旦Webアプリを立ち上げてみます。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd </span>ngrx-tutorial
+<span class="gp">$</span> ng serve <span class="nt">-o</span>
+</pre></div></div>
+
+<ul>
+<li>ブラウザが起動し下記のような画面が表示されたら成功です。
+<a href="https://camo.qiitausercontent.com/f46653279a0efbe1432919aa808f440fc6eb1ede/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35633139633366302d313034612d336566322d613333642d3331356330663061336639662e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/f46653279a0efbe1432919aa808f440fc6eb1ede/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35633139633366302d313034612d336566322d613333642d3331356330663061336639662e706e67" alt="スクリーンショット 2018-07-30 1.03.59.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5c19c3f0-104a-3ef2-a33d-315c0f0a3f9f.png"></a>
+</li>
+</ul>
+
+<h2>
+<span id="2-ngrxを使わずにカウント処理実装2分" class="fragment"></span><a href="#2-ngrx%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%9A%E3%81%AB%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%87%A6%E7%90%86%E5%AE%9F%E8%A3%852%E5%88%86"><i class="fa fa-link"></i></a>2. ngrxを使わずにカウント処理実装（2分）</h2>
+
+<p>カウント処理の資産は全て<code>src/app/counter</code>フォルダ配下に作成します。<br>
+まずはコマンドラインからボイラープレートを作成し、その後カウント処理を実装します。</p>
+
+<h3>
+<span id="ボイラープレート作成" class="fragment"></span><a href="#%E3%83%9C%E3%82%A4%E3%83%A9%E3%83%BC%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>ボイラープレート作成</h3>
+
+<ul>
+<li>カウント処理関連資産をまとめるモジュールを作成します。
+
+<ul>
+<li>このモジュールをアプリ全体のモジュールに登録するため<code>--module</code>オプションを指定します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g module counter <span class="nt">--module</span><span class="o">=</span>app.module.ts
+</pre></div></div>
+
+<ul>
+<li>カウント処理用のコンポーネントを作成します。
+
+<ul>
+<li>上記で作成したモジュールにコンポーネントを登録するため<code>--module</code>オプションを指定します。</li>
+<li>最終的にアプリ全体のモジュールにコンポーネントを登録するため<code>--export</code>オプションを指定します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g component counter <span class="nt">--module</span><span class="o">=</span>counter/counter.module.ts <span class="nt">--export</span>
+</pre></div></div>
+
+<ul>
+<li>
+<code>app.component.html</code>修正し、作成したカウント処理用のコンポーネントを呼び出すようにします。</li>
+</ul>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">app.component.html</span></div>
+<div class="highlight"><pre><span class="nt">&lt;app-counter&gt;&lt;/app-counter&gt;</span>
+</pre></div>
+</div>
+
+<ul>
+<li>一旦ここまででWebアプリを立ち上げてみます。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng serve <span class="nt">-o</span>
+</pre></div></div>
+
+<ul>
+<li>ブラウザが起動し、下記画面が表示されます。開発者ツールでエラーがなければ成功です。</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/6ed3cc13498f56621ca94113a6eacdc34949e17f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37373261373530312d333461372d336566312d363636362d6431336537393338326365362e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/6ed3cc13498f56621ca94113a6eacdc34949e17f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37373261373530312d333461372d336566312d363636362d6431336537393338326365362e706e67" alt="スクリーンショット 2018-07-30 1.06.30.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/772a7501-34a7-3ef1-6666-d13e79382ce6.png"></a></p>
+
+<h3>
+<span id="処理実装" class="fragment"></span><a href="#%E5%87%A6%E7%90%86%E5%AE%9F%E8%A3%85"><i class="fa fa-link"></i></a>処理実装</h3>
+
+<ul>
+<li>カウント用コンポーネントで実際の処理を記述します。</li>
+</ul>
+
+<div class="code-frame" data-lang="ts">
+<div class="code-lang"><span class="bold">src/app/counter/counter.component.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">OnInit</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="p">:</span> <span class="s1">'app-counter'</span><span class="p">,</span>
+  <span class="na">templateUrl</span><span class="p">:</span> <span class="s1">'./counter.component.html'</span><span class="p">,</span>
+  <span class="na">styleUrls</span><span class="p">:</span> <span class="p">[</span><span class="s1">'./counter.component.css'</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">CounterComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span> <span class="p">{</span>
+  <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+
+  <span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">}</span>
+
+  <span class="nx">increment</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">decrement</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">src/app/counter/counter.component.html</span></div>
+<div class="highlight"><pre><span class="nt">&lt;button</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">increment</span><span class="err">()"</span><span class="nt">&gt;</span>+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">decrement</span><span class="err">()"</span><span class="nt">&gt;</span>-<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div&gt;</span>Count: {{count}}<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+
+<ul>
+<li>ここまででWebアプリを立ち上げてみます。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng serve <span class="nt">-o</span>
+</pre></div></div>
+
+<ul>
+<li>ブラウザが起動し下記画面が表示されます。<code>+</code>,<code>-</code>ボタンをクリックすると数字が増えたり減ったりした、開発者ツールでもエラーがなければ成功です。</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" alt="スクリーンショット 2018-07-30 0.59.12.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/d506bc6e-cdce-4d00-1109-2af9f4780663.png"></a></p>
+
+<h2>
+<span id="3-ngrxインストール初期設定2分" class="fragment"></span><a href="#3-ngrx%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A2%E5%88%86"><i class="fa fa-link"></i></a>3. ngrxインストール、初期設定（2分）</h2>
+
+<p>@ngrx/storeをアプリに導入し、初期設定をします。</p>
+
+<ul>
+<li>下記ライブラリをインストールします。
+
+<ul>
+<li>
+<code>@ngrx/schematics</code>
+
+<ul>
+<li>Angualr CLIでngrxの雛形を作るためのライブラリ</li>
+</ul>
+</li>
+<li>
+<code>@ngrx/store</code>
+
+<ul>
+<li>ngrxでStore,Reducer,Actionを使うためのライブラリ</li>
+</ul>
+</li>
+<li>
+<code>@ngrx/store-devtools</code>
+
+<ul>
+<li>強力なデバッカを使えるようにするためのライブラリ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> npm i <span class="nt">-D</span> @ngrx/schematics
+<span class="gp">$</span> npm i <span class="nt">-s</span> @ngrx/store
+<span class="gp">$</span> npm i <span class="nt">-s</span> @ngrx/store-devtools
+</pre></div></div>
+
+<p>*<code>@ngrx/schematics</code>をデフォルトのSchematicsに追加します（コマンドラインでngrxのボイラープレート生成時に<code>@ngrx/schematics</code>の指定を省略できるようにするためです。）</p>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng config cli.defaultCollection @ngrx/schematics
+</pre></div></div>
+
+<ul>
+<li>上記を実行すると、<code>angular.json</code>にこのような設定が追加されます。</li>
+</ul>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">angular.json</span></div>
+<div class="highlight"><pre><span class="w">  </span><span class="s2">"defaultProject"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ngrx-tutorial"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cli"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"defaultCollection"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@ngrx/schematics"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<ul>
+<li>ルートのStoreを作成します。
+
+<ul>
+<li>
+<code>src/app/state</code>配下に生成したいので<code>--statePath</code>オプションを指定します。</li>
+<li>アプリ全体のモジュールに登録したいので<code>--module</code>オプションを指定します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g store state <span class="nt">--statePath</span> state <span class="nt">--root</span> <span class="nt">--module</span> app.module.ts
+</pre></div></div>
+
+<ul>
+<li>上記コマンドで更新した<code>src/app/app.module.ts</code>で<code>environment</code>のimport文のパスでエラーが出ている場合は修正してください。</li>
+</ul>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">app/src/app.module.ts</span></div>
+<div class="highlight"><pre><span class="gd">- import { environment } from '../../environments/environment';
+</span><span class="gi">+ import { environment } from '../environments/environment';
+</span></pre></div>
+</div>
+
+<ul>
+<li>ここまででWebアプリを立ち上げてみます。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng serve <span class="nt">-o</span>
+</pre></div></div>
+
+<ul>
+<li>手順2の動作確認時と同様の挙動になります、開発者ツールでもエラーがなければ成功です。</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" alt="スクリーンショット 2018-07-30 0.59.12.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/d506bc6e-cdce-4d00-1109-2af9f4780663.png"></a></p>
+
+<h2>
+<span id="4-ngrxを使ってカウント処理実装5分" class="fragment"></span><a href="#4-ngrx%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%87%A6%E7%90%86%E5%AE%9F%E8%A3%855%E5%88%86"><i class="fa fa-link"></i></a>4. ngrxを使ってカウント処理実装（5分）</h2>
+
+<p>ここからは実際にStore、Reducer、Actionを作成し、カウント処理の値をStoreに移行します。<br>
+ここで作成する資産はカウンター処理に閉じたものなので、<code>src/app/counter/state</code>配下に作成します。<br>
+また<code>@ngrx/schemetics</code>のデフォルトではReducer、Actionなどの資産が、役割ごとにフォルダ分けされてしまいますが、１フォルダに集約したほうがソースが修正しやすいので、今回は全て<code>src/app/counter/state</code>の直下に作成します。</p>
+
+<h3>
+<span id="ボイラープレート生成" class="fragment"></span><a href="#%E3%83%9C%E3%82%A4%E3%83%A9%E3%83%BC%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E7%94%9F%E6%88%90"><i class="fa fa-link"></i></a>ボイラープレート生成</h3>
+
+<ul>
+<li>Store
+
+<ul>
+<li>
+<code>src/app/counter/state</code>直下に作成するため<code>--statePath</code>オプションを指定します。</li>
+<li>カウント処理関連モジュールに登録したいので<code>--module</code>オプションを指定します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g store counter/counter <span class="nt">--statePath</span> state <span class="nt">--module</span> counter.module.ts
+</pre></div></div>
+
+<ul>
+<li>Reducer
+
+<ul>
+<li>上記で作成したStoreに本Reducerを登録したいため<code>--reducers</code>オプションを指定します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g reducer counter/state/counter <span class="nt">--reducers</span> index.ts
+</pre></div></div>
+
+<ul>
+<li>Action
+
+<ul>
+<li>
+<code>src/app/counter/state</code>直下に作成するため<code>--flat</code>オプションを登録します。</li>
+</ul>
+</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng g action counter/state/counter <span class="nt">--flat</span>
+</pre></div></div>
+
+<p>※この時点ではコンパイルエラーがでますので、動作確認はできません。そのまま次に進みます。</p>
+
+<h2>
+<span id="処理実装-1" class="fragment"></span><a href="#%E5%87%A6%E7%90%86%E5%AE%9F%E8%A3%85-1"><i class="fa fa-link"></i></a>処理実装</h2>
+
+<p>依存関係の都合でボイラープレートとは逆順で実装していきます。</p>
+
+<h3>
+<span id="action" class="fragment"></span><a href="#action"><i class="fa fa-link"></i></a>Action</h3>
+
+<p>ボイラープレート生成時から下記のように修正します。<br>
+※コメントはコードの説明なので無視して実装してください。</p>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">src/app/counter/state/counter.actions.ts</span></div>
+<div class="highlight"><pre>import { Action } from '@ngrx/store';
+
+export enum CounterActionTypes {
+// Actionごとに型を定義します。
+<span class="gd">-  LoadCounters = '[Counter] Load Counters'
+</span><span class="gi">+  CountIncrement = '[Counter] Increment Count',
++  CountDecrement = '[Counter] Decrement Count'
+</span>}
+
+// Actionごとに@ngrx.storeのActionをインプリしたクラスを作成します。
+// 複雑な処理をする場合はコンストラクタ引数をとりますが、
+// 本チュートリアルでは簡単のため引数なしにしています。
+<span class="gd">- export class Counter implements Action {
+-   readonly type = CounterActionTypes.LoadCounters;
+- }
+</span><span class="gi">+ export class CountIncrement implements Action {
++   readonly type = CounterActionTypes.CountIncrement;
++   public constructor() {}
++ }
++ 
++ export class CountDecrement implements Action {
++   readonly type = CounterActionTypes.CountDecrement;
++   public constructor() {}
++ }
+</span>
+
+// 上記で定義したActionクラスを集約した型を定義します。Reducerで使うためです。
+<span class="gd">- export type CounterActions = LoadCounters;
+</span><span class="gi">+ export type CounterActions = CountIncrement | CountDecrement;
+</span></pre></div>
+</div>
+
+<h2>
+<span id="reducer作成" class="fragment"></span><a href="#reducer%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>Reducer作成</h2>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">src/app/counter/state/counter.reducer.ts</span></div>
+<div class="highlight"><pre>import { Action } from '@ngrx/store';
+<span class="gi">+ import { CounterActionTypes } from './counter.actions';
+</span>
+
+export interface State {
+// カウンター処理に置けるStateを定義します。
+<span class="gi">+   count: number;
+</span>}
+
+export const initialState: State = {
+// カウンター処理に置けるStateの初期値を定義します。
+<span class="gi">+   count: 0
+</span>};
+
+
+export function reducer(state = initialState, action: Action): State {
+  switch (action.type) {
+// 引数として受け取ったActionの型に応じて処理を振り分けます
+// ここではカウンター処理に関連するアクションのみ拾って、他はStateをそのまま返します。
+<span class="gi">+     case CounterActionTypes.CountIncrement:
+</span>// Stateを変更する場合は、Stateがイミュータブルになるように元のStateには変更を加えず
+// Object.assingで新規オブジェクトを作るようにします。
+<span class="gi">+       return Object.assign({}, { ...state, count : state.count + 1 });
++     case CounterActionTypes.CountDecrement:
++       return Object.assign({}, { ...state, count : state.count - 1 });
+</span>    default:
+      return state;
+  }
+}
+
+// コンポーネントでStateのCountを取得するための関数を定義します。
+// Storeの方にも定義しますが、ここでは本ファイルで定義している
+// Stateのプロパティに関連する処理のみ定義します。
+<span class="gi">+ export const getCount = (state: State) =&gt; state.count;
+</span></pre></div>
+</div>
+
+<ul>
+<li>Store</li>
+</ul>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">src/app/counter/state/index.ts</span></div>
+<div class="highlight"><pre>import {
+  ActionReducerMap,
+  createFeatureSelector,
+  createSelector,
+  MetaReducer
+} from '@ngrx/store';
+// ng gコマンド生成時は相対パスがずれている可能性があるため
+// その場合は修正する
+<span class="gd">- import { environment } from '../../environments/environment';
+</span><span class="gi">+ import { environment } from '../../../environments/environment';
+</span>import * as fromCounter from './counter.reducer';
+
+export interface State {
+
+  counter: fromCounter.State;
+}
+
+export const reducers: ActionReducerMap&lt;State&gt; = {
+
+  counter: fromCounter.reducer,
+};
+
+
+export const metaReducers: MetaReducer&lt;State&gt;[] = !environment.production ? [] : [];
+
+// コンポーネントでStateのプロパティを取得するための関数を定義します。
+// 複数コンポーネントで使う度に定義するのは冗長なのでココで共通的に定義します。
+<span class="gi">+ export const getCounterFeatureState = createFeatureSelector&lt;State&gt;('counter');
++ export const getCounter = createSelector(getCounterFeatureState, s =&gt; s.counter);
++ export const getCount = createSelector(getCounter, fromCounter.getCount);
+</span></pre></div>
+</div>
+
+<ul>
+<li>Component</li>
+</ul>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">src/app/counter/counter.component.ts</span></div>
+<div class="highlight"><pre>import { Component, OnInit } from '@angular/core';
+<span class="gi">+ import { Observable } from 'rxjs';
++ import { Store } from '@ngrx/store';
+</span>
+<span class="gi">+ import * as CounterReducer from './state/counter.reducer';
++ import * as CounterActions from './state/counter.actions';
++ import { getCount } from './state';
+</span>
+<span class="gu">@Component({
+</span>  selector: 'app-counter',
+  templateUrl: './counter.component.html',
+  styleUrls: ['./counter.component.css']
+})
+export class CounterComponent implements OnInit {
+// Storeでの値変更を順次受け付けれるように型をObservableに変更します
+<span class="gd">-   count = 0;
+</span><span class="gi">+   count$: Observable&lt;number&gt;;
+</span>
+// Storeをインジェクションします
+<span class="gd">-   constructor() { }
+</span><span class="gi">+   constructor(private store: Store&lt;CounterReducer.State&gt;) {
+</span>// Storeからカウンタを取得します
+<span class="gi">+     this.count$ = store.select(getCount);
++  }
+</span>
+  ngOnInit() {
+  }
+
+  increment() {
+// インクリメントの実処理はカウンタのReducerに任せるので
+// ここではActionをdispatchするだけです。
+<span class="gd">-     this.count = this.count + 1;
+</span><span class="gi">+     this.store.dispatch(new CounterActions.CountIncrement());
+</span>  }
+
+  decrement() {
+<span class="gd">-     this.count = this.count - 1;
+</span><span class="gi">+     this.store.dispatch(new CounterActions.CountDecrement());
+</span>  }
+
+}
+</pre></div>
+</div>
+
+<ul>
+<li>ConponentのHTML</li>
+</ul>
+
+<div class="code-frame" data-lang="diff">
+<div class="code-lang"><span class="bold">src/app/counter/counter.component.html</span></div>
+<div class="highlight"><pre>&lt;button (click)="increment()"&gt;+&lt;/button&gt;
+&lt;button (click)="decrement()"&gt;-&lt;/button&gt;
+&lt;!-- 変数名と型が変わったのでHTMLも若干修正します --&gt;
+<span class="gd">- &lt;div&gt;Count: {{count }}&lt;/div&gt;
+</span><span class="gi">+ &lt;div&gt;Count: {{count$ | async }}&lt;/div&gt;
+</span></pre></div>
+</div>
+
+<ul>
+<li>Webアプリを立ち上げてみます。</li>
+</ul>
+
+<div class="code-frame" data-lang="terminal"><div class="highlight"><pre><span class="gp">$</span> ng serve <span class="nt">-o</span>
+</pre></div></div>
+
+<ul>
+<li>開発者ツールなどで全くエラーが出ていなければ成功です。見た目は変わっていませんが、Countは<code>@ngrx/store</code>で管理されるようになっています。</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e4f3b6b6888e2f7e618fc6587c88775f7b161624/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64353036626336652d636463652d346430302d313130392d3261663966343738303636332e706e67" alt="スクリーンショット 2018-07-30 0.59.12.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/d506bc6e-cdce-4d00-1109-2af9f4780663.png"></a></p>
+
+<h2>
+<span id="補足ストアとストア登録方法" class="fragment"></span><a href="#%E8%A3%9C%E8%B6%B3%E3%82%B9%E3%83%88%E3%82%A2%E3%81%A8%E3%82%B9%E3%83%88%E3%82%A2%E7%99%BB%E9%8C%B2%E6%96%B9%E6%B3%95"><i class="fa fa-link"></i></a>補足：ストアとストア登録方法</h2>
+
+<p>ストアとストア登録処理はボイラープレートで生成するのでココで改めて説明します。</p>
+
+<p><strong>まずはルートのストアです。</strong><br>
+ストアは<code>src/app/state/index.ts</code>に作成されます。<br>
+中身を見るとわかりますが、実態はReducerを集約したActionReducerMapです。<br>
+Reducerを新しく作成した時は、このマップにどんどん追加していきます。</p>
+
+<div class="code-frame" data-lang="ts">
+<div class="code-lang"><span class="bold">src/app/state/index.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span>
+  <span class="nx">ActionReducer</span><span class="p">,</span>
+  <span class="nx">ActionReducerMap</span><span class="p">,</span>
+  <span class="nx">createFeatureSelector</span><span class="p">,</span>
+  <span class="nx">createSelector</span><span class="p">,</span>
+  <span class="nx">MetaReducer</span>
+<span class="p">}</span> <span class="k">from</span> <span class="s1">'@ngrx/store'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">environment</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'../../environments/environment'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kr">interface</span> <span class="nx">State</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">reducers</span><span class="p">:</span> <span class="nx">ActionReducerMap</span><span class="o">&lt;</span><span class="nx">State</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ココにReducerが追加されていきます。</span>
+  <span class="c1">// 今回のチュートリアルではルートのストアに１つもReducerを定義していないので空っぽです。</span>
+<span class="p">};</span>
+
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">metaReducers</span><span class="p">:</span> <span class="nx">MetaReducer</span><span class="o">&lt;</span><span class="nx">State</span><span class="o">&gt;</span><span class="p">[]</span> <span class="o">=</span> <span class="o">!</span><span class="nx">environment</span><span class="p">.</span><span class="nx">production</span> <span class="p">?</span> <span class="p">[]</span> <span class="p">:</span> <span class="p">[];</span>
+
+</pre></div>
+</div>
+
+<p>ストアをモジュールに登録するには下記のように<code>StoreModule.forRoot</code>を使います(ボイラープレートでやってくれます)</p>
+
+<div class="code-frame" data-lang="ts">
+<div class="code-lang"><span class="bold">src/app/app.module.ts</span></div>
+<div class="highlight"><pre><span class="p">@</span><span class="nd">NgModule</span><span class="p">({</span>
+  <span class="c1">// ・・・</span>
+  <span class="na">imports</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// ・・・</span>
+    <span class="nx">StoreModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span><span class="nx">reducers</span><span class="p">,</span> <span class="p">{</span> <span class="nx">metaReducers</span> <span class="p">}),</span>
+    <span class="o">!</span><span class="nx">environment</span><span class="p">.</span><span class="nx">production</span> <span class="p">?</span> <span class="nx">StoreDevtoolsModule</span><span class="p">.</span><span class="nx">instrument</span><span class="p">()</span> <span class="p">:</span> <span class="p">[]</span>
+    <span class="c1">// ・・・</span>
+  <span class="p">],</span>
+  <span class="c1">// ・・・</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">AppModule</span> <span class="p">{</span> <span class="p">}</span>
+
+</pre></div>
+</div>
+
+<p><strong>次にカウンタのストアに関してです。</strong><br>
+こちらもルートの場合とほぼ同じです。</p>
+
+<div class="code-frame" data-lang="ts">
+<div class="code-lang"><span class="bold">src/app/counter/state/index.ts</span></div>
+<div class="highlight"><pre><span class="c1">// ・・・</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">reducers</span><span class="p">:</span> <span class="nx">ActionReducerMap</span><span class="o">&lt;</span><span class="nx">State</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// カウンタのReducerをマップに登録しています。</span>
+  <span class="na">counter</span><span class="p">:</span> <span class="nx">fromCounter</span><span class="p">.</span><span class="nx">reducer</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">metaReducers</span><span class="p">:</span> <span class="nx">MetaReducer</span><span class="o">&lt;</span><span class="nx">State</span><span class="o">&gt;</span><span class="p">[]</span> <span class="o">=</span> <span class="o">!</span><span class="nx">environment</span><span class="p">.</span><span class="nx">production</span> <span class="p">?</span> <span class="p">[]</span> <span class="p">:</span> <span class="p">[];</span>
+<span class="c1">// ・・・</span>
+</pre></div>
+</div>
+
+<p>ただ登録は<code>StoreModule.forFeature</code>を使います。<br>
+このメソッドは、機能毎に状態管理する時に使うもので、ルートのストアに指定した名前で登録されます。使う時になったら遅延ロードしてくれる機能を持っています。</p>
+
+<div class="code-frame" data-lang="ts">
+<div class="code-lang"><span class="bold">src/app/counter/counter.module.ts</span></div>
+<div class="highlight"><pre><span class="c1">// ・・・</span>
+<span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">fromCounter</span> <span class="k">from</span> <span class="s1">'./state'</span><span class="p">;</span>
+<span class="c1">// ・・・</span>
+<span class="p">@</span><span class="nd">NgModule</span><span class="p">({</span>
+  <span class="na">imports</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// ・・・</span>
+    <span class="c1">// アプリ全体のストアにcounterという名前で登録します</span>
+    <span class="nx">StoreModule</span><span class="p">.</span><span class="nx">forFeature</span><span class="p">(</span><span class="s1">'counter'</span><span class="p">,</span> <span class="nx">fromCounter</span><span class="p">.</span><span class="nx">reducers</span><span class="p">,</span> <span class="p">{</span> <span class="na">metaReducers</span><span class="p">:</span> <span class="nx">fromCounter</span><span class="p">.</span><span class="nx">metaReducers</span> <span class="p">})</span>
+    <span class="c1">// ・・・</span>
+  <span class="p">],</span>
+  <span class="c1">// ・・・</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">CounterModule</span> <span class="p">{</span> <span class="p">}</span>
+
+</pre></div>
+</div>
+
+<h2>
+<span id="まとめ" class="fragment"></span><a href="#%E3%81%BE%E3%81%A8%E3%82%81"><i class="fa fa-link"></i></a>まとめ</h2>
+
+<p>以上で<code>@ngrx/schematics</code>を使った<code>@ngrx/store</code>のチュートリアルは終了です。<br>
+<code>ngrx</code>ライブラリは他にも<code>@ngrx/router-store</code>、<code>@ngrx/entity</code>、<code>@ngrx/effect</code>があるので、<br>
+今回のアプリをベースに拡張し、理解を深めてみるのも良いかもしれません。</p>
+
+<p>AngularはVue.jsなどと比較するとボイラープレートが多くなってしまいます。<br>
+しかし、ソースコード自動生成機能が充実しているので、けっこう便利なフレームワークです！<br>
+あまり周りでAngular使ってる人がいなくて寂しいのですが、、、、皆さん是非Angular使いましょう！</p>
+
+<h2>
+<span id="参考" class="fragment"></span><a href="#%E5%8F%82%E8%80%83"><i class="fa fa-link"></i></a>参考</h2>
+
+<ul>
+<li>GitHub
+
+<ul>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/store/README.md#ngrxstore" rel="nofollow noopener" target="_blank">@ngrx/store</a>
+
+<ul>
+<li>公式ページ。サンプルは少し古いですが、ドキュメントは充実しています。</li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/ngrx/platform/blob/master/docs/schematics/README.md" rel="nofollow noopener" target="_blank">@ngrx/schematics</a>
+
+<ul>
+<li>各リンクに行くと、コマンドのオプションの説明などが記載されています。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Medium
+
+<ul>
+<li>
+<a href="https://blog.nrwl.io/managing-state-in-angular-applications-22b75ef5625f" rel="nofollow noopener" target="_blank">Managing State in Angular Applications</a>
+
+<ul>
+<li>Angularで状態管理する時のベストプラクティスを検討し、最終的に@ngrx/storeを紹介している記事です。ソースコードもGitHubにあり、大変参考になります。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Qiita
+
+<ul>
+<li>
+<a href="https://qiita.com/puku0x/items/0a8e7224761dc549bd06" id="reference-55d4d1f3588dbe22005a">@ngrx/storeと@ngrx/effectsの使い方</a>
+
+<ul>
+<li>GitHubに<a href="https://github.com/puku0x/ngrx-todo" rel="nofollow noopener" target="_blank">サンプル</a>もありコード例が多く大変参考になりました。</li>
+</ul>
+</li>
+<li>
+<a href="https://qiita.com/musou1500/items/8003c4a3f2b2e80d919f" id="reference-0b88f55e95af744439cc">@ngrx/schematicsを触ってみる</a>
+
+<ul>
+<li>
+<code>@ngrx/schematics</code>の使い方が網羅されており参考になりました。</li>
+</ul>
+</li>
+<li>
+<a href="https://qiita.com/gen2-gk/items/5e5c5b81243def8edc2c#ngrx-%E9%96%A2%E9%80%A3%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AF1%E3%81%A4%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AB%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B" id="reference-00af0c3c5f2c814f6e6e">ngrxでハマったポイント</a>
+
+<ul>
+<li>ngrx関連資産をstoreフォルダ配下に集約するという知見はココを参考にさせていただきました。</li>
+</ul>
+</li>
+<li>
+<a href="https://qiita.com/kouMatsumoto/items/c8297466c1824953632f" id="reference-2bdc06375583d7c16351">ngrx紹介</a>
+
+<ul>
+<li>ngrxを知るきっかけになった記事です。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/7780e313-8bda-5534-99aa-37bf47e9deb3/">← <!-- -->GitBucketのissueで作業量を設定できるプラグイン</a></li><li><a rel="next" href="/gatsby-starter-qiita/f18d04ac-9b1a-5ac8-8d43-8aa3d8f746a7/">Gatsbyプラグイン45選<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"41-febdc-6-bf-5-d-50-b-8-a-695-3-c-017-b-8-f-766-a-de7","path":"/41febdc6-bf5d-50b8-a695-3c017b8f766a/"};window.dataPath="800/path---41-febdc-6-bf-5-d-50-b-8-a-695-3-c-017-b-8-f-766-a-de-7-724-Dcxjg0kBTD2gs4Z9Pnz9i9cnk";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

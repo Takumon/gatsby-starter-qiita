@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="Githubで草を生やす活動は楽しいですね!増えてきて芝みたいになると達成感があって、モチベーションも上がります。ところで、この前の10/30に草がハロウィン仕様になっていたのを見て、草を自分の好みの色を変更できればもっと楽しくなるのでは?..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/546/path---b-4-c-7-d-1-b-9-428-f-569-a-af-40-527-d-89794-a-77-3-aa-301-VKHMTIdIutoxB1XjWAN82QTK4Yk.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>TypeScriptで簡単にChrome Extensionを作る方法</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2017-12-20T02:36:27+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div><p>Githubで草を生やす活動は楽しいですね!<br>
+増えてきて芝みたいになると達成感があって、モチベーションも上がります。<br>
+ところで、この前の10/30に草がハロウィン仕様になっていたのを見て、<br>
+草を自分の好みの色を変更できればもっと楽しくなるのでは?と思い<br>
+<a href="https://chrome.google.com/webstore/detail/github-contributions-pain/bdibnecenojddgmjplnfehpjdmkiddok?hl=ja" rel="nofollow noopener" target="_blank">草の色が変更できる（ついでにお絵描きもできる）Chrome Extension</a>を作りました。<br>
+<strong>その時に<a href="https://github.com/mazamachi/generator-chrome-extension-kickstart-typescript" rel="nofollow noopener" target="_blank">generator-chrome-extension-kickstart-typescript</a>を使って、TypeScriptで簡単にChrome Extensionが作れたので、アプリ作成から公開までの手順をまとめます。</strong></p>
+
+<h2>
+<span id="1-プロジェクトの雛形を生成する" class="fragment"></span><a href="#1-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%9B%9B%E5%BD%A2%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B"><i class="fa fa-link"></i></a>1. プロジェクトの雛形を生成する</h2>
+
+<p>yomanと<a href="https://github.com/mazamachi/generator-chrome-extension-kickstart-typescript" rel="nofollow noopener" target="_blank">generator-chrome-extension-kickstart-typescript</a>で簡単に雛形が作れるのでコレらを使っていきます。</p>
+
+<ul>
+<li>
+<code>yoman</code>と<code>generator-chrome-extension-kickstart-typescript</code>をグローバルインストールします</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm install -g yo generator-chrome-extension-kickstart-typescript 
+</pre></div></div>
+
+<ul>
+<li>プロジェクトのルートフォルダを作成後、ルートフォルダに移動して<code>yo</code>コマンドで雛形を生成します</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ mkdir project
+$ cd project
+$ yo chrome-extension-kickstart-typescript 
+</pre></div></div>
+
+<ul>
+<li>いくつか質問されるので適当に答えます
+
+<ul>
+<li>
+<strong>What would you like to call this extension?</strong>
+
+<ul>
+<li>プロジェクト名を入力します。デフォルトはプロジェクトのフォルダ名</li>
+</ul>
+</li>
+<li>
+<strong>And how would you call it if you only had 12 characters (short_name)?</strong>
+
+<ul>
+<li>プロジェクトの略称を12文字以内で入力します</li>
+</ul>
+</li>
+<li>
+<strong>How would you like to describe this extension?</strong>
+
+<ul>
+<li>プロジェクト概要を入力します</li>
+</ul>
+</li>
+<li>
+<strong>Would you like to use UI Action?</strong>
+
+<ul>
+<li>作りたいUI Actionに応じて、<code>No</code>,<code>Browser</code>,<code>Page</code>のいずれかを選択します
+
+<ul>
+<li>
+<code>No</code> ・・・ UI Actionを使わない場合</li>
+<li>
+<code>Browser</code> ・・・ ツールバーの右にアイコンが常駐するタイプのChrome拡張を作成する場合</li>
+<li>
+<code>Page</code> ・・・ 特定のWebサイト観覧時のみにアドレスバー右にアイコンが表示されるタイプのChrome拡張を作成する場合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Would you like to override a chrome page?</strong>
+
+<ul>
+<li>Chromeの内部ページを書き換えるかどうかで、<code>No</code>,<code>Bookmarks Page</code>,<code>History Page</code>,<code>Newtab Page</code>のいずれかを選択します</li>
+</ul>
+</li>
+<li>
+<strong>Would you like more UI Features?</strong>
+
+<ul>
+<li>作りたいUIを複数選択します
+
+<ul>
+<li>
+<code>Options Page</code> ・・・ オプション画面を作りたい場合</li>
+<li>
+<code>Devtools Page</code> ・・・ 開発者ツールを拡張したい場合</li>
+<li>
+<code>Content Scripts</code> ・・・ Webで表示している画面にJavaScriptを差し込んで何か処理をしたい場合</li>
+<li>
+<code>Omnibox</code> ・・・ アドレスバーを拡張したい時に選択</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Would you like to use permissions?</strong>
+
+<ul>
+<li>使用するパーミッションを複数選択します</li>
+</ul>
+</li>
+<li>
+<strong>Would you like to install promo images for the Chrome Web Store?</strong>
+
+<ul>
+<li>Chromeストアで使う宣伝用画像を自動で生成するかを選択します</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>※自分は下記のように答えました<br>
+<strong>What would you like to call this extension?</strong> =&gt; github-contributions-paint<br>
+<strong>And how would you call it if you only had 12 characters (short_name)?</strong> =&gt;  github-paint<br>
+<strong>How would you like to describe this extension?</strong> =&gt;  You can paint github contributions!<br>
+<strong>Would you like to use UI Action?</strong> =&gt; Browser<br>
+<strong>Would you like to override a chrome page?</strong> =&gt;  No<br>
+<strong>Would you like more UI Features?</strong> =&gt;  Content Scripts<br>
+<strong>Would you like to use permissions?</strong> =&gt;  Tabs<br>
+<strong>Would you like to install promo images for the Chrome Web Store?</strong> =&gt;  Yes</p>
+
+<ul>
+<li>すると雛形が生成されます</li>
+</ul>
+
+<div class="code-frame" data-lang="">
+<div class="code-lang"><span class="bold">生成された雛形のフォルダ構成</span></div>
+<div class="highlight"><pre>github-contributions-paint
+├── README.md
+├── app
+│   ├── images       　　　    　・・・Chromeウェブストア公開時に必要なアイコン格納フォルダ
+│   │   ├── icon-128.png
+│   │   ├── icon-16.png
+│   │   ├── icon-19.png
+│   │   └── icon-38.png
+│   ├── manifest.json          ・・・Chrome拡張の設定を定義するファイル
+│   ├── pages                  ・・・HTMLファイル格納フォルダ
+│   │   └── popup.html         ・・・Chrome拡張のアイコンをクリックした時に表示するポップアップ画面用資産
+│   ├── scripts                ・・・TSファイル格納フォルダ
+│   │   ├── background.ts      ・・・バックグランド処理を記述するファイル
+│   │   └── popup.ts           ・・・Chrome拡張のアイコンをクリックした時に表示するポップアップ画面用資産
+│   ├── styles                 ・・・CSSファイル格納フォルダ
+│   │   └── popup.scss         ・・・Chrome拡張のアイコンをクリックした時に表示するポップアップ画面用資産
+│   ├── _locales
+│   │   └── en
+│   │       └── messages.json ・・・アプリの設定ファイル
+│   └── fonts
+├── promo                     ・・・Chromeウェブストア公開時に必要な宣伝用画像の格納フォルダ
+│   ├── Chrome-Webstore-Icon_128x128.png
+│   ├── Promo-Image-Large_920x680.png
+│   ├── Promo-Image-Marquee_1400x560.png
+│   ├── Promo-Image-Small_440x280.png
+│   ├── Screenshot_1280x800.png
+│   └── Screenshot_640x400.png
+├── dist
+├── gulpfile.babel.js
+├── node_modules
+├── package-lock.json
+├── package.json
+├── tasks
+├── tsconfig.json
+└── tslint.json
+
+</pre></div>
+</div>
+
+<ul>
+<li>最後にTypeScriptをグローバルインストールしていない場合は、グローバルインストールまたはプロジェクトにインストールします</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm install typescript --save-dev
+</pre></div></div>
+
+<h2>
+<span id="2-作ったchrome-extensionを動かしてみる" class="fragment"></span><a href="#2-%E4%BD%9C%E3%81%A3%E3%81%9Fchrome-extension%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>2. 作ったChrome Extensionを動かしてみる</h2>
+
+<p>雛形を作成したら早速動かすことができます</p>
+
+<ul>
+<li>ビルドコマンドを実行します</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm run dev:chrome
+</pre></div></div>
+
+<ul>
+<li><p>Chromeで<code>chrome://extensions</code>を開いて<code>パッケージ化されていない拡張機能を読み込む</code>ボタンをクリック<br>
+<a href="https://camo.qiitausercontent.com/88e144ea0fc880ccec17978afc9ec782fb0d62c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35613534396134352d386563342d383935352d623733332d3837353534396638616433312e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/88e144ea0fc880ccec17978afc9ec782fb0d62c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35613534396134352d386563342d383935352d623733332d3837353534396638616433312e706e67" alt="手順_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5a549a45-8ec4-8955-b733-875549f8ad31.png"></a></p></li>
+<li><p>プロジェクトルート/dist配下の<code>chrome</code>フォルダを選択<br>
+<a href="https://camo.qiitausercontent.com/53813821851801eddbed514961987f9070733381/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66393161313636652d366532652d336633372d373130652d6565373532306339336563322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/53813821851801eddbed514961987f9070733381/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66393161313636652d366532652d336633372d373130652d6565373532306339336563322e706e67" alt="操作_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/f91a166e-6e2e-3f37-710e-ee7520c93ec2.png"></a></p></li>
+<li><p>するとプロジェクトが<a>Chrome Extension管理画面</a>に追加されて、ブラウザ右上にアイコンが表示されます<br>
+<a href="https://camo.qiitausercontent.com/e2e0fba31b666b0fea44ded1ded106236dd280e8/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36316232653131332d653532302d376566382d633437652d3432366265393361613834622e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e2e0fba31b666b0fea44ded1ded106236dd280e8/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36316232653131332d653532302d376566382d633437652d3432366265393361613834622e706e67" alt="動作確認1_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/61b2e113-e520-7ef8-c47e-426be93aa84b.png"></a></p></li>
+<li><p>アイコンをクリックして動作検証ができます<br>
+<a href="https://camo.qiitausercontent.com/909be0f655c64c11846b9b3ca31630357ddd7121/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33666631316537332d383162332d636435612d386537302d3961373534613661393936352e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/909be0f655c64c11846b9b3ca31630357ddd7121/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33666631316537332d383162332d636435612d386537302d3961373534613661393936352e706e67" alt="動作確認_11.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/3ff11e73-81b3-cd5a-8e70-9a754a6a9965.png"></a></p></li>
+</ul>
+
+<h2>
+<span id="3-開発中にchrome-extensionの動作確認する" class="fragment"></span><a href="#3-%E9%96%8B%E7%99%BA%E4%B8%AD%E3%81%ABchrome-extension%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B"><i class="fa fa-link"></i></a>3. 開発中にChrome Extensionの動作確認する</h2>
+
+<p>雛形の動作検証ができたらTypeScriptファイルを編集して処理を追加していきます。<br>
+<code>npm run dev:chrome</code>を実行した後、下記手順繰り返すことで、ソースコードを修正しながら随時動作検証ができます。</p>
+
+<ul>
+<li>資産（TypeScriptやHTML,CSS）を修正する（勝手にビルドが走ります）</li>
+<li>最新のビルド資産を取り込むため<a>Chrome Extension管理画面</a>でリロードをクリックします
+<a href="https://camo.qiitausercontent.com/090a13aa3e617e29329421ec4c5fba4a56e1fb9e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35663936353163362d373337662d643664622d383062662d3434613731363662323030352e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/090a13aa3e617e29329421ec4c5fba4a56e1fb9e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35663936353163362d373337662d643664622d383062662d3434613731363662323030352e706e67" alt="開発手順_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5f9651c6-737f-d6db-80bf-44a7166b2005.png"></a>
+</li>
+<li>Chrome Extensionの動作確認をする</li>
+</ul>
+
+<h2>
+<span id="4-アイコンと宣伝用画像を作る" class="fragment"></span><a href="#4-%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%81%A8%E5%AE%A3%E4%BC%9D%E7%94%A8%E7%94%BB%E5%83%8F%E3%82%92%E4%BD%9C%E3%82%8B"><i class="fa fa-link"></i></a>4. アイコンと宣伝用画像を作る</h2>
+
+<p>アプリを公開する前に、アイコンと宣伝用画像を作成し、雛形生成時のデフォルト資産と差し替えます。<br>
+デザイナーさんなら苦労しないでしょうが、自分はこれが一番大変でした。<br>
+3つのアイコンと3つの宣伝用画像が必要です。</p>
+
+<h3>
+<span id="アイコン" class="fragment"></span><a href="#%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3"><i class="fa fa-link"></i></a>アイコン</h3>
+
+<ul>
+<li>128x128
+
+<ul>
+<li>必須。インストール時やChromeウェブストアで表示する用</li>
+</ul>
+</li>
+<li>48x48
+
+<ul>
+<li>拡張機能の管理ページで表示する用</li>
+</ul>
+</li>
+<li>16x16
+
+<ul>
+<li>ブラウザ右上に表示する用</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<span id="宣伝用画像" class="fragment"></span><a href="#%E5%AE%A3%E4%BC%9D%E7%94%A8%E7%94%BB%E5%83%8F"><i class="fa fa-link"></i></a>宣伝用画像</h3>
+
+<ul>
+<li>440x280
+
+<ul>
+<li>必須</li>
+</ul>
+</li>
+<li>920x680
+
+<ul>
+<li>大きめの画像</li>
+</ul>
+</li>
+<li>1400x560
+
+<ul>
+<li>ChromeExtensionをChrome Storeで選択した時に表示される画像</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<span id="5-chromeウェブストアに公開する" class="fragment"></span><a href="#5-chrome%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%88%E3%82%A2%E3%81%AB%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B"><i class="fa fa-link"></i></a>5. Chromeウェブストアに公開する</h2>
+
+<ul>
+<li>雛形生成時バージョンが0.0.0になっており、バージョンが低すぎて公開できない状態なので、<code>manifest.json</code>と<code>package.json</code>のバージョン指定を0.0.1にあげます</li>
+</ul>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">manifest.json</span></div>
+<div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="err">・・・</span><span class="w">
+  </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.1"</span><span class="p">,</span><span class="w"> </span><span class="err">&lt;-</span><span class="w"> </span><span class="mf">0.0</span><span class="err">.</span><span class="mi">0</span><span class="err">から</span><span class="mf">0.0</span><span class="err">.</span><span class="mi">1</span><span class="err">にあげる</span><span class="w">
+  </span><span class="err">・・・</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">package.json</span></div>
+<div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="err">・・・</span><span class="w">
+  </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.1"</span><span class="p">,</span><span class="w"> </span><span class="err">&lt;-</span><span class="w"> </span><span class="mf">0.0</span><span class="err">.</span><span class="mi">0</span><span class="err">から</span><span class="mf">0.0</span><span class="err">.</span><span class="mi">1</span><span class="err">にあげる</span><span class="w">
+  </span><span class="err">・・・</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<ul>
+<li>下記コマンドで公開用のzipファイルを作成します</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm run build:chrome
+</pre></div></div>
+
+<ul>
+<li><p><a href="https://chrome.google.com/webstore/category/extensions" rel="nofollow noopener" target="_blank">Chromeウェブストア</a>のデベロッパーダッシュボードを開きます。Chromeアカウントでログインします<br>
+<a href="https://camo.qiitausercontent.com/d0db218423075317e350940d46d6510353fc81bd/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65646234386163392d303138312d316437382d633761642d6130383237313261663031632e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/d0db218423075317e350940d46d6510353fc81bd/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65646234386163392d303138312d316437382d633761642d6130383237313261663031632e706e67" alt="アプリ登録_1.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/edb48ac9-0181-1d78-c7ad-a082712af01c.png"></a></p></li>
+<li><p>ダッシュボードで<code>新しいアイテムを追加する</code>を選択します<br>
+<a href="https://camo.qiitausercontent.com/70b8f467a4819f7fd2251cf96abf3749b7626eeb/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37383761336132352d326539332d363138362d313765642d3662313962626233626162352e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/70b8f467a4819f7fd2251cf96abf3749b7626eeb/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37383761336132352d326539332d363138362d313765642d3662313962626233626162352e706e67" alt="アプリ登録_2.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/787a3a25-2e93-6186-17ed-6b19bbb3bab5.png"></a></p></li>
+<li><p><code>ファイルを追加</code>で作成したzipファイル(プロジェクトルート/packages配下にあります)を選択後、<code>アップロード</code>を選択します<br>
+<a href="https://camo.qiitausercontent.com/2bc72004e70eb79c898506904f452d396754f39f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f32323362343632342d643839322d336562382d356561382d3733633461616632623562382e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/2bc72004e70eb79c898506904f452d396754f39f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f32323362343632342d643839322d336562382d356561382d3733633461616632623562382e706e67" alt="アプリ登録_3.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/223b4624-d892-3eb8-5ea8-73c4aaf2b5b8.png"></a></p></li>
+<li><p>説明、アイコン、宣伝用画像、カテゴリを入力して<code>変更を公開</code>をクリックします<br>
+<a href="https://camo.qiitausercontent.com/efa7c9ab0ced7326af8c7cb2d03fe9c2282e7f11/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37323466303335352d666537622d373931382d326437352d3039633333636365356530302e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/efa7c9ab0ced7326af8c7cb2d03fe9c2282e7f11/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37323466303335352d666537622d373931382d326437352d3039633333636365356530302e706e67" alt="登録_5.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/724f0355-fe7b-7918-2d75-09c33cce5e00.png"></a></p></li>
+<li><p>これで公開作業は完了です。しばらくするとChromeウェブストアに公開されます</p></li>
+</ul>
+
+<h2>
+<span id="最後に" class="fragment"></span><a href="#%E6%9C%80%E5%BE%8C%E3%81%AB"><i class="fa fa-link"></i></a>最後に</h2>
+
+<p>今回は<a href="https://github.com/mazamachi/generator-chrome-extension-kickstart-typescript" rel="nofollow noopener" target="_blank">generator-chrome-extension-kickstart-typescript</a>を使って、TypeScriptでChrome Extensionを作成、公開する手順をまとめました。<br>
+最初はTypeScriptでChrome Extensionを作るのは、ビルドの設定など色々めんどくさそうだぁと思っていましたが、<br>
+<a href="https://github.com/mazamachi/generator-chrome-extension-kickstart-typescript" rel="nofollow noopener" target="_blank">generator-chrome-extension-kickstart-typescript</a>を使うことで、簡単に作成から公開まで実現できました。<br>
+ブラウザでのちょっとした作業を効率化するのにChrome Extentionは非常に強力なツールなので、今後なにかアイディアがあればまた作ってみたいと思います。</p>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/e0ec0869-f368-5083-bdc2-cdba9d59427a/">← <!-- -->フロントエンド初心者がMEANスタック(MongoDB+Express+Angular+Node.js)でアプリを作ってみて躓いたこと</a></li><li><a rel="next" href="/gatsby-starter-qiita/7780e313-8bda-5534-99aa-37bf47e9deb3/">GitBucketのissueで作業量を設定できるプラグイン<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"b-4-c-7-d-1-b-9-428-f-569-a-af-40-527-d-89794-a-77-3aa","path":"/b4c7d1b9-428f-569a-af40-527d89794a77/"};window.dataPath="546/path---b-4-c-7-d-1-b-9-428-f-569-a-af-40-527-d-89794-a-77-3-aa-301-VKHMTIdIutoxB1XjWAN82QTK4Yk";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

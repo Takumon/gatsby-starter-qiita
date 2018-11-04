@@ -1,0 +1,2191 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="なにこれReact.js製の静的サイトジェネレーター Gatsbyは、プラグインを使って簡単に機能拡張できる仕組みを持っています。公式プラグインとコミュニティ提供のものをあわせると、なんと502個もあるそうです。今回はその中でも、おすすめ4..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/703/path---f-18-d-04-ac-9-b-1-a-5-ac-8-8-d-43-8-aa-3-d-8-f-746-a-7-792-9a8-qUKXRKDXpObCgOyIOtqbVT0yrc.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>Gatsbyプラグイン45選</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2018-10-23T08:48:23+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div>
+<h2>
+<span id="なにこれ" class="fragment"></span><a href="#%E3%81%AA%E3%81%AB%E3%81%93%E3%82%8C"><i class="fa fa-link"></i></a>なにこれ</h2>
+
+<p>React.js製の静的サイトジェネレーター <a href="https://www.gatsbyjs.org/" rel="nofollow noopener" target="_blank">Gatsby</a>は、<a href="https://www.gatsbyjs.org/plugins/" rel="nofollow noopener" target="_blank">プラグイン</a>を使って簡単に機能拡張できる仕組みを持っています。<a href="https://github.com/gatsbyjs/gatsby/tree/master/packages" rel="nofollow noopener" target="_blank">公式プラグイン</a>とコミュニティ提供のものをあわせると、なんと502個もあるそうです。今回はその中でも、おすすめ45個をユースケース別にご紹介します。</p>
+
+<p>※ 本記事は<a href="https://takumon.com/2018/10/21/" rel="nofollow noopener" target="_blank">ブログ</a>の転記です。Qiitaで使えない機能（コードブロックの指定行強調表示など）の表示結果はスクリーンキャプチャにしています。HTMLでの表示結果を見たい場合は<a href="https://takumon.com/2018/10/21/" rel="nofollow noopener" target="_blank">ブログ</a>をご覧ください。</p>
+
+<h2>
+<span id="ユースケース別目次" class="fragment"></span><a href="#%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9%E5%88%A5%E7%9B%AE%E6%AC%A1"><i class="fa fa-link"></i></a>ユースケース別目次</h2>
+
+<p>※クリックすると説明セクションにとべます。</p>
+
+<p><strong><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E7%B3%BB">マークダウン系</a></strong></p>
+
+<ul>
+<li><a href="#gatsby-remark-prismjs">コードブロックでシンタックスハイライトする</a></li>
+<li><a href="#gatsby-remark-code-titles">コードブロックにタイトルを追加する</a></li>
+<li><a href="#gatsby-remark-autolink-headers">見出しにGitHub風ホバーリンクをつける</a></li>
+<li><a href="#gatsby-remark-emojis">絵文字を使う</a></li>
+<li><a href="#gatsby-remark-graphviz">Graphvizでグラフを描画する</a></li>
+<li><a href="#gatsby-remark-katex">数式を使う</a></li>
+<li><a href="#gatsby-remark-embed-snippet">コードブロックにJavaSriptファイルなどを埋め込む</a></li>
+<li><a href="#gatsby-remark-copy-linked-files">リンクされているPDFや動画などをビルド時にpublicフォルダにコピーする</a></li>
+<li><a href="#gatsby-remark-images">画像をスマートに表示する</a></li>
+<li><a href="#gatsby-remark-responsive-iframe">iframeタグを縦横比固定でレスポンシブ化する</a></li>
+<li><a href="#gatsby-remark-embed-youtube">Youtubeを埋め込む</a></li>
+<li><a href="#gatsby-plugin-twitter">Twitterの埋め込む</a></li>
+</ul>
+
+<p><strong><a href="#seo%E7%B3%BB">SEO系</a></strong></p>
+
+<ul>
+<li><a href="#gatsby-plugin-react-helmet">React Helmetを使う</a></li>
+<li><a href="#gatsby-plugin-offline">オフライン環境でもWebサイトをスムーズに見れるようにする</a></li>
+<li><a href="#gatsby-plugin-manifest">PWA対応する（manifest.webmanifestを生成する）</a></li>
+<li><a href="#gatsby-plugin-sitemap">サイトマップを生成する</a></li>
+<li><a href="#gatsby-plugin-canonical-urls">canonical linksを追加する</a></li>
+<li><a href="#gatsby-plugin-feed">RSSフィードを生成する</a></li>
+<li><a href="#gatsby-plugin-robots-txt">robots.txtを生成する</a></li>
+</ul>
+
+<p><strong><a href="#%E9%96%8B%E8%A3%9C%E8%A3%9C%E5%8A%A9%E7%B3%BB">開補補助系</a></strong></p>
+
+<ul>
+<li><a href="#gatsby-plugin-lodash">ビルド資産（bundle.js）のlodashのサイズ削減する</a></li>
+<li><a href="#gatsby-plugin-webpack-bundle-analyzer">ビルド資産（bundle.js）の中身のサイズを可視化する</a></li>
+<li><a href="#gatsby-plugin-google-analytics">Google Analyticsを使う</a></li>
+<li><a href="#gatsby-plugin-facebook-analytics">Facebook Analyticsを使う</a></li>
+</ul>
+
+<p><strong><a href="#ui%E7%B3%BB">UI系</a></strong></p>
+
+<ul>
+<li><a href="#gatsby-plugin-nprogress">ローディング中にプログレスバー表示</a></li>
+<li><a href="#gatsby-plugin-catch-links">aタグでローカル遷移時にリロードではなくヒストリーAPIで遷移</a></li>
+<li><a href="#gatsby-plugin-layout">1系のレイアウト機能を2系で使う</a></li>
+</ul>
+
+<p><strong><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB">ファイル系</a></strong></p>
+
+<ul>
+<li><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB">JSONファイルをパースする</a></li>
+<li><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB">XMLファイルをパースする</a></li>
+<li><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB">Yamlファイルをパースする</a></li>
+<li><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB">CSVファイルをパースする</a></li>
+<li><a href="#gatsby-source-filesystem">ファイルを読み取んでノードを生成する</a></li>
+<li><a href="#gatsby-transformer-remark">Markdownファイルをパースする</a></li>
+<li><a href="#gatsby-image">画像読み込みを最適化する</a></li>
+<li><a href="#gatsby-transformer-sharp">画像読み込みでImageSharpノードを生成する</a></li>
+<li><a href="#gatsby-plugin-sharp">Sharp(画像圧縮ライブラリ)を使う</a></li>
+</ul>
+
+<p><strong><a href="#css%E7%B3%BB">CSS系</a></strong></p>
+
+<ul>
+<li>SASS/SCSSを使う</li>
+<li>Styled Componentsを使う</li>
+<li>Glamorとglamorousを使う</li>
+<li>Emotionを使う</li>
+<li>PostCSSを使う</li>
+<li><a href="#gatsby-plugin-typography">Typography.js(文章のスタイルを設定するライブラリ)を使う</a></li>
+</ul>
+
+<p><strong><a href="#%E5%A4%96%E9%83%A8%E9%80%A3%E6%90%BA%E7%B3%BB">外部連携系</a></strong></p>
+
+<ul>
+<li>Mediumのデータを取得する</li>
+<li>WordPressのデータを取得する</li>
+<li>contentfulのデータを取得する</li>
+<li><a href="#gatsby-source-esa">esa.ioのデータを取得する</a></li>
+</ul>
+
+<h2>
+<span id="プラグインの使い方" class="fragment"></span><a href="#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9"><i class="fa fa-link"></i></a>プラグインの使い方</h2>
+
+<p>※知ってる人は読み飛ばしてください。</p>
+
+<ul>
+<li>プラグインはnpmパッケージで公開されているのでnpmインストールする</li>
+<li>
+<code>gatsby-config.js</code>のpluginsに定義を追加する</li>
+<li>下記のようにオプションも指定できる</li>
+</ul>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// オプションなしで指定する場合は下記のようにプラグイン名を文字列で指定しましょう。</span>
+    <span class="s2">"gatsby-plugin-react-helmet"</span><span class="p">,</span>
+    <span class="c1">// オプションありの場合は、オブジェクトで指定します。</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-filesystem`</span><span class="p">,</span>
+      <span class="c1">// オプションはさらにオブジェクトで指定します。</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">path</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">__dirname</span><span class="p">}</span><span class="s2">/src/data/`</span><span class="p">,</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"data"</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">// プラグイン自体を拡張するプラグインを指定できます。</span>
+        <span class="c1">// その場合はオプションのpluginsにプラグインを定義しましょう。</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span><span class="s2">`gatsby-remark-smartypants`</span><span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">"gatsby-plugin-offline"</span><span class="p">,</span>
+      <span class="c1">// 下記のように空オプションの場合は、プラグイン名を文字列で指定した場合と同じです。</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p>※ 詳細は<a href="https://takumon.com/2018/10/20/#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9" rel="nofollow noopener" target="_blank">Gatsbyプラグインの使い方･作り方･公開方法 | Takumon Blog</a>を参照してください。</p>
+
+<h2>
+<span id="マークダウン系" class="fragment"></span><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E7%B3%BB"><i class="fa fa-link"></i></a>マークダウン系</h2>
+
+<p>ここで紹介するプラグインは<a href="gatsby-transformer-remark">gatsby-transformer-remark</a>の拡張です。<br><br>
+そのためプラグインを使う時は、<code>gatsby-config.js</code>ではgatsby-transformer-remarkのオプションとして定義します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+    <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-prismjs`</span><span class="p">,</span>
+          <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">classPrefix</span><span class="p">:</span> <span class="s2">"language-"</span><span class="p">,</span>
+            <span class="na">inlineCodeMarker</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="na">aliases</span><span class="p">:</span> <span class="p">{},</span>
+            <span class="na">showLineNumbers</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">noInlineHighlight</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="p">},</span>
+        <span class="p">},</span>
+      <span class="p">],</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-prismjs" class="fragment"></span><a href="#gatsby-remark-prismjs"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs" rel="nofollow noopener" target="_blank">gatsby-remark-prismjs</a>
+</h3>
+
+<p><strong>マークダウンのコードブロックでシンタックスハイライトできるようにする</strong><br>
+* <a href="https://prismjs.com/" rel="nofollow noopener" target="_blank">Prism.js</a>を使ってシンタックスハイライトします。他にも行数表示や指定行強調といった機能が使えます。<br>
+* Gatsbyで技術系ブログを作るなら、このプラグインが一番重要でしょう。使い方の詳細も含めてご紹介します。</p>
+
+<h4>
+<span id="設定" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A"><i class="fa fa-link"></i></a>設定</h4>
+
+<p><code>gatsby-config.js</code>で下記のように定義します。<br>
+オプションが複数ありあますが重要なのは<code>showLineNumbers</code>だけです。<code>true</code>だとコードブロックの行数表示機能が使えるようになります。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+    <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-prismjs`</span><span class="p">,</span>
+          <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">classPrefix</span><span class="p">:</span> <span class="s2">"language-"</span><span class="p">,</span>
+            <span class="na">inlineCodeMarker</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="na">aliases</span><span class="p">:</span> <span class="p">{},</span>
+            <span class="na">showLineNumbers</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">noInlineHighlight</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="p">},</span>
+        <span class="p">},</span>
+      <span class="p">],</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>若干めんどくさいですが、<code>gatsby-config.js</code>以外にもやることがあります。<br><br>
+<code>gatsby-browser.js</code>でPrismJSのテーマを読み込みます。<br><br>
+<code>gatsby-browser.js</code>は、なければプロジェクトのルートフォルダ直下に作成してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-browser.js</span></div>
+<div class="highlight"><pre><span class="nx">require</span><span class="p">(</span><span class="s2">"prismjs/themes/prism-solarizedlight.css"</span><span class="p">)</span>
+</pre></div>
+</div>
+
+<p><br><br>
+行数を表示するには、専用のCSSを読み込みます。<br></p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">src/components/layout.jsの一部</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="s1">'prismjs/plugins/line-numbers/prism-line-numbers.css'</span><span class="p">;</span>
+
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>指定行を強調表示させるにはCSSを定義してください。</p>
+
+<div class="code-frame" data-lang="css"><div class="highlight"><pre><span class="nc">.gatsby-highlight-code-line</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#feb</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">-1em</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">-1em</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0.75em</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">0.25em</span> <span class="nb">solid</span> <span class="m">#f99</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.gatsby-highlight</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#fdf6e3</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0.3em</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0.5em</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.gatsby-highlight</span> <span class="nt">pre</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s1">"language-"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="n">initial</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c">/* 1 */</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="c">/* 2 */</span>
+<span class="p">}</span>
+<span class="nc">.gatsby-highlight</span> <span class="nt">pre</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s1">"language-"</span><span class="o">]</span><span class="nc">.line-numbers</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">2.8em</span><span class="p">;</span> <span class="c">/* 3 */</span>
+<span class="p">}</span>
+</pre></div></div>
+
+<p><br></p>
+
+<h4>
+<span id="使い方" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>シンタックスハイライトだけなら下記のように記述します。</p>
+
+<ul>
+<li>記述方法</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript
+plugins:[
+  {
+    resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`,
+        ]
+      }
+    }
+  } 
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/02b666af653df603b518bbc431fc8238a9101df3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66343238346434392d626461642d373865302d613764322d3563323931373563646635652e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/02b666af653df603b518bbc431fc8238a9101df3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66343238346434392d626461642d373865302d613764322d3563323931373563646635652e706e67" alt="スクリーンショット 2018-10-22 22.46.27.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/f4284d49-bdad-78e0-a7d2-5c29175cdf5e.png"></a></p>
+
+<p>行数表示や指定行強調を使う場合コードブロックの1行目(```の部分)にそれらの情報を記載します。以降に詳細を示します。</p>
+
+<h5>
+<span id="行数表示する場合" class="fragment"></span><a href="#%E8%A1%8C%E6%95%B0%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>行数表示する場合</h5>
+
+<ul>
+<li>記述方法</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript{numberLines: true}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/d260ef23960977cde69e9ec062180fee82ac8707/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65613863326630642d653034352d346332662d326636302d3531383233626232613361652e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/d260ef23960977cde69e9ec062180fee82ac8707/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f65613863326630642d653034352d346332662d326636302d3531383233626232613361652e706e67" alt="スクリーンショット 2018-10-22 22.46.41.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/ea8c2f0d-e045-4c2f-2f60-51823bb2a3ae.png"></a></p>
+
+<h5>
+<span id="行数表示する場合開始行数指定あり" class="fragment"></span><a href="#%E8%A1%8C%E6%95%B0%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E9%96%8B%E5%A7%8B%E8%A1%8C%E6%95%B0%E6%8C%87%E5%AE%9A%E3%81%82%E3%82%8A"><i class="fa fa-link"></i></a>行数表示する場合（開始行数指定あり）</h5>
+
+<ul>
+<li>記述方法</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript{numberLines: 5}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/0493012e1f6a73e67a66c2fb7d07ad09caa99e14/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36613635343132632d356430642d386364352d616566362d6265303264616563633231392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/0493012e1f6a73e67a66c2fb7d07ad09caa99e14/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36613635343132632d356430642d386364352d616566362d6265303264616563633231392e706e67" alt="スクリーンショット 2018-10-22 22.47.00.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/6a65412c-5d0d-8cd5-aef6-be02daecc219.png"></a></p>
+
+<h5>
+<span id="指定行数を強調する場合" class="fragment"></span><a href="#%E6%8C%87%E5%AE%9A%E8%A1%8C%E6%95%B0%E3%82%92%E5%BC%B7%E8%AA%BF%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>指定行数を強調する場合</h5>
+
+<ul>
+<li>記述方法</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript{1,5-9}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/3ab7eae120380a79128489b8af36699d65b79d9d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f61643938313762342d396130652d306133352d643566642d3561623634633033353464312e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/3ab7eae120380a79128489b8af36699d65b79d9d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f61643938313762342d396130652d306133352d643566642d3561623634633033353464312e706e67" alt="スクリーンショット 2018-10-22 22.47.08.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/ad9817b4-9a0e-0a35-d5fd-5ab64c0354d1.png"></a></p>
+
+<h5>
+<span id="全部の組み合わせ指定行数を強調かつ行数表示" class="fragment"></span><a href="#%E5%85%A8%E9%83%A8%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E6%8C%87%E5%AE%9A%E8%A1%8C%E6%95%B0%E3%82%92%E5%BC%B7%E8%AA%BF%E3%81%8B%E3%81%A4%E8%A1%8C%E6%95%B0%E8%A1%A8%E7%A4%BA"><i class="fa fa-link"></i></a>全部の組み合わせ（指定行数を強調かつ行数表示）</h5>
+
+<ul>
+<li>記述方法（2つの括弧を定義します）</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript{numberLines: 5}{1,5-9}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/c58a55c9c942a073fe7b66943cf7b3a9f606d687/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63383636383930622d323232662d636566632d636133392d6232383762356534313833392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/c58a55c9c942a073fe7b66943cf7b3a9f606d687/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63383636383930622d323232662d636566632d636133392d6232383762356534313833392e706e67" alt="スクリーンショット 2018-10-22 22.47.17.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/c866890b-222f-cefc-ca39-b287b5e41839.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-code-titles" class="fragment"></span><a href="#gatsby-remark-code-titles"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-code-titles/?=gatsby-remark-code-titles" rel="nofollow noopener" target="_blank">gatsby-remark-code-titles</a>
+</h3>
+
+<p><strong>マークダウンでコードブロックにタイトルを表示できるようにする</strong></p>
+
+<h4>
+<span id="設定-1" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-1"><i class="fa fa-link"></i></a>設定</h4>
+
+<ul>
+<li>前述のgatsby-remark-prismjsとあわせて使います。</li>
+</ul>
+
+<p><code>gatsby-config.js</code>で<code>gatsby-transformer-remark</code>オプションとして一番最初に定義する必要があります。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">`gatsby-remark-code-titles`</span><span class="p">,</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-prismjs`</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">classPrefix</span><span class="p">:</span> <span class="s2">"language-"</span><span class="p">,</span>
+              <span class="na">inlineCodeMarker</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+              <span class="na">aliases</span><span class="p">:</span> <span class="p">{},</span>
+              <span class="na">showLineNumbers</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br><br>
+さらにCSSでスタイルを追加しましょう。</p>
+
+<div class="code-frame" data-lang="css"><div class="highlight"><pre><span class="nc">.gatsby-code-title</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#f3e3b9</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#b38383</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">-0.65em</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0.7rem</span> <span class="m">1.05rem</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.8em</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">0.2</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">SFMono-Regular</span><span class="p">,</span><span class="n">Menlo</span><span class="p">,</span><span class="n">Monaco</span><span class="p">,</span><span class="n">Consolas</span><span class="p">,</span><span class="n">Liberation</span> <span class="n">Mono</span><span class="p">,</span><span class="n">Courier</span> <span class="n">New</span><span class="p">,</span><span class="nb">monospace</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span> <span class="m">8px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div>
+
+<h4>
+<span id="使い方-1" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-1"><i class="fa fa-link"></i></a>使い方</h4>
+
+<ul>
+<li>マークダウンでコードブロックの一行目に<code>:title=タイトル名</code>と記述します。</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript:title=gatsby-config.js
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/0a3fdf6e1f69f1409342c7fe2ee2f736ef3270f3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64386365343631362d373335652d343134392d623264332d3330373531306337613531642e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/0a3fdf6e1f69f1409342c7fe2ee2f736ef3270f3/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64386365343631362d373335652d343134392d623264332d3330373531306337613531642e706e67" alt="スクリーンショット 2018-10-22 23.20.45.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/d8ce4616-735e-4149-b2d3-307510c7a51d.png"></a></p>
+
+<h5>
+<span id="強調行指定との組み合わせ" class="fragment"></span><a href="#%E5%BC%B7%E8%AA%BF%E8%A1%8C%E6%8C%87%E5%AE%9A%E3%81%A8%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B"><i class="fa fa-link"></i></a>強調行指定との組み合わせ</h5>
+
+<ul>
+<li>強調行の後にタイトルを記述します。</li>
+</ul>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```javascript{1, 5-9}:gatsby-config.js
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/d4f812f1ccb4479e2b9cdc9fa72d3d599155fe52/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35383535313732662d666663632d633062632d323336322d6330363865323063386337372e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/d4f812f1ccb4479e2b9cdc9fa72d3d599155fe52/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35383535313732662d666663632d633062632d323336322d6330363865323063386337372e706e67" alt="スクリーンショット 2018-10-22 23.20.56.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5855172f-ffcc-c0bc-2362-c068e20c8c77.png"></a></p>
+
+<h5>
+<span id="行数表示との組み合わせ" class="fragment"></span><a href="#%E8%A1%8C%E6%95%B0%E8%A1%A8%E7%A4%BA%E3%81%A8%E3%81%AE%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B"><i class="fa fa-link"></i></a>行数表示との組み合わせ</h5>
+
+<p>なぜかできませんでした...プラグインの相性が悪いのかもしれません。</p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-autolink-headers" class="fragment"></span><a href="#gatsby-remark-autolink-headers"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers" rel="nofollow noopener" target="_blank">gatsby-remark-autolink-headers</a>
+</h3>
+
+<p><strong>マークダウンで見出しにGitHub風ホバーリンクをつける</strong></p>
+
+<p>見出しホバー時に鎖アイコンリンクが表示されます。<br>
+リンクを指定して初期表示すると見出しまでスクロースしてくれるので便利です。</p>
+
+<p><a href="https://camo.qiitausercontent.com/45489494a718ac4d508bd05a61db4d47aed9729a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33616365386363342d313337662d653937372d653432332d3635323739643332326231302e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/45489494a718ac4d508bd05a61db4d47aed9729a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33616365386363342d313337662d653937372d653432332d3635323739643332326231302e706e67" alt="スクリーンショット 2018-10-22 23.22.56.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/3ace8cc4-137f-e977-e423-65279d322b10.png"></a></p>
+
+<h4>
+<span id="設定-2" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-2"><i class="fa fa-link"></i></a>設定</h4>
+
+<p>オプションでアイコン、アイコンの位置、アイコンのクラス名を指定できます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-autolink-headers`</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">offsetY</span><span class="p">:</span> <span class="s2">`100`</span><span class="p">,</span>
+              <span class="na">icon</span><span class="p">:</span> <span class="s2">`&lt;svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;`</span><span class="p">,</span>
+              <span class="na">className</span><span class="p">:</span> <span class="s2">`custom-class`</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="補足" class="fragment"></span><a href="#%E8%A3%9C%E8%B6%B3"><i class="fa fa-link"></i></a>補足</h4>
+
+<p><a href="https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers/#how-to-use" rel="nofollow noopener" target="_blank">公式サイト</a>には下記記述がありますが<br>
+起因となった<a href="https://github.com/gatsbyjs/gatsby/issues/5764" rel="nofollow noopener" target="_blank">issue 5764</a>はもう解決済みたいなので、定義順は特に気にする必要なさそうです。</p>
+
+<blockquote>
+<p>gatsby-remark-prismjsと一緒に使う場合は必ず後に定義してください。</p>
+</blockquote>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-emojis" class="fragment"></span><a href="#gatsby-remark-emojis"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-emojis" rel="nofollow noopener" target="_blank">gatsby-remark-emojis</a>
+</h3>
+
+<p><strong>マークダウンで絵文字が使えるようにする</strong><br></p>
+
+<ul>
+<li>絵文字は画像ファイルではなく、base64形式で埋め込みます。全ての絵文字をドカッとインポートするわけではないのでデプロイ資産のサイズが最小限で済むのがメリットです。</li>
+</ul>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">HTMLファイル中に埋め込まれる絵文字</span></div>
+<div class="highlight"><pre><span class="nt">&lt;img</span>
+  <span class="na">class=</span><span class="s">"emoji-icon"</span>
+  <span class="na">data-icon=</span><span class="s">"emoji-100"</span>
+  <span class="na">style=</span><span class="s">"display: inline; margin: 0; margin-top: 1px; position: relative; top: 5px; width: 25px"</span>
+  <span class="na">src=</span><span class="s">"data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAMMUlEQVR4Ae3YhXtcx90o4HfOnhVZlpntkMN0nTK3TsrMzPdjZmZmvh8zM5SZuQ04zInMsiVb0kq7e2jmPnBRj11t5HLy/gcz88Px4PaQhwRf5Q6xJQFTViAc9OWV2FVyVc6tq5hEZXlj0zylxxNKzkr0hng7/nMdo6OkQIFkGXnbl95mwn1c1mFvyWWBqxpuq/k13Oz0bOeyeZ5Z8eKaR9a0ARtyPpy4aophfBhdywj7fOGt5ZySrTUziQPoAwyxteDJJc+teXnBUAQEvnML78BQn5M4ArCGUHPhAt9d8LKS9RGBMjCVeMsovz3KD3cZrvkeTFlG3vWFs47xkkfP85zIwxpuj/wWbocxtvV4c8l39NgcgTrQCZzIaNW8MHFRw3vxz7CBrM+mgu/o8uqK1WgCdwf2tbg2510ZWY9rKhb6rDKAvOfMXUS2yLo+T6/4/YK1NVo8OvI23L6D8Q6vKPixPiNIgfnAvowbW3y2zTv7/Ejk+ZE7AXqM1Dx7kVfXrIaMycivXMff30WB9Houx9bIbM3orxKQOL38F52Zv6DVZUfJq0q+q8eaBIj0a9IjCEd4Rs3r+4xAoJPxlgV+LOPoBM0mth/hrJrViVHYSTbPtprvqhhPCFT4pxbveQT9R+AswmHaEYl2ZPhJg1zAk6zcq2iVnNfnG7t8Y8lYIgBSxoEhjvdZt8DVJVcAKuyb4+f6HELTwVb2JM5uCBkjEFnX4qXznJ/IkQKfyXgnDgNEVo9y1QIhUOU0Ocky8twZedI839Fjb814AgAEbsH0LC9oeFpFDoH7Mn43cv8QDUDFeYHNgdkWx6DDpoZXxv8nchr+YIHPIQKsZ0vimQ2txGgiRMvLo5V5Ga+e51t67ImsOsXh+yVvW82JeR5bcw4EOhmf6PG+EUoAmOfKhq2J+cjoYwn72F1wcSJDzHhn4LPj9ACgYSxxViIgS6Sjlpcf9cB8P5fO8aI5XlZyWUNuKZqMzzZcu55Lj3NJTRtwZ+IfRjhpiZK1kTbKRO8+zm7xmooRpECn4V8jBywRyRMTgGw1F7+Bu7Ho9ORvMJh15ImHH+fba66p2BoRaDLm0GpYAyga/jJw/yKvi1yaECgDtxR8whLnsesoayIC7YywwJaKpyWgCdzUsA89S+SUkWlA1mJ3xsiyF5AZTMFQ4vUFL60ZBtyaeG+L4cArGiBmHFvkExez4TiPaVgP2N/i42MsWIoGCTCacW6kU7ARUODtQ0w7hUATKAGpoQgky8gbg6lJiZPYH5hI3Jj4+1V8KOM5JV8PKPCREToFz6w5JwIxcH2bDziFjBMtOhENApdiy/97qTXvi3ScQs3amrMBqeTuPj3LyBcMZoh+4teHmKrZ2OMtuHYdj57juRUtwHzNPyZO9LkmsjWixULgpoK7ndpFGROAAltqzk1AHZhM7A/UlriMsaNcWLELAWWXyf+gbxn5PxhYwkn8LsBP0p7m4Q2PS0ATONjjhnMY6XBBZCwgcGiI+51GyeMj50VkzCXUnA2oA/cPUzmFDmdHri4ZRhOYyum+jGQZ+cusXM1ZFY8omIBAt8W+TfTa7K3ZFAGR2xtudgqbyDs8pWZ7RJteoFfTAnQi/xboOoVFzqt5RgKqFjePM2sA+biVK3gMHhuBhKmGt+Y0NY9NTECgjFzb5SZLnE2G3QXnR4YDArOJuQYQWFzk5i6VJR5Odow1NZsAZeBzgb4B5MHK9djdsDshY7bFuxven9FUXIhRCBxrc7BNbYlIhidENkQE6hbtwASgCUxH5kaIluKynGf1CICy4loUBpCXVuYcdkxxQU07AJMN/4xOzSpsSrQhcKTFcaewQNbieZHNgE7GIoYgULY4PE7hFGa5tOJJCUiBk13umaUygPyIldnOExJXNgjAzAL7YJiAjWj9PxcwY4kNtGseMcMVkREIHMw4FDkPkGE4d2oFGxu2A7oZn8uZ3kg0gHyjlVngUZHdCYF+xtQBClgHDCcCoMgoLFGRJ17YsDEhIPLhjLsjFwJakXEEANhJXvHoWa6pyQHTDX87TNeA8mEP3FlcfJQralYF4N7EO9s0kCylSFQAsJV2j0sWeGZiDAJTkY+1WahpQSJEhgtqAGiz6SQvq9gbESgDdxzlY/PUBpTf6YHbxEsjl0cgJm7t8Y4dVE5tKNACgFlW1XxdlwsTOeBDLfbl7EIDyLBuA/9tHSfaFInRBfYW7K1YCzgWeMduFpAMKL/K4NYQsHmWqyPbINAJ3D3GCQBAAMAliceM089oAqnDI0teWzMMGYcTb9nPPZsZTxwGBOwo+b45ZhKdjLU1j49cCIEC1y/wnwskg5MfM7hxQuA5BefUANyZ8SkAyEiJk9iBVs0VGd/S52osBpqG51WMA8rAf+R8cjfVRm6b5UMZeyMTibGCl9VoEJAAaHBrxr9+gANIBif8oMG9iaHI78zyipq1gSrxW9fzE+gDXM1w4rs7fGvDDgQkJABkgH7GtRXfPcnnkOBRXN7le3u8ODGODAAQUWTcE/jTm/lDFB6g8EcG81Syhp3z/GefPZGQcW2Ln8d/WGIVYxW/1OdlDRuQIwASInotPt3nJ2f5HAqAS2lVnF3yhj6vj2xAQEDKmM74eOLvT/JB9KxAeJvBXMhI4jtn+N6aTYGY+KVZfhWzTmEX6xPPqHh5zSMiGxPtQCfj9sB7Kv5ugftRWuJcWn3GF1nTZ11D3mZrw2xgZoSTLebQt0LhEwazitV4S4fHRYYC70z8/P/gE0hO4ycZX2RjwZqK8chIRtliZojjh5hBtIx9hDHCHoZmqFE7c8LfDRb+4Rg7e3ysYBcWEz+c8RdYNDi/Q0DyFSK83PJ+hXaXR83ynw0bMybxzXinM+c81k5QonuQx7U4F/2aNW3ua3PfOo7NcU6i3Ml9aJw5+T9Z3iRDOZdE8oTAVIt5K7CLbX1297m4oVWz5ijbJkmJ+RaPztiZKBLjOBw5eJSZwI5EdZybRvngBm5C1xnIj1texVDDJWhD5AZMWcZljMyys2BLl2012w9zduBS7Im0IusTrRpQIyEBAhdBCxHQ0K954hy/gfc7A+FTljfBxobfmeWFWEh8W8Vb0QOAKwld1lVsX2RLwzkZD09cUnNpzeYGEQnBaaVAjQBIaLCAk4HhRBH55U/z50hWKP+I5T2bVmIDQotPRG4dpgcAZ5PPsLPi+XhazeNK1tdIlpIySpTI0EGT6GMxcDLQQQCkQA+TQ9ycMVFzuMdnEc7oAgygZihyMVoZ+07zN7+m4SUL/GJFjgCAGiXKQC8wHTja4giG8NkW8wX3d7i7y3Sg2EwEQIJEQkAaJT3ZmcmfbHkZDaaxYYGPTzFtia2kSF3TABrEQDdjMnBTxh2RW6a5bgOziAhokBATsSQhHXBayRdIfq/lXUkv8IEWWWDm72ks8WRmI+8Z5dkl3RY3N0wW3Bo4MMxioApU91HcR/LlJ/y25T2bdsVli7yx4Tew3ykM08bOPrFNt6Y4SQ+VZVzCeEZ7DfOzjGPoLGYOMYYFgMTqnSwiOnNCMpi7GeqwM3AIhRXaQ+sgOyq2VuwNzCVGKi7qsjMxhKGGLKNAnugOcxCrarY0yJka4a5hPrmGT2PeCoQpXzwl2xLbe+zpc2XF+P/u/ZgI7E70kWN9wwQkJAQAZHQxlMgTAiljGpOBD67mb3CTByjc4gvjUlqHuKhmU5eLFtmOsxMbcWHi/EiWEJGQAAkQfH4B6GacwGxiBE3G+0b4A9ziAcoLK7ObdoftfXb12HoDuxJXYWvkipqtEc3nP2AM1IEmsIATWIgcQxMYbzgYqCHQD8zkTGVMR4YTZeSmD3OnFQi/aXAvJU9s6rG54OLEoxJX1VzcsK06zZQXKNELdBIFmsi9gZOBMqPb4jgOtJgpuKumGmPD9dxUUEACyi95F4BnkWNPyTMbHlfyiJJNjaXUgQL9xFxgJnAw52hgMnEiUNzDW2boRaDwZZIbUGQ48S3zvLRmNQAiKvQxnzGZcTjjvsinulw/x5GlX+a7Sbt9+YVPG8wqxvBzc7y2YQIlqoy5wF2BT0c+vMjnxilzYkOzSET0FSq812C2ESLrSn6sZqLPO/vcntPP6QzTayhQ+ioSPuaBGWNLRdZl7pP0EX0VC7/gwS3zIPfQBTx0AQ9yD12AB7mHLsCD3EMX4EHufwJIOEs9kLQJngAAAABJRU5ErkJggg=="</span>
+<span class="nt">&gt;</span>
+</pre></div>
+</div>
+
+<ul>
+<li>(注意点）コードブロック中の記述も絵文字に変換しようとするので気をつけてください。</li>
+</ul>
+
+<h4>
+<span id="設定-3" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-3"><i class="fa fa-link"></i></a>設定</h4>
+
+<p>オプションで色々指定できます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-remark-emojis'</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="c1">// falseにすると絵文字機能をオフにできます</span>
+              <span class="na">active</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+              <span class="c1">// サイズは16, 24, 32, 64から選べます</span>
+              <span class="na">size</span>   <span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+              <span class="c1">// 独自クラスを追加できます</span>
+              <span class="na">class</span>  <span class="p">:</span> <span class="s1">'emoji-icon'</span><span class="p">,</span>
+              <span class="c1">// 独自スタイルを追加できます</span>
+              <span class="na">styles</span> <span class="p">:</span> <span class="p">{</span>
+                <span class="na">display</span>      <span class="p">:</span> <span class="s1">'inline'</span><span class="p">,</span>
+                <span class="na">margin</span>       <span class="p">:</span> <span class="s1">'0'</span><span class="p">,</span>
+                <span class="s1">'margin-top'</span> <span class="p">:</span> <span class="s1">'1px'</span><span class="p">,</span>
+                <span class="na">position</span>     <span class="p">:</span> <span class="s1">'relative'</span><span class="p">,</span>
+                <span class="na">top</span>          <span class="p">:</span> <span class="s1">'5px'</span><span class="p">,</span>
+                <span class="na">width</span>        <span class="p">:</span> <span class="s1">'25px'</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-2" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-2"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>マークダウンにて<code>:XXX:</code>のような形式で記述します。<br>
+例 <img alt=":100:" class="emoji" height="20" src="https://cdn.qiita.com/emoji/twemoji/unicode/1f4af.png" title=":100:" width="20"></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-graphviz" class="fragment"></span><a href="#gatsby-remark-graphviz"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-graphviz" rel="nofollow noopener" target="_blank">gatsby-remark-graphviz</a>
+</h3>
+
+<p><strong>マークダウンで<a href="https://www.graphviz.org/" rel="nofollow noopener" target="_blank">Graphviz</a>(dot言語で記述されたグラフ構造を任意のフォーマットの画像ファイルへ出力するツール)を使えるようにする</strong><br></p>
+
+<ul>
+<li>内部的には<a href="https://github.com/mdaines/viz.js/" rel="nofollow noopener" target="_blank">viz.js</a>でコードブロックをSVGファイルに変換しています。</li>
+</ul>
+
+<h4>
+<span id="設定-4" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-4"><i class="fa fa-link"></i></a>設定</h4>
+
+<p><code>gatsby-remark-prismjs</code>のようなコードブロックを編集するプラグインより先に定義してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-transformer-remark'</span><span class="p">,</span>
+    <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">'gatsby-remark-graphviz'</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">],</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-3" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-3"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>マークダウンで下記のように言語を<code>dot</code>としてコードブロックを記述します。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+```dot
+digraph graphname {
+  a -&gt; b;
+  b -&gt; c;
+  a -&gt; c;
+}
+```
+</pre></div></div>
+
+<p>すると下記のように表示されます。</p>
+
+<p><a href="https://camo.qiitausercontent.com/a2b30c9c36ba82e0bbc0728ee541daa180c30f07/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34363931373735662d343735302d383263312d306664312d6638623932343032623139662e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/a2b30c9c36ba82e0bbc0728ee541daa180c30f07/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34363931373735662d343735302d383263312d306664312d6638623932343032623139662e706e67" alt="スクリーンショット 2018-10-22 23.26.08.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/4691775f-4750-82c1-0fd1-f8b92402b19f.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-katex" class="fragment"></span><a href="#gatsby-remark-katex"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-katex" rel="nofollow noopener" target="_blank">gatsby-remark-katex</a>
+</h3>
+
+<p><strong>マークダウンで数式が使えるようにする</strong><br></p>
+
+<h4>
+<span id="設定-5" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-5"><i class="fa fa-link"></i></a>設定</h4>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-transformer-remark'</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">`gatsby-remark-katex`</span><span class="p">,</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+</pre></div>
+</div>
+
+<p><br><br>
+追加でCSSをテンプレートで読み込んでください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">テンプレート</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="s1">'katex/dist/katex.min.css'</span><span class="p">;</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-4" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-4"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>方程式を '$'で囲みます。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$
+</pre></div></div>
+
+<p>すると下記のように表示されます。</p>
+
+<p><a href="https://camo.qiitausercontent.com/b3424fcce7aadcffa5675ed4a549f65fbd639dca/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37626364643737352d313633332d623835372d303963622d3338626632393238363663362e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/b3424fcce7aadcffa5675ed4a549f65fbd639dca/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37626364643737352d313633332d623835372d303963622d3338626632393238363663362e706e67" alt="スクリーンショット 2018-10-22 23.29.41.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/7bcdd775-1633-b857-09cb-38bf292866c6.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-embed-snippet" class="fragment"></span><a href="#gatsby-remark-embed-snippet"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-embed-snippet" rel="nofollow noopener" target="_blank">gatsby-remark-embed-snippet</a>
+</h3>
+
+<p><strong>マークダウンでJavaSriptファイルなどを読み込んでコードブロックに埋め込む</strong><br></p>
+
+<h4>
+<span id="設定-6" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-6"><i class="fa fa-link"></i></a>設定</h4>
+
+<p><code>directory</code>は読み込み対象資産のフォルダを指定します。<br><br>
+必ず<code>gatsby-remark-prismjs</code>より前に指定してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">"gatsby-remark-embed-snippet"</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">classPrefix</span><span class="p">:</span> <span class="s2">"language-"</span><span class="p">,</span>
+              <span class="na">directory</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">__dirname</span><span class="p">}</span><span class="s2">/examples/`</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-prismjs`</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">classPrefix</span><span class="p">:</span> <span class="s2">"language-"</span><span class="p">,</span>
+              <span class="na">inlineCodeMarker</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+              <span class="na">aliases</span><span class="p">:</span> <span class="p">{},</span>
+              <span class="na">showLineNumbers</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-5" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-5"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>マークダウンで`embed:設定で指定したディレクトリからの相対パス`のように指定します。<br>
+指定行を強調したい場合は、読み込み対象ファイルにコメントで記述します。</p>
+
+<h4>
+<span id="javascriptファイルの場合" class="fragment"></span><a href="#javascript%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>JavaScriptファイルの場合</h4>
+
+<h5>
+<span id="読み込み対象ファイル" class="fragment"></span><a href="#%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E5%AF%BE%E8%B1%A1%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB"><i class="fa fa-link"></i></a>読み込み対象ファイル</h5>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">examples/2018/10/21/sample.js</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s2">"react"</span>
+<span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="s2">"react-dom"</span>
+
+<span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">"Brian"</span>
+
+<span class="c1">// highlight-range{2-3}</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1&gt;&lt;/</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"root"</span><span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+
+<h5>
+<span id="マークダウン記述" class="fragment"></span><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%98%E8%BF%B0"><i class="fa fa-link"></i></a>マークダウン記述</h5>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+`embed:2018/10/21/sample.js`
+</pre></div></div>
+
+<h5>
+<span id="表示結果" class="fragment"></span><a href="#%E8%A1%A8%E7%A4%BA%E7%B5%90%E6%9E%9C"><i class="fa fa-link"></i></a>表示結果</h5>
+
+<p><a href="https://camo.qiitausercontent.com/3486057ab9d26988c899775bc9321081cd52bf7f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f38316131383861352d376161352d333766372d336563652d3336663130303136386630372e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/3486057ab9d26988c899775bc9321081cd52bf7f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f38316131383861352d376161352d333766372d336563652d3336663130303136386630372e706e67" alt="スクリーンショット 2018-10-22 23.31.18.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/81a188a5-7aa5-37f7-3ece-36f100168f07.png"></a></p>
+
+<h4>
+<span id="cssファイルの場合" class="fragment"></span><a href="#css%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>CSSファイルの場合</h4>
+
+<h5>
+<span id="読み込み対象ファイル-1" class="fragment"></span><a href="#%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E5%AF%BE%E8%B1%A1%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-1"><i class="fa fa-link"></i></a>読み込み対象ファイル</h5>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">examples/2018/10/21/sample.css</span></div>
+<div class="highlight"><pre><span class="nx">html</span> <span class="p">{</span>
+  <span class="cm">/* highlight-range{1-2} */</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span> <span class="p">{</span>
+  <span class="nx">box</span><span class="o">-</span><span class="na">sizing</span><span class="p">:</span> <span class="nx">border</span><span class="o">-</span><span class="nx">box</span><span class="p">;</span> <span class="cm">/* highlight-line */</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<h5>
+<span id="マークダウン記述-1" class="fragment"></span><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%98%E8%BF%B0-1"><i class="fa fa-link"></i></a>マークダウン記述</h5>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+`embed:2018/10/21/sample.css`
+</pre></div></div>
+
+<h5>
+<span id="表示結果-1" class="fragment"></span><a href="#%E8%A1%A8%E7%A4%BA%E7%B5%90%E6%9E%9C-1"><i class="fa fa-link"></i></a>表示結果</h5>
+
+<p><a href="https://camo.qiitausercontent.com/a51f4e283b1a709b07e92ee2f3ca454126dddea7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35653664393538392d366166632d633761312d653435382d3362323439623861303737362e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/a51f4e283b1a709b07e92ee2f3ca454126dddea7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35653664393538392d366166632d633761312d653435382d3362323439623861303737362e706e67" alt="スクリーンショット 2018-10-22 23.31.26.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5e6d9589-6afc-c7a1-e458-3b249b8a0776.png"></a></p>
+
+<h4>
+<span id="htmlファイルの場合" class="fragment"></span><a href="#html%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>HTMLファイルの場合</h4>
+
+<h5>
+<span id="読み込み対象ファイル-2" class="fragment"></span><a href="#%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E5%AF%BE%E8%B1%A1%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-2"><i class="fa fa-link"></i></a>読み込み対象ファイル</h5>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">examples/2018/10/21/sample.html</span></div>
+<div class="highlight"><pre><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>highlight me<span class="nt">&lt;/h1&gt;</span> <span class="c">&lt;!-- highlight-line --&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      <span class="c">&lt;!-- highlight-next-line --&gt;</span>
+      And me
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+
+<h5>
+<span id="マークダウン記述-2" class="fragment"></span><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%98%E8%BF%B0-2"><i class="fa fa-link"></i></a>マークダウン記述</h5>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+`embed:2018/10/21/sample.html`
+</pre></div></div>
+
+<h5>
+<span id="表示結果-2" class="fragment"></span><a href="#%E8%A1%A8%E7%A4%BA%E7%B5%90%E6%9E%9C-2"><i class="fa fa-link"></i></a>表示結果</h5>
+
+<p><a href="https://camo.qiitausercontent.com/2515a8804b1cf6e4e8913ee61154356d7f59ce0d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39313761623834642d633130382d663466382d326661362d3432663931303032626633632e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/2515a8804b1cf6e4e8913ee61154356d7f59ce0d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39313761623834642d633130382d663466382d326661362d3432663931303032626633632e706e67" alt="スクリーンショット 2018-10-22 23.31.35.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/917ab84d-c108-f4f8-2fa6-42f91002bf3c.png"></a></p>
+
+<h4>
+<span id="yamlの場合" class="fragment"></span><a href="#yaml%E3%81%AE%E5%A0%B4%E5%90%88"><i class="fa fa-link"></i></a>YAMLの場合</h4>
+
+<h5>
+<span id="読み込み対象ファイル-3" class="fragment"></span><a href="#%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E5%AF%BE%E8%B1%A1%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-3"><i class="fa fa-link"></i></a>読み込み対象ファイル</h5>
+
+<div class="code-frame" data-lang="yaml">
+<div class="code-lang"><span class="bold">examples/2018/10/21/sample.yaml</span></div>
+<div class="highlight"><pre><span class="na">foo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">highlighted"</span> <span class="c1"># highlight-line</span>
+<span class="na">bar</span><span class="pi">:</span> <span class="s2">"</span><span class="s">not</span><span class="nv"> </span><span class="s">highlighted"</span>
+<span class="c1"># highlight-range{1-2}</span>
+<span class="na">baz</span><span class="pi">:</span> <span class="s2">"</span><span class="s">highlighted"</span>
+<span class="na">quz</span><span class="pi">:</span> <span class="s2">"</span><span class="s">highlighted"</span>
+</pre></div>
+</div>
+
+<h5>
+<span id="マークダウン記述-3" class="fragment"></span><a href="#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%98%E8%BF%B0-3"><i class="fa fa-link"></i></a>マークダウン記述</h5>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>
+`embed:2018/10/21/sample.yaml`
+</pre></div></div>
+
+<h5>
+<span id="表示結果-3" class="fragment"></span><a href="#%E8%A1%A8%E7%A4%BA%E7%B5%90%E6%9E%9C-3"><i class="fa fa-link"></i></a>表示結果</h5>
+
+<p><a href="https://camo.qiitausercontent.com/1daa769151a85e6c6800f7c02ecd3051387eaf5d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63633830613530352d653633652d663862322d313833352d3465646664643832643339622e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/1daa769151a85e6c6800f7c02ecd3051387eaf5d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63633830613530352d653633652d663862322d313833352d3465646664643832643339622e706e67" alt="スクリーンショット 2018-10-22 23.31.44.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/cc80a505-e63e-f8b2-1835-4edfdd82d39b.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-copy-linked-files" class="fragment"></span><a href="#gatsby-remark-copy-linked-files"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-copy-linked-files" rel="nofollow noopener" target="_blank">gatsby-remark-copy-linked-files</a>
+</h3>
+
+<p><strong>マークダウンのリンクや画像で使われているPDFや動画などをビルド時にpublicフォルダにコピーする</strong></p>
+
+<h4>
+<span id="設定-7" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-7"><i class="fa fa-link"></i></a>設定</h4>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span><span class="s2">"gatsby-remark-copy-linked-files"</span><span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br><br>
+コピー先をpublic以外にしたい場合はオプションを指定します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-remark-copy-linked-files'</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">destinationDir</span><span class="p">:</span> <span class="s1">'path/to/dir'</span><span class="p">,</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>コピー対象外ファイル指定することもできます。その場合は<code>ignoreFileExtensions</code>を設定します。<br>
+このプロパティは<code>["png", "jpg", "jpeg", "bmp", "tiff"]</code>がデフォルトです。<br>
+というのも、これらのファイルはgatsby-remark-imagesを使って自動的にレスポンシブな画像が生成されることを前提にしているからです。<br>
+もしgatsby-remark-imagesを使わずにpublicファイルへの単純コピーにしたい場合は下記のようにします。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">"gatsby-remark-copy-linked-files"</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">ignoreFileExtensions</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-images" class="fragment"></span><a href="#gatsby-remark-images"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-images" rel="nofollow noopener" target="_blank">gatsby-remark-images</a>
+</h3>
+
+<p><strong>マークダウンで画像をスマートに表示できるようにする</strong><br></p>
+
+<ul>
+<li>画像ロード後にレイアウトがガタっとずれないように、画像の大きさ分の空要素を確保しておく</li>
+<li>ブラウザ幅別に画像を生成し<code>img</code>タグの<code>srcset</code>属性と<code>sizes</code>属性を設定します</li>
+<li>画像を20px幅に小さくしたものを、画像ロード中にプレースホルダーとして表示します。これはMediumとFacebookで使われているテクニックです。</li>
+</ul>
+
+<h4>
+<span id="設定使い方" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p><code>gatsby-remark-images</code>、<code>gatsby-plugin-sharp</code>とあわせて使いましょう。<br>
+オプションに指定したmaxWidthにあわせて、プラグインがいい感じの色々サイズの画像を複数生成してくれます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">`gatsby-plugin-sharp`</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-transformer-remark`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-remark-images`</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">maxWidth</span><span class="p">:</span> <span class="mi">590</span><span class="p">,</span>
+            <span class="p">},</span>
+          <span class="p">},</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-responsive-iframe" class="fragment"></span><a href="#gatsby-remark-responsive-iframe"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-responsive-iframe" rel="nofollow noopener" target="_blank">gatsby-remark-responsive-iframe</a>
+</h3>
+
+<p><strong>マークダウンでiframeタグを縦横比固定でレスポンシブにする</strong></p>
+
+<h4>
+<span id="使い方-6" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-6"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p><code>gatsby-config.js</code>の設定は特に変わったところはありません。<br>
+ただし縦横比を明確にするためマークダウン中のiframeにはwidthとheigth属性を必ず指定してください。</p>
+
+<div class="code-frame" data-lang="markdown">
+<div class="code-lang"><span class="bold">マークダウンサンプル</span></div>
+<div class="highlight"><pre>This is a beautiful iframe:
+
+<span class="nt">&lt;iframe</span> <span class="na">url=</span><span class="s">"http://www.example.com/"</span> <span class="na">width=</span><span class="s">"600"</span> <span class="na">height=</span><span class="s">"400"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-remark-embed-youtube" class="fragment"></span><a href="#gatsby-remark-embed-youtube"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube" rel="nofollow noopener" target="_blank">gatsby-remark-embed-youtube</a>
+</h3>
+
+<p><strong>マークダウンでYoutubeを埋め込めるようにする</strong></p>
+
+<h4>
+<span id="設定-8" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-8"><i class="fa fa-link"></i></a>設定</h4>
+
+<p>オプションに高さと幅を指定できます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">"gatsby-transformer-remark"</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="na">resolve</span><span class="p">:</span> <span class="s2">"gatsby-remark-embed-youtube"</span><span class="p">,</span>
+            <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">width</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span>
+              <span class="na">height</span><span class="p">:</span> <span class="mi">400</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>一注意があって、<code>gatsby-remark-responsive-iframe</code>をあわせて使う場合は必ずその前に定義してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>        <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">"gatsby-remark-embed-youtube"</span><span class="p">,</span>
+          <span class="s2">"gatsby-remark-responsive-iframe"</span>
+        <span class="p">]</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-7" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-7"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>マークダウンで下記のように記載します。URLの最後(embed/2Xc9gXyf2G4)は動画のIDです。</p>
+
+<div class="code-frame" data-lang="markdown">
+<div class="code-lang"><span class="bold">マークダウンサンプル</span></div>
+<div class="highlight"><pre><span class="gh"># Look at this Video:</span>
+
+<span class="sb">`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/bdf5225f67f4609dd5da770513fd53e2de4e9bc5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30613937336438662d323234652d633433322d613539612d6462636431373063393965662e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/bdf5225f67f4609dd5da770513fd53e2de4e9bc5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f30613937336438662d323234652d633433322d613539612d6462636431373063393965662e706e67" alt="スクリーンショット 2018-10-22 23.37.20.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/0a973d8f-224e-c432-a59a-dbcd170c99ef.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-twitter" class="fragment"></span><a href="#gatsby-plugin-twitter"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-twitter" rel="nofollow noopener" target="_blank">gatsby-plugin-twitter</a>
+</h3>
+
+<p><strong>マークダウンでTwitterの埋め込み用スクリプトを記述できるようにする</strong><br></p>
+
+<p>こちらのプラグインもう少しスマートになってほしいです（ちょっとめんどくさいです）。<br>
+使い方は<a href="https://takumon.com/2018/10/07/#twitter" rel="nofollow noopener" target="_blank">GatsbyでYouTubeとTwitter埋め込み | Takumon Blog</a>を参照してください。</p>
+
+<h4>
+<span id="使い方-8" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-8"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>マークダウンには下記のように記載します。</p>
+
+<div class="code-frame" data-lang="html"><div class="highlight"><pre><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"twitter-tweet"</span> <span class="na">data-lang=</span><span class="s">"ja"</span><span class="nt">&gt;&lt;p</span> <span class="na">lang=</span><span class="s">"ja"</span> <span class="na">dir=</span><span class="s">"ltr"</span><span class="nt">&gt;</span>最近忙しかったのでアレですが、ブログ更新しました。<span class="nt">&lt;br&gt;&lt;br&gt;</span>Reactで構造化データマークアップ（JSON-LD対応） <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://t.co/7V49VqH9WI"</span><span class="nt">&gt;</span>https://t.co/7V49VqH9WI<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/inouetakumon?ref_src=twsrc%5Etfw"</span><span class="nt">&gt;</span>@inouetakumon<span class="nt">&lt;/a&gt;</span>さんから<span class="nt">&lt;/p&gt;</span><span class="ni">&amp;mdash;</span> takumontakumon (@inouetakumon) <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/inouetakumon/status/1046062825037344770?ref_src=twsrc%5Etfw"</span><span class="nt">&gt;</span>2018年9月29日<span class="nt">&lt;/a&gt;&lt;/blockquote&gt;</span>
+</pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>表示結果</li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/e37c0ae7a0ae7fde08f8930aeac32399ffbe8a07/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64646632623963322d626537652d656166322d333139342d6464306633343663346561302e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/e37c0ae7a0ae7fde08f8930aeac32399ffbe8a07/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f64646632623963322d626537652d656166322d333139342d6464306633343663346561302e706e67" alt="スクリーンショット 2018-10-22 23.37.27.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/ddf2b9c2-be7e-eaf2-3194-dd0f346c4ea0.png"></a></p>
+
+<h2>
+<span id="seo系" class="fragment"></span><a href="#seo%E7%B3%BB"><i class="fa fa-link"></i></a>SEO系</h2>
+
+<h3>
+<span id="gatsby-plugin-react-helmet" class="fragment"></span><a href="#gatsby-plugin-react-helmet"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet" rel="nofollow noopener" target="_blank">gatsby-plugin-react-helmet</a>
+</h3>
+
+<p><strong>React HelmetをGatsbyビルド時使えるようにする</strong><br></p>
+
+<ul>
+<li>実用例は過去記事<a href="https://takumon.com/09/29" rel="nofollow noopener" target="_blank">Reactで構造化データマークアップ（JSON-LD対応)</a>を参照してください。</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-offline" class="fragment"></span><a href="#gatsby-plugin-offline"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-offline" rel="nofollow noopener" target="_blank">gatsby-plugin-offline</a>
+</h3>
+
+<p><strong>低速ネットワーク環境やオフライン環境でもWebサイトをスムーズに見れるようにする</strong><br></p>
+
+<ul>
+<li>ビルド時にサービスワーカーを生成してくれます。</li>
+<li>
+<code>gatsby-plugin-manifest</code>との併用推奨です。</li>
+<li>このプラグインは<a href="https://developers.google.com/web/tools/workbox/modules/workbox-build" rel="nofollow noopener" target="_blank">Workbox</a>の設定を従っており、必要に応じて<code>gatsby-config.js</code>で上書くという感じです。Workboxは宣言的な記述だけで最適なServiceWorkerのコードが生成できるライブラリで、下記にわかりやすく書かれていました。
+
+<ul>
+<li>参考：<a href="https://qiita.com/nazonohito51/items/32b61cabdac8b24769bd" id="reference-bbd2f54e9203f459a89c">ServiceWorkerを簡単に書けるworkbox-swの使い方 | Qiita</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-manifest" class="fragment"></span><a href="#gatsby-plugin-manifest"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-manifest" rel="nofollow noopener" target="_blank">gatsby-plugin-manifest</a>
+</h3>
+
+<p><strong>アプリをPWA対応にする（manifest.webmanifestを生成する）</strong><br></p>
+
+<ul>
+<li>サイトに<code>manifest.webmanifest</code>を配置することで、スマホでブログを見たときに、ネイティブアプリのようなUXを実現できます。</li>
+<li>
+<code>gatsby-plugin-offline</code>との併用推奨です。</li>
+<li>詳細は<a href="https://takumon.com/2018/10/08/#gatsby-plugin-manifest%E3%81%AE%E8%A8%AD%E5%AE%9A" rel="nofollow noopener" target="_blank">GatsbyでPWA対応 |Takumon Blog</a>を参照してください。</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-sitemap" class="fragment"></span><a href="#gatsby-plugin-sitemap"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap" rel="nofollow noopener" target="_blank">gatsby-plugin-sitemap</a>
+</h3>
+
+<p><strong>サイトマップを生成する</strong><br></p>
+
+<h4>
+<span id="設定使い方-1" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-1"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>プラグインで<a href="https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-sitemap/src/internals.js#L34" rel="nofollow noopener" target="_blank">いい感じの設定</a>があらかじめされているので、最低限設定するならsiteUrlを指定するだけです。個別にオプションを設定する場合は、<a href="https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-sitemap/src/internals.js#L34" rel="nofollow noopener" target="_blank">いい感じの設定</a>を参考にしましょう。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">siteMetadata</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">siteUrl</span><span class="p">:</span> <span class="s2">`https://www.example.com`</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span><span class="s2">`gatsby-plugin-sitemap`</span><span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>これだけで下記のようなサイトマップが生成できます。</p>
+
+<div class="code-frame" data-lang="xml"><div class="highlight"><pre><span class="nt">&lt;urlset</span>
+  <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span>
+  <span class="na">xmlns:news=</span><span class="s">"http://www.google.com/schemas/sitemap-news/0.9"</span>
+  <span class="na">xmlns:xhtml=</span><span class="s">"http://www.w3.org/1999/xhtml"</span>
+  <span class="na">xmlns:mobile=</span><span class="s">"http://www.google.com/schemas/sitemap-mobile/1.0"</span>
+  <span class="na">xmlns:image=</span><span class="s">"http://www.google.com/schemas/sitemap-image/1.1"</span>
+  <span class="na">xmlns:video=</span><span class="s">"http://www.google.com/schemas/sitemap-video/1.1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;url&gt;</span>
+    <span class="nt">&lt;loc&gt;</span>https://takumon.com//2018/10/14/<span class="nt">&lt;/loc&gt;</span>
+    <span class="nt">&lt;changefreq&gt;</span>daily<span class="nt">&lt;/changefreq&gt;</span>
+    <span class="nt">&lt;priority&gt;</span>0.7<span class="nt">&lt;/priority&gt;</span>
+  <span class="nt">&lt;/url&gt;</span>
+  <span class="nt">&lt;url&gt;</span>
+    <span class="nt">&lt;loc&gt;</span>https://takumon.com//2018/10/12/<span class="nt">&lt;/loc&gt;</span>
+    <span class="nt">&lt;changefreq&gt;</span>daily<span class="nt">&lt;/changefreq&gt;</span>
+    <span class="nt">&lt;priority&gt;</span>0.7<span class="nt">&lt;/priority&gt;</span>
+  <span class="nt">&lt;/url&gt;</span>
+  <span class="nt">&lt;url&gt;</span>
+    <span class="nt">&lt;loc&gt;</span>https://takumon.com//2018/10/08/<span class="nt">&lt;/loc&gt;</span>
+    <span class="nt">&lt;changefreq&gt;</span>daily<span class="nt">&lt;/changefreq&gt;</span>
+    <span class="nt">&lt;priority&gt;</span>0.7<span class="nt">&lt;/priority&gt;</span>
+  <span class="nt">&lt;/url&gt;</span>
+  <span class="c">&lt;!-- ・・・ --&gt;</span>
+  <span class="c">&lt;!-- Webサイト上の全てのURL定義 --&gt;</span>
+  <span class="c">&lt;!-- ・・・ --&gt;</span>
+<span class="nt">&lt;/urlset&gt;</span>
+</pre></div></div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-canonical-urls" class="fragment"></span><a href="#gatsby-plugin-canonical-urls"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-canonical-urls" rel="nofollow noopener" target="_blank">gatsby-plugin-canonical-urls</a>
+</h3>
+
+<p><strong>canonical linksを追加する</strong><br><br>
+* canonical linksは検索エンジンに対して、プロコトルが違ったりクエリストリングがついていても同一のサイトのURLだということを宣言するためのリンクです。</p>
+
+<h4>
+<span id="設定使い方-2" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-2"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>オプションとしてsiteUrlを指定します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-canonical-urls`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">siteUrl</span><span class="p">:</span> <span class="s2">`https://www.example.com`</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br><br>
+すると下記リンクタグがHTML内に埋め込まれます。</p>
+
+<div class="code-frame" data-lang="html"><div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"canonical"</span> <span class="na">href=</span><span class="s">"http://www.example.com/about-us/"</span> <span class="nt">/&gt;</span>
+</pre></div></div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-feed" class="fragment"></span><a href="#gatsby-plugin-feed"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-feed" rel="nofollow noopener" target="_blank">gatsby-plugin-feed</a>
+</h3>
+
+<p><strong>RSSフィードを作る</strong></p>
+
+<h4>
+<span id="設定-9" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-9"><i class="fa fa-link"></i></a>設定</h4>
+
+<p><code>gatsby-config.js</code>でsiteMetadataを設定しプラグインを定義するだけでOKです。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">siteMetadata</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">title</span><span class="p">:</span> <span class="s2">`GatsbyJS`</span><span class="p">,</span>
+    <span class="nx">description</span><span class="p">:</span> <span class="s2">`Blazing fast modern site generator for React`</span><span class="p">,</span>
+    <span class="nx">siteUrl</span><span class="p">:</span> <span class="s2">`https://www.gatsbyjs.org`</span>
+  <span class="p">},</span>
+  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-feed`</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br><br>
+このプラグインを使うと、ビルドでpublic配下にrss.xmlが生成されます。<br>
+自分の場合はFeedlyの登録ボタンと、rss.xmlへのリンクをブログのトップに設けています。</p>
+
+<p><a href="https://camo.qiitausercontent.com/bcafb7ebbe215d5b7bfd9cd3044c8eaee099e6ec/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37383238636236322d653366642d386364382d656235392d3961346437373231356133342e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/bcafb7ebbe215d5b7bfd9cd3044c8eaee099e6ec/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f37383238636236322d653366642d386364382d656235392d3961346437373231356133342e706e67" alt="rssfeed.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/7828cb62-e3fd-8cd8-eb59-9a4d77215a34.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-robots-txt" class="fragment"></span><a href="#gatsby-plugin-robots-txt"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt" rel="nofollow noopener" target="_blank">gatsby-plugin-robots-txt</a>
+</h3>
+
+<p><strong><code>robots.txt</code>を生成する</strong><br></p>
+
+<ul>
+<li>robots.txtは検索エンジンのクロールを最適化するためのテキストファイルです。SEO対策に使われます。</li>
+</ul>
+
+<h4>
+<span id="設定使い方-3" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-3"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>オプションでホストURLやサイトマップを指定できます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-plugin-robots-txt'</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">host</span><span class="p">:</span> <span class="s1">'https://www.example.com'</span><span class="p">,</span>
+        <span class="na">sitemap</span><span class="p">:</span> <span class="s1">'https://www.example.com/sitemap.xml'</span><span class="p">,</span>
+        <span class="na">policy</span><span class="p">:</span> <span class="p">[{</span> <span class="na">userAgent</span><span class="p">:</span> <span class="s1">'*'</span><span class="p">,</span> <span class="na">allow</span><span class="p">:</span> <span class="s1">'/'</span> <span class="p">}]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>Netlfyで<a href="https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/" rel="nofollow noopener" target="_blank">Deploy Preview機能</a>を使うなら下記のような設定にします。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="kd">const</span> <span class="p">{</span>
+  <span class="nx">NODE_ENV</span><span class="p">,</span>
+  <span class="na">URL</span><span class="p">:</span> <span class="nx">NETLIFY_SITE_URL</span> <span class="o">=</span> <span class="s1">'https://www.example.com'</span><span class="p">,</span>
+  <span class="na">DEPLOY_PRIME_URL</span><span class="p">:</span> <span class="nx">NETLIFY_DEPLOY_URL</span> <span class="o">=</span> <span class="nx">NETLIFY_SITE_URL</span><span class="p">,</span>
+  <span class="na">CONTEXT</span><span class="p">:</span> <span class="nx">NETLIFY_ENV</span> <span class="o">=</span> <span class="nx">NODE_ENV</span>
+<span class="p">}</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">isNetlifyProduction</span> <span class="o">=</span> <span class="nx">NETLIFY_ENV</span> <span class="o">===</span> <span class="s1">'production'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">siteUrl</span> <span class="o">=</span> <span class="nx">isNetlifyProduction</span> <span class="p">?</span> <span class="nx">NETLIFY_SITE_URL</span> <span class="p">:</span> <span class="nx">NETLIFY_DEPLOY_URL</span><span class="p">;</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">siteMetadata</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nx">siteUrl</span>
+  <span class="p">},</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s1">'gatsby-plugin-robots-txt'</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">resolveEnv</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">NETLIFY_ENV</span><span class="p">,</span>
+        <span class="na">env</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">production</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">policy</span><span class="p">:</span> <span class="p">[{</span> <span class="na">userAgent</span><span class="p">:</span> <span class="s1">'*'</span> <span class="p">}]</span>
+          <span class="p">},</span>
+          <span class="s1">'branch-deploy'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">policy</span><span class="p">:</span> <span class="p">[{</span> <span class="na">userAgent</span><span class="p">:</span> <span class="s1">'*'</span><span class="p">,</span> <span class="na">disallow</span><span class="p">:</span> <span class="p">[</span><span class="s1">'/'</span><span class="p">]</span> <span class="p">}],</span>
+            <span class="na">sitemap</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="na">host</span><span class="p">:</span> <span class="kc">null</span>
+          <span class="p">},</span>
+          <span class="s1">'deploy-preview'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">policy</span><span class="p">:</span> <span class="p">[{</span> <span class="na">userAgent</span><span class="p">:</span> <span class="s1">'*'</span><span class="p">,</span> <span class="na">disallow</span><span class="p">:</span> <span class="p">[</span><span class="s1">'/'</span><span class="p">]</span> <span class="p">}],</span>
+            <span class="na">sitemap</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="na">host</span><span class="p">:</span> <span class="kc">null</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>オプションを指定しない場合は、siteMetadataにsiteUrlを指定します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">siteMetadata</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">siteUrl</span><span class="p">:</span> <span class="s1">'https://www.example.com'</span>
+  <span class="p">},</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span><span class="s1">'gatsby-plugin-robots-txt'</span><span class="p">]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>ビルドするとpublicフォルダ配下に<code>robot.txt</code>が生成されます。</p>
+
+<div class="code-frame" data-lang="txt">
+<div class="code-lang"><span class="bold">robot.txtの例</span></div>
+<div class="highlight"><pre>User-agent: *
+Disallow:
+Sitemap: https://takumon.com/sitemap.xml
+</pre></div>
+</div>
+
+<h2>
+<span id="開補補助系" class="fragment"></span><a href="#%E9%96%8B%E8%A3%9C%E8%A3%9C%E5%8A%A9%E7%B3%BB"><i class="fa fa-link"></i></a>開補補助系</h2>
+
+<h3>
+<span id="gatsby-plugin-lodash" class="fragment"></span><a href="#gatsby-plugin-lodash"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-lodash" rel="nofollow noopener" target="_blank">gatsby-plugin-lodash</a>
+</h3>
+
+<p><strong>ビルド時のlodashのサイズを小さくする</strong><br></p>
+
+<h4>
+<span id="設定使い方-4" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-4"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>入れるだけでもサイズを削減できますが、オプションで削除対象モジュールを指定してさらに削減可能です。<br>
+※削除対象モジュールは<a href="https://github.com/lodash/lodash-webpack-plugin#feature-sets" rel="nofollow noopener" target="_blank">ここ</a>から選択してください。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-lodash`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">disabledFeatures</span><span class="p">:</span> <span class="p">[</span>
+          <span class="s2">`shorthands`</span><span class="p">,</span>
+          <span class="s2">`cloning`</span>
+        <span class="p">],</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-webpack-bundle-analyzer" class="fragment"></span><a href="#gatsby-plugin-webpack-bundle-analyzer"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-webpack-bundle-analyzer" rel="nofollow noopener" target="_blank">gatsby-plugin-webpack-bundle-analyzer</a>
+</h3>
+
+<p><strong><a href="https://github.com/webpack-contrib/webpack-bundle-analyzer" rel="nofollow noopener" target="_blank">webpack-bundle-analyzer</a>を使ってbundle.jsの中身のサイズを可視化する</strong><br><br>
+* webpack-bundle-analyzerはパフォーマンスチューニングでbundle.jsのサイズを減らそうと思ったときに便利なライブラリです。ライブラリorコンポーネント毎にサイズをグラフィカルに示してくれます。</p>
+
+<h3>
+<span id="設定-10" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-10"><i class="fa fa-link"></i></a>設定</h3>
+
+<p>このプラグインは内部webpack-bundle-analyzerというライブラリを使っており、<br>
+<a href="https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin" rel="nofollow noopener" target="_blank">webpack-bundle-analyzerのオプション</a>なら何でも指定できます。<br></p>
+
+<p>デフォルトだと<code>gatsby develop</code>するたびにブラウザが開くので、<br>
+それがいやなら下記のようにすると良いでしょう。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>    <span class="p">{</span>
+      <span class="nl">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-webpack-bundle-analyzer`</span><span class="p">,</span>
+      <span class="nx">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nl">openAnalyzer</span><span class="p">:</span> <span class="kc">false</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="使い方-9" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-9"><i class="fa fa-link"></i></a>使い方</h3>
+
+<p><code>gatsby develop</code>して<code>http://localhost:8888</code>にアクセスします。<br>
+すると下記のようにコンポーネント毎のサイズをグラフィカルに示してくれます。</p>
+
+<p><a href="https://camo.qiitausercontent.com/f38171316c68e9c327486036add3ef875f39063a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63623365336136322d356563642d323861332d373832312d3164336364343666616164342e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/f38171316c68e9c327486036add3ef875f39063a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f63623365336136322d356563642d323861332d373832312d3164336364343666616164342e706e67" alt="bundlesize.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/cb3e3a62-5ecd-28a3-7821-1d3cd46faad4.png"></a></p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-google-analytics" class="fragment"></span><a href="#gatsby-plugin-google-analytics"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics" rel="nofollow noopener" target="_blank">gatsby-plugin-google-analytics</a>
+</h3>
+
+<p><strong><a href="https://analytics.google.com/analytics/web/" rel="nofollow noopener" target="_blank">Google Analytics</a>を使えるようにする</strong><br></p>
+
+<h4>
+<span id="設定使い方-5" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-5"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p><code>gatsby-config.js</code>でトラッキングIDを設定するだけです。Google AnalyticsでトラッキングIDを発行して設定しましょう。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-google-analytics`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">trackingId</span><span class="p">:</span> <span class="s2">"YOUR_GOOGLE_ANALYTICS_TRACKING_ID"</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-facebook-analytics" class="fragment"></span><a href="#gatsby-plugin-facebook-analytics"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-facebook-analytics/" rel="nofollow noopener" target="_blank">gatsby-plugin-facebook-analytics</a>
+</h3>
+
+<p><strong><a href="https://developers.facebook.com/docs/analytics/?locale=ja_JP" rel="nofollow noopener" target="_blank">Facebook Analytics</a>を使えるようにする</strong><br></p>
+
+<h4>
+<span id="設定使い方-6" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-6"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-facebook-analytics`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">appId</span><span class="p">:</span> <span class="s2">"あなたのAPP ID"</span><span class="p">,</span>
+        <span class="c1">// 開発時も解析対象とするか</span>
+        <span class="c1">// デフォルトはfalseでプロダクションのみ解析対象とします</span>
+        <span class="na">includeInDevelopment</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="c1">// SDKのデバックバージョンを含めるか</span>
+        <span class="c1">// デフォルトはfalseでライブラリはsdk.jsをロードします。</span>
+        <span class="na">debug</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="c1">// 言語を指定。デフォルトはenglish</span>
+        <span class="na">language</span><span class="p">:</span> <span class="s2">"ja-jp"</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h2>
+<span id="ui系" class="fragment"></span><a href="#ui%E7%B3%BB"><i class="fa fa-link"></i></a>UI系</h2>
+
+<h3>
+<span id="gatsby-plugin-nprogress" class="fragment"></span><a href="#gatsby-plugin-nprogress"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-nprogress" rel="nofollow noopener" target="_blank">gatsby-plugin-nprogress</a>
+</h3>
+
+<p><strong>ローディングに時間がかかっている時にプログレスバーを表示する</strong><br><br>
+* <a href="http://ricostacruz.com/nprogress/" rel="nofollow noopener" target="_blank">NProgress</a>を使って、リンククリックから1秒たってもローディング中の場合にプログレスバーを表示します。</p>
+
+<h4>
+<span id="設定使い方-7" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-7"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>下記のように設定します。<code>color</code>でバーの色が変更可能です。<br>
+またオプションには<a href="https://github.com/rstacruz/nprogress#configuration" rel="nofollow noopener" target="_blank">NProgress</a>のオプションが全て指定できるようになっています。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-nprogress`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">color</span><span class="p">:</span> <span class="s2">`#444`</span><span class="p">,</span>
+        <span class="na">showSpinner</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-catch-links" class="fragment"></span><a href="#gatsby-plugin-catch-links"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links" rel="nofollow noopener" target="_blank">gatsby-plugin-catch-links</a>
+</h3>
+
+<p><strong>aタグでローカル遷移する時にリロードを抑止してヒストリーAPIで遷移できるようにする</strong></p>
+
+<p>GatsbyはSPAなのでローカル遷移はヒストリーAPIを使うべきで、リロードは避けたいところですが、<br>
+<code>&lt;a href="tags/react" &gt;ローカル遷移のリンク&lt;/a&gt;</code>のような<strong>a</strong>タグの場合、クリック時に（ブラウザのでフォルの挙動により）リロードしてしまいます。</p>
+
+<p>このプラグインを使えば、<strong>a</strong>タグの場合でもローカル遷移であればリロードを抑止し、ヒストリーAPIを使った遷移が可能です。<br>
+<a href="https://www.gatsbyjs.org/docs/gatsby-link/#programmatic-navigation" rel="nofollow noopener" target="_blank">Gatsby-Link</a>を使っていれば問題ないのですが、どうしても<strong>a</strong>タグしか使えない場合は、このプラグインが役立つでしょう。</p>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-layout" class="fragment"></span><a href="#gatsby-plugin-layout"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-layout" rel="nofollow noopener" target="_blank">gatsby-plugin-layout</a>
+</h3>
+
+<p><strong>1系のレイアウト機能を2系でも使えるようにする</strong><br></p>
+
+<ul>
+<li>1系から2系に移行したときに、レイアウト機能(2系では削除された機能)をそのまま使えるようにするために使います。</li>
+</ul>
+
+<h4>
+<span id="設定使い方-8" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-8"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p><code>gatsby-config.js</code>の設定は特に変わったところはありません。<br>
+レイアウト用ファイルは<code>src/layouts/index.js</code>を作成しましょう。</p>
+
+<h2>
+<span id="ファイル系" class="fragment"></span><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%B3%BB"><i class="fa fa-link"></i></a>ファイル系</h2>
+
+<p>JSON,XML,YAML,CSVのパースは使い方はほぼ一緒なのでまとめて説明します。</p>
+
+<ul>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-json" rel="nofollow noopener" target="_blank">gatsby-transformer-json</a>
+
+<ul>
+<li><strong>JSONファイルをパースする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-xml" rel="nofollow noopener" target="_blank">gatsby-transformer-xml</a>
+
+<ul>
+<li><strong>XMLファイルをパースする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-yaml" rel="nofollow noopener" target="_blank">gatsby-transformer-yaml</a>
+
+<ul>
+<li><strong>Yamlファイルをパースする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-csv" rel="nofollow noopener" target="_blank">gatsby-transformer-csv</a>
+
+<ul>
+<li><strong>CSVファイルをパースする</strong></li>
+</ul>
+</li>
+</ul>
+
+<p>これらはgatsby-source-filesystemとあわせて使います。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">`gatsby-transformer-json`</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-filesystem`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">path</span><span class="p">:</span> <span class="s2">`./src/data/`</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="gatsby-source-filesystem" class="fragment"></span><a href="#gatsby-source-filesystem"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-source-filesystem" rel="nofollow noopener" target="_blank">gatsby-source-filesystem</a>
+</h3>
+
+<p><strong>ファイルを読み取りGatsby上で扱えるFileノードを生成する</strong><br></p>
+
+<ul>
+<li>
+<code>transformer</code>プラグイン（ファイルノードをファイル形式毎に最適化したノードに変換するプラグイン）と併用します。例えば<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-json" rel="nofollow noopener" target="_blank">gatsby-transformer-json</a>はJSONファイルをJSONノードに変換し、<a href="https://www.gatsbyjs.org/packages/gatsby-transformer-remark/?=gatsby-transformer-remark" rel="nofollow noopener" target="_blank">gatsby-transformer-remark</a>はマークダウンファイルをMarkdownRemarkノードに変換します。</li>
+<li>※gatsby-starter-blogインストール済</li>
+</ul>
+
+<h3>
+<span id="設定方法使い方" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E4%BD%BF%E3%81%84%E6%96%B9"><i class="fa fa-link"></i></a>設定方法・使い方</h3>
+
+<ul>
+<li>
+<code>gatsby-config.js</code>では読み込み対象のフォルダパスを指定します。</li>
+</ul>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.js</span></div>
+<div class="highlight"><pre><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-filesystem`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">`pages`</span><span class="p">,</span>
+        <span class="na">path</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">__dirname</span><span class="p">}</span><span class="s2">/src/pages/`</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-filesystem`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">`data`</span><span class="p">,</span>
+        <span class="na">path</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">__dirname</span><span class="p">}</span><span class="s2">/src/data/`</span><span class="p">,</span>
+        <span class="na">ignore</span><span class="p">:</span> <span class="p">[</span><span class="s2">`**/\.*`</span><span class="p">],</span> <span class="c1">// ドット始まりのファイルは無視</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<ul>
+<li>読み取ったファイルノードはGraphQLで取得できます。</li>
+</ul>
+
+<div class="code-frame" data-lang="graphql"><div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="n">allFile</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">edges</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">node</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">extension</span><span class="w">
+        </span><span class="n">dir</span><span class="w">
+        </span><span class="n">modifiedTime</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>JavaScriptの関数 <code>createFilePath</code> を用意しています。実際<code>gatsby-config.js</code>ではマークダウン読み込みで使っています。</li>
+</ul>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.js</span></div>
+<div class="highlight"><pre><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateNode</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">actions</span><span class="p">,</span> <span class="nx">getNode</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">createNodeField</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">actions</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">internal</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="s2">`MarkdownRemark`</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">createFilePath</span><span class="p">({</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">getNode</span> <span class="p">})</span>
+    <span class="nx">createNodeField</span><span class="p">({</span>
+      <span class="na">name</span><span class="p">:</span> <span class="s2">`slug`</span><span class="p">,</span>
+      <span class="nx">node</span><span class="p">,</span>
+      <span class="nx">value</span><span class="p">,</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<ul>
+<li>同じく関数<code>createRemoteFileNode</code>を用意しています。こちらは名前の通り、リモートのファイル読み込みで使用します。</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-transformer-remark" class="fragment"></span><a href="#gatsby-transformer-remark"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-transformer-remark" rel="nofollow noopener" target="_blank">gatsby-transformer-remark</a>
+</h3>
+
+<p><strong>マークダウンファイルをパースする（MarkdownRemarkノードに変換する）</strong><br></p>
+
+<h4>
+<span id="使い方-10" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-10"><i class="fa fa-link"></i></a>使い方</h4>
+
+<ul>
+<li>MarkdownRemarkノードはGraphQLで取得可能です。</li>
+</ul>
+
+<div class="code-frame" data-lang="graphql"><div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="n">allMarkdownRemark</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">edges</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">node</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">html</span><span class="w">
+        </span><span class="n">headings</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="n">depth</span><span class="w">
+          </span><span class="n">value</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="n">frontmatter</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="n">title</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>目次も取得できます。目次のURLは<code>slug</code>ですが<code>pathToSlugField</code>でカスタム可能です。</li>
+</ul>
+
+<div class="code-frame" data-lang="graphql"><div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="n">allMarkdownRemark</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">edges</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">node</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">html</span><span class="w">
+        </span><span class="n">tableOfContents</span><span class="p">(</span><span class="n">pathToSlugField</span><span class="p">:</span><span class="w"> </span><span class="s2">"frontmatter.path"</span><span class="p">)</span><span class="w">
+        </span><span class="n">frontmatter</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="n">path</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div></div>
+
+<p><br></p>
+
+<ul>
+<li>要約も取得できます。デフォルト120文字ですが、<code>pruneLength</code>でカスタム可能です。</li>
+</ul>
+
+<div class="code-frame" data-lang="graphql"><div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="n">allMarkdownRemark</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">edges</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">node</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">html</span><span class="w">
+        </span><span class="n">excerpt</span><span class="p">(</span><span class="n">pruneLength</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">)</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div></div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-image" class="fragment"></span><a href="#gatsby-image"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-transformer-remark" rel="nofollow noopener" target="_blank">gatsby-image</a>
+</h3>
+
+<p><strong>画像読み込みを最適化する</strong></p>
+
+<ul>
+<li>gatsby-plugin-sharpと併せて使用します</li>
+<li>Webサイトにおいて画像読み込みの最適化はかなり手間がかかりますが、それをよしなりやってくれるのがこのプラグインです。GraphQLとSharpを使ったGatsbyのネイティブ画像処理機能とシームレスに連携するように設計されています。</li>
+</ul>
+
+<h4>
+<span id="設定使い方-9" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-9"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<ul>
+<li>
+<code>gatsby-plugin-sharp</code>、<code>gatsby-transformer-sharp</code>と一緒に使います。下記のように設定します。</li>
+</ul>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre><span class="kd">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">`path`</span><span class="p">)</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-filesystem`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">`images`</span><span class="p">,</span>
+        <span class="na">path</span><span class="p">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s2">`src`</span><span class="p">,</span> <span class="s2">`images`</span><span class="p">),</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s2">`gatsby-plugin-sharp`</span><span class="p">,</span>
+    <span class="s2">`gatsby-transformer-sharp`</span><span class="p">,</span>
+  <span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<ul>
+<li>実際使う場合はコンポーネント内でHTMLの<code>img</code>タグの代わりにgatsby-imageの<code>Img</code>タグを使います。</li>
+</ul>
+
+<div class="code-frame" data-lang="javascript"><div class="highlight"><pre><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s2">"react"</span>
+<span class="k">import</span> <span class="nx">Img</span> <span class="k">from</span> <span class="s2">"gatsby-image"</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="p">({</span> <span class="nx">data</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="nx">gatsby</span><span class="o">-</span><span class="nx">image</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="nx">Img</span> <span class="nx">fixed</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">childImageSharp</span><span class="p">.</span><span class="nx">fixed</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="p">)</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">query</span> <span class="o">=</span> <span class="nx">graphql</span><span class="s2">`
+  query {
+    file(relativePath: { eq: "blog/avatars/kyle-mathews.jpeg" }) {
+      childImageSharp {
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`</span>
+</pre></div></div>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-transformer-sharp" class="fragment"></span><a href="#gatsby-transformer-sharp"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-transformer-sharp" rel="nofollow noopener" target="_blank">gatsby-transformer-sharp</a>
+</h3>
+
+<p><strong>画像読み込みでImageSharpノードを生成する</strong><br></p>
+
+<ul>
+<li>
+<code>gatsby-plugin-sharp</code>と併用します。</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-plugin-sharp" class="fragment"></span><a href="#gatsby-plugin-sharp"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sharp" rel="nofollow noopener" target="_blank">gatsby-plugin-sharp</a>
+</h3>
+
+<p><strong><a href="https://github.com/lovell/sharp" rel="nofollow noopener" target="_blank">Sharp</a>(画像圧縮ライブラリ)を使えるようにする</strong><br></p>
+
+<ul>
+<li>Gatsbyエンドユーザーが使うというよりは、プラグインの一部で使う低レイヤーのプラグイン。</li>
+</ul>
+
+<h2>
+<span id="css系" class="fragment"></span><a href="#css%E7%B3%BB"><i class="fa fa-link"></i></a>CSS系</h2>
+
+<p>SASSやCSS in JSのライブラリ用のプラグインは一通り用意されています。<br>
+プラグインを入れるだけで簡単に使えるので設定や使い方は省略します。</p>
+
+<ul>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass" rel="nofollow noopener" target="_blank">gatsby-plugin-sass</a>
+
+<ul>
+<li><strong>GatsbyでSASS/SCSSを使えるようにする</strong></li>
+<li>
+<code>node-sass</code>をあわせてインストールしてください。</li>
+<li>CSS Moduleを使う場合、拡張子を<code>module.scss</code>、<code>module.sass</code>などとしてください。</li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components" rel="nofollow noopener" target="_blank">gatsby-plugin-styled-components</a>
+
+<ul>
+<li><strong><a href="https://github.com/styled-components/styled-components" rel="nofollow noopener" target="_blank">Styled Components</a>を使えるようにする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-plugin-glamor" rel="nofollow noopener" target="_blank">gatsby-plugin-glamor</a>
+
+<ul>
+<li><strong><a href="https://github.com/threepointone/glamor" rel="nofollow noopener" target="_blank">Glamor</a>と<a href="https://github.com/paypal/glamorous" rel="nofollow noopener" target="_blank">glamorous</a>を使えるようにする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-plugin-emotion/" rel="nofollow noopener" target="_blank">gatsby-plugin-emotion</a>
+
+<ul>
+<li><strong><a href="https://github.com/emotion-js/emotion" rel="nofollow noopener" target="_blank">Emotion</a>を使えるようにする</strong></li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-plugin-postcss" rel="nofollow noopener" target="_blank">gatsby-plugin-postcss</a>
+
+<ul>
+<li><strong><a href="https://postcss.org/" rel="nofollow noopener" target="_blank">PostCSS</a>が使えるようにする</strong></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<span id="gatsby-plugin-typography" class="fragment"></span><a href="#gatsby-plugin-typography"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-plugin-typography" rel="nofollow noopener" target="_blank">gatsby-plugin-typography</a>
+</h3>
+
+<p><strong><a href="https://kyleamathews.github.io/typography.js/" rel="nofollow noopener" target="_blank">Typography.js</a>(文章のスタイルを設定するライブラリ)を使えるようにする</strong><br><br>
+* Typography.jsはフォント、フォントサイズ、line-heigth等のパラメータを設定すると、それに従ってCSSを生成してくれるライブラリです。CSSよりも管理が楽になる上、様々なテーマが提供されているので、それを使って簡単にスタイルを設定できます。</p>
+
+<h4>
+<span id="設定使い方-10" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A%E4%BD%BF%E3%81%84%E6%96%B9-10"><i class="fa fa-link"></i></a>設定・使い方</h4>
+
+<p>スタイル指定用のJavaScriptを作成します。<br>
+テーマを使うと作成が楽です。どんなテーマがあるかは<a href="https://kyleamathews.github.io/typography.js/" rel="nofollow noopener" target="_blank">Typography.js</a>の右上にある<code>Pick theme</code>プルダウンで確認できます。お気に入りのテーマを選んで、npmインストールして使いましょう。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">src/utils/typography.js</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="nx">Typography</span> <span class="k">from</span> <span class="s2">"typography"</span>
+<span class="k">import</span> <span class="nx">grandViewTheme</span> <span class="k">from</span> <span class="s2">"typography-theme-grand-view"</span>
+
+<span class="kd">const</span> <span class="nx">typography</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Typography</span><span class="p">(</span><span class="nx">grandViewTheme</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">rhythm</span><span class="p">,</span> <span class="nx">scale</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">typography</span><span class="p">;</span>
+<span class="k">export</span> <span class="p">{</span> <span class="nx">rhythm</span><span class="p">,</span> <span class="nx">scale</span><span class="p">,</span> <span class="nx">typography</span> <span class="k">as</span> <span class="k">default</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>JavaScriptでテーマの設定を上書くこともできます。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">src/utils/typography.js</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="nx">Typography</span> <span class="k">from</span> <span class="s2">"typography"</span>
+<span class="k">import</span> <span class="nx">grandViewTheme</span> <span class="k">from</span> <span class="s2">"typography-theme-grand-view"</span>
+
+<span class="nx">grandViewTheme</span><span class="p">.</span><span class="nx">overrideThemeStyles</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="s1">'html,body,h1,h2,h3,h4,h5,h6'</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">color</span><span class="p">:</span> <span class="s1">'#444'</span><span class="p">,</span>
+    <span class="na">fontFamily</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s1">'-apple-system'</span><span class="p">,</span>
+      <span class="s1">'BlinkMacSystemFont'</span><span class="p">,</span>
+      <span class="s1">'Segoe UI'</span><span class="p">,</span>
+      <span class="s1">'Helvetica Neue'</span>
+      <span class="s1">'Hiragino Kaku Gothic ProN'</span><span class="p">,</span>
+      <span class="s1">'"Yu Gothic"'</span><span class="p">,</span>
+      <span class="s1">'YuGothic'</span><span class="p">,</span>
+      <span class="s1">'Verdana'</span><span class="p">,</span>
+      <span class="s1">'Meiryo'</span>
+      <span class="s1">'"M+ 1p"'</span><span class="p">,</span>
+      <span class="s1">'sans-serif'</span>
+    <span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">','</span><span class="p">),</span>
+  <span class="p">},</span>
+<span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">typography</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Typography</span><span class="p">(</span><span class="nx">grandViewTheme</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">rhythm</span><span class="p">,</span> <span class="nx">scale</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">typography</span><span class="p">;</span>
+<span class="k">export</span> <span class="p">{</span> <span class="nx">rhythm</span><span class="p">,</span> <span class="nx">scale</span><span class="p">,</span> <span class="nx">typography</span> <span class="k">as</span> <span class="k">default</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<p><br></p>
+
+<p>作ったスタイル指定用のJavaScriptを<code>gatsby-config.js</code>で指定します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの中</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-plugin-typography`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">pathToConfigModule</span><span class="p">:</span> <span class="s2">`src/utils/typography`</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+</pre></div>
+</div>
+
+<p><br></p><hr>
+
+<h2>
+<span id="外部連携系" class="fragment"></span><a href="#%E5%A4%96%E9%83%A8%E9%80%A3%E6%90%BA%E7%B3%BB"><i class="fa fa-link"></i></a>外部連携系</h2>
+
+<p>ブログなどからデータをひっぱってきてGraphQLで扱えるようにするプラグイン群です。様々ありますが、有名どころを以下に示します。各プラグインの使い方は、かなりがっつりしたものになるのでココでは省略します。</p>
+
+<ul>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-source-medium" rel="nofollow noopener" target="_blank">gatsby-source-medium</a>
+
+<ul>
+<li>
+<a href="https://medium.com/" rel="nofollow noopener" target="_blank">Medium</a>の記事を引っ張ってきてGraphQLで扱えるようにする</li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-source-wordpres" rel="nofollow noopener" target="_blank">gatsby-source-wordpres</a>
+
+<ul>
+<li>
+<a href="https://ja.wordpress.org/" rel="nofollow noopener" target="_blank">WordPress</a>の記事を引っ張ってきてGraphQLで扱えるようにする</li>
+</ul>
+</li>
+<li>
+<a href="https://www.gatsbyjs.org/packages/gatsby-source-contentful" rel="nofollow noopener" target="_blank">gatsby-source-contentful</a>
+
+<ul>
+<li>
+<a href="https://www.contentful.com/" rel="nofollow noopener" target="_blank">contentful</a>からデータを引っ張ってきてGraphQLで扱えるようにする</li>
+</ul>
+</li>
+</ul>
+
+<p><br></p><hr>
+
+<h3>
+<span id="gatsby-source-esa" class="fragment"></span><a href="#gatsby-source-esa"><i class="fa fa-link"></i></a><a href="https://www.gatsbyjs.org/packages/gatsby-source-esa" rel="nofollow noopener" target="_blank">gatsby-source-esa</a>
+</h3>
+
+<p><strong><a href="https://docs.esa.io/posts/102" rel="nofollow noopener" target="_blank">esa API</a>を使って<a href="https://esa.io/" rel="nofollow noopener" target="_blank">esa.io</a>のデータを引っ張ってきてGraphQLで扱えるようにする</strong><br></p>
+
+<h4>
+<span id="設定-11" class="fragment"></span><a href="#%E8%A8%AD%E5%AE%9A-11"><i class="fa fa-link"></i></a>設定</h4>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">gatsby-config.jsの一部</span></div>
+<div class="highlight"><pre>  <span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">resolve</span><span class="p">:</span> <span class="s2">`gatsby-source-esa`</span><span class="p">,</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">// (必須)トークン</span>
+        <span class="c1">// https://[YOUR_TEAM_NAME].esa.io/user/applications からトークンを取得できます。</span>
+        <span class="c1">// なおオーナでないとトークンは取得できません</span>
+        <span class="na">accessToken</span><span class="p">:</span> <span class="s2">`YOUR_PERSONAL_ACCESS_TOKEN`</span><span class="p">,</span>
+        <span class="c1">// (必須)チーム名</span>
+        <span class="na">teamName</span><span class="p">:</span> <span class="s2">`YOUR_TEAM_NAME`</span><span class="p">,</span>
+        <span class="c1">// (任意)検索クエリ</span>
+        <span class="c1">// 詳細は https://docs.esa.io/posts/104 参照</span>
+        <span class="c1">// 例 : 'in:public' や 'wip:false in:public'　など</span>
+        <span class="na">q</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+        <span class="c1">// (任意)ベースカテゴリ</span>
+        <span class="c1">// 例 : 'public'</span>
+        <span class="na">baseCategory</span><span class="p">:</span> <span class="s1">''</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="使い方-11" class="fragment"></span><a href="#%E4%BD%BF%E3%81%84%E6%96%B9-11"><i class="fa fa-link"></i></a>使い方</h4>
+
+<p>GraphQLで下記スキーマにて取得します。</p>
+
+<div class="code-frame" data-lang="graphql"><div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="n">allEsaPost</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">edges</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">node</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">number</span><span class="w">
+        </span><span class="n">name</span><span class="w">
+        </span><span class="n">body_md</span><span class="w">
+        </span><span class="n">body_html</span><span class="w">
+        </span><span class="n">category</span><span class="w">
+        </span><span class="n">relative_category</span><span class="w">
+        </span><span class="n">tags</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div></div>
+
+<h2>
+<span id="まとめ" class="fragment"></span><a href="#%E3%81%BE%E3%81%A8%E3%82%81"><i class="fa fa-link"></i></a>まとめ</h2>
+
+<p>もともと自分のブログで使っていたものも多数ありますが、<br>
+調べてみると、いろいろ便利なプラグインを発見できました。<br>
+これでますますGatsbyが人気になることを願っています。</p>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/41febdc6-bf5d-50b8-a695-3c017b8f766a/">← <!-- -->10分でできる！ @ngrx/storeチュートリアル with @ngrx/schematics</a></li><li><a rel="next" href="/gatsby-starter-qiita/description/">Gatsby Starter Qiita概要<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"f-18-d-04-ac-9-b-1-a-5-ac-8-8-d-43-8-aa-3-d-8-f-746-a-7-792","path":"/f18d04ac-9b1a-5ac8-8d43-8aa3d8f746a7/"};window.dataPath="703/path---f-18-d-04-ac-9-b-1-a-5-ac-8-8-d-43-8-aa-3-d-8-f-746-a-7-792-9a8-qUKXRKDXpObCgOyIOtqbVT0yrc";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

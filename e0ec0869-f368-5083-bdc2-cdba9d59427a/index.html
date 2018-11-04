@@ -1,0 +1,783 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="FUJITSU Advent Calendar 2017 12日目の記事です。リッチでイマドキなデザインのアプリが作りたくて、ここ４ヶ月ほどMEANスタック(MongoDB+Express+Angular+Node.js)でブログアプリを作..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/427/path---e-0-ec-0869-f-368-5083-bdc-2-cdba-9-d-59427-a-a-7-c-8d0-QqZGdOVBq9MlT7FfGQN2iBpkA.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>フロントエンド初心者がMEANスタック(MongoDB+Express+Angular+Node.js)でアプリを作ってみて躓いたこと</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2017-12-12T03:19:11+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div><p><a href="https://qiita.com/advent-calendar/2017/fujitsu">FUJITSU Advent Calendar 2017</a> 12日目の記事です。</p>
+
+<p>リッチでイマドキなデザインのアプリが作りたくて、<br>
+ここ４ヶ月ほど<strong>MEAN</strong>スタック(<strong>M</strong>ongoDB+<strong>E</strong>xpress+<strong>A</strong>ngular+<strong>N</strong>ode.js)でブログアプリを作っています。<br>
+知識ゼロからのスタートでしたが、多くの方々がブログやStackOverFlowに情報を載せてくれているので、躓きながらもなんとかアプリ開発を進めることができました。</p>
+
+<p>この記事では、フロントエンド初心者の自分がMEANスタックでアプリを作る時に躓いたことや、こういう機能を実現するにはどうすればいいか?などをまとめています。<br>
+これからをAngularを学ぼうとしている方、ExpressやMongoDBなどサーバーサイドJavaScriptを学ぼうとしている方の参考になればうれしいです。</p>
+
+<h2>
+<span id="アプリの紹介" class="fragment"></span><a href="#%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E7%B4%B9%E4%BB%8B"><i class="fa fa-link"></i></a>アプリの紹介</h2>
+
+<p>本線から脱線しますが、イントラでの使用を想定したQiitaのようなブログアプリです。デモ環境もあるのでよければ触ってみてください(モバイルには未対応ですが。。。)</p>
+
+<ul>
+<li><a href="https://github.com/Takumon/mean-blog" rel="nofollow noopener" target="_blank">Github</a></li>
+<li><a href="https://hub.docker.com/r/takumon/mean-blog_auto/" rel="nofollow noopener" target="_blank">Dockerhub</a></li>
+<li>
+<a href="https://material-blog-demo.herokuapp.com/" rel="nofollow noopener" target="_blank">デモ環境</a> (ユーザID/パスは DemoUser / DemoUser1234# です)</li>
+</ul>
+
+<p>アプリキャプチャ その１ (記事詳細)<br>
+<a href="https://camo.qiitausercontent.com/4d64d8bd315bcf330d1ac6de1cfe8bb53f280992/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f62383133333331372d666163322d626239622d386632642d3133646238393662656366352e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/4d64d8bd315bcf330d1ac6de1cfe8bb53f280992/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f62383133333331372d666163322d626239622d386632642d3133646238393662656366352e706e67" alt="appdemo_detail.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/b8133317-fac2-bb9b-8f2d-13db896becf5.png"></a></p>
+
+<p>アプリキャプチャ その２ (記事一覧)<br>
+<a href="https://camo.qiitausercontent.com/96927cda50e8df84b0c5415e996246c6d720b607/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39353064313036322d316261342d363366362d666535332d6366653664343634333061342e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/96927cda50e8df84b0c5415e996246c6d720b607/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f39353064313036322d316261342d363366362d666535332d6366653664343634333061342e706e67" alt="アプリ_スクリーンキャプチャ_記事一覧.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/950d1062-1ba4-63f6-fe53-cfe6d46430a4.png"></a></p>
+
+<p>アプリキャプチャ その３ (プロフィール)<br>
+<a href="https://camo.qiitausercontent.com/46aab6c2add74ca826b1dbe730d1a82eb481e295/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33323563373934382d636531362d396330382d306236362d6433383932653034366165642e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/46aab6c2add74ca826b1dbe730d1a82eb481e295/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f33323563373934382d636531362d396330382d306236362d6433383932653034366165642e706e67" alt="アプリ_スクリーンキャプチャ_ ユーザ画面.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/325c7948-ce16-9c08-0b66-d3892e046aed.png"></a></p>
+
+<h1>
+<span id="1-フロント側angularまわり" class="fragment"></span><a href="#1-%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E5%81%B4angular%E3%81%BE%E3%82%8F%E3%82%8A"><i class="fa fa-link"></i></a>1. フロント側Angularまわり</h1>
+
+<h2>
+<span id="angularについて調べる時に古い情報を除外したい" class="fragment"></span><a href="#angular%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%AA%BF%E3%81%B9%E3%82%8B%E6%99%82%E3%81%AB%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E9%99%A4%E5%A4%96%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>Angularについて調べる時に古い情報を除外したい</h2>
+
+<p>1系は<code>AngularJS</code>、2系以降は<code>Angular</code>と呼ばれており、1系と2系以降では大きく仕様が異なります。<br>
+そのため検索する時は<code>Angualr2</code>などバージョンを指定したり、1系を除外するため<code>--AngularJS</code>をつけたりすると検索しやすいです。</p>
+
+<h2>
+<span id="htmlのdom要素を別のdom要素またはcomponentから扱いたい" class="fragment"></span><a href="#html%E3%81%AEdom%E8%A6%81%E7%B4%A0%E3%82%92%E5%88%A5%E3%81%AEdom%E8%A6%81%E7%B4%A0%E3%81%BE%E3%81%9F%E3%81%AFcomponent%E3%81%8B%E3%82%89%E6%89%B1%E3%81%84%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>HTMLのDOM要素を、別のDOM要素またはComponentから扱いたい</h2>
+
+<p>要素に<code>#xxxxx</code>のように<code>#</code>始まりの名前をつけると、別のDOM要素から参照できます</p>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">HTML</span></div>
+<div class="highlight"><pre><span class="nt">&lt;input</span> <span class="err">#</span><span class="na">phone</span> <span class="na">placeholder=</span><span class="s">"電話番号"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!--  他のDOM要素からphonという変数名でDOM要素を参照できるようになる --&gt;</span>
+<span class="nt">&lt;button</span> <span class="nt">&gt;</span>(click)="callPhone(phone.value)"&gt;
+</pre></div>
+</div>
+
+<p>Componentから参照する場合は<code>@ViewChild</code>を使います</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">Component</span></div>
+<div class="highlight"><pre>  <span class="c1">// ViewChildの引数に名前を文字列で指定します</span>
+  <span class="p">@</span><span class="nd">ViewChild</span><span class="p">(</span><span class="s1">'phone'</span><span class="p">)</span> <span class="nx">phoneElement</span><span class="p">:</span> <span class="nx">phoneElement</span><span class="p">;</span>
+
+  <span class="nx">showPhoneValue</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">phoneElement</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+    <span class="p">)</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://angular.io/guide/template-syntax#ref-vars" rel="nofollow noopener" target="_blank">Angular公式サイト</a></li>
+<li><a href="https://stackoverflow.com/questions/32693061/how-can-i-select-an-element-in-a-component-template" rel="nofollow noopener" target="_blank">StackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="routing時の認証を非同期で行いたい" class="fragment"></span><a href="#routing%E6%99%82%E3%81%AE%E8%AA%8D%E8%A8%BC%E3%82%92%E9%9D%9E%E5%90%8C%E6%9C%9F%E3%81%A7%E8%A1%8C%E3%81%84%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>Routing時の認証を非同期で行いたい</h2>
+
+<p>URLごとの認証は<code>CanActivate</code>インターフェースを実装すればできますが、<br>
+サーバから認証情報を取得して非同期で認証したい場合もあると思います。<br>
+そのような時は、<strong><code>CanActivate#canActivate</code>で</strong>booleanの代わりに<strong>Observableを戻り値に指定する</strong>ことで実現できます。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">SampleAuthGuard</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Router</span><span class="p">,</span> <span class="nx">CanActivate</span><span class="p">,</span> <span class="nx">ActivatedRouteSnapshot</span><span class="p">,</span> <span class="nx">RouterStateSnapshot</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/router'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'rxjs/Rx'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">AuthenticationService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./authentication.service'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">SampleAuthGuard</span> <span class="kr">implements</span> <span class="nx">CanActivate</span> <span class="p">{</span>
+
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="kr">private</span> <span class="nx">auth</span><span class="p">:</span> <span class="nx">AuthenticationService</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+  <span class="c1">// booleanではなくObservable&lt;boolean&gt;を戻り値で返す</span>
+  <span class="nx">canActivate</span><span class="p">(</span><span class="nx">route</span><span class="p">:</span> <span class="nx">ActivatedRouteSnapshot</span><span class="p">,</span> <span class="nx">state</span><span class="p">:</span> <span class="nx">RouterStateSnapshot</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="kr">boolean</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">auth</span><span class="p">.</span><span class="nx">checkState</span><span class="p">()</span>
+      <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">)</span>
+      <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">Observable</span><span class="p">.</span><span class="k">of</span><span class="p">(</span><span class="kc">false</span><span class="p">))</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function" rel="nofollow noopener" target="_blank">StackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="formarrayの値を初期化したい" class="fragment"></span><a href="#formarray%E3%81%AE%E5%80%A4%E3%82%92%E5%88%9D%E6%9C%9F%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>FormArrayの値を初期化したい</h2>
+
+<p>FormControlはpatchValueで初期値を設定できますが、<br>
+FormArrayの場合patchValueで配列の値を設定しようとしても設定できません。<br>
+こういう場合は、<strong>配列1つ１つの値をもとにFormControlを生成してFormArrayにpush</strong>します。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">ダメな例</span></div>
+<div class="highlight"><pre><span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Form生成</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">form</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">formBuilder</span><span class="p">.</span><span class="nx">group</span><span class="p">({</span>
+    <span class="na">schoolName</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">students</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">formBuilder</span><span class="p">.</span><span class="nx">array</span><span class="p">([])</span>
+  <span class="p">});</span>
+
+  <span class="c1">// Formに初期値を設定</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">pathValue</span><span class="p">({</span>
+    <span class="na">schooleName</span><span class="p">:</span> <span class="s1">'SampleSchoolName'</span> <span class="c1">// FormControlの値の初期化はpatchValueで可能</span>
+    <span class="na">students</span><span class="p">:</span> <span class="p">[</span><span class="s1">'taro'</span><span class="p">,</span> <span class="s1">'jiro'</span><span class="p">,</span> <span class="s1">'saburo'</span><span class="p">];</span> <span class="c1">// FormArrayに要素を追加する場合patchValueでは不可能</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">良い例</span></div>
+<div class="highlight"><pre><span class="nx">ngOnInit</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Formを生成</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">form</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">formBuilder</span><span class="p">.</span><span class="nx">group</span><span class="p">({</span>
+    <span class="na">schoolName</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">students</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">formBuilder</span><span class="p">.</span><span class="nx">array</span><span class="p">([])</span>
+  <span class="p">});</span>
+
+  <span class="c1">// Formに初期値を設定</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">pathValue</span><span class="p">({</span>
+    <span class="na">schooleName</span><span class="p">:</span> <span class="s1">'SampleSchoolName'</span>
+  <span class="p">});</span>
+
+  <span class="c1">// データからFormControlを生成し１件１件FormArrayにpushする</span>
+  <span class="p">[</span><span class="s1">'taro'</span><span class="p">,</span> <span class="s1">'jiro'</span><span class="p">,</span> <span class="s1">'saburo'</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">student</span> <span class="o">-&gt;</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">controls</span><span class="p">[</span><span class="s1">'students'</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">FormControll</span><span class="p">(</span><span class="nx">student</span><span class="p">));</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/40916084/angular2-patchvalue-push-value-into-array" rel="nofollow noopener" target="_blank">StackOvereFlow</a></li>
+</ul>
+
+<h2>
+<span id="error-error-no-provider-for-templaterefというエラー" class="fragment"></span><a href="#error-error-no-provider-for-templateref%E3%81%A8%E3%81%84%E3%81%86%E3%82%A8%E3%83%A9%E3%83%BC"><i class="fa fa-link"></i></a>「ERROR Error: No provider for TemplateRef!」というエラー</h2>
+
+<p>最初このエラーが出た時は、何が原因なのかわからずに困りました。。。<br>
+大抵の場合は、<strong><code>*ngIf</code>や<code>*ngForm</code>の<code>*</code>が抜けてることが原因</strong>です(要するにただのタイポです。。。)<br>
+<code>*</code>が抜けると、Angularは<code>ngIf</code>をディレクティブとして解釈しようとしますが、<br>
+そんなディレクティブは存在しないので<code>No provider for TemplateRef!</code>と言われてしまうそうです。</p>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/35932074/angular2-no-provider-for-templateref-ngif-templateref" rel="nofollow noopener" target="_blank">StackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="textareaにおいてtabキーでインデントしたい" class="fragment"></span><a href="#textarea%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6tab%E3%82%AD%E3%83%BC%E3%81%A7%E3%82%A4%E3%83%B3%E3%83%87%E3%83%B3%E3%83%88%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>textareaにおいてTabキーでインデントしたい</h2>
+
+<p>文書を入力するようなテキストエリアの場合に、Tabキーでのインデントしたい場合は、<br>
+kyedownイベント発生時にテキストエリアの値とキャレットの位置を操作することで実現可能です。</p>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">HTML</span></div>
+<div class="highlight"><pre><span class="nt">&lt;textarea</span> <span class="err">#</span><span class="na">sampletextarea</span>
+  <span class="err">(</span><span class="na">keydown</span><span class="err">)="</span><span class="na">indent</span><span class="err">($</span><span class="na">event</span><span class="err">,</span> <span class="na">sampletextarea</span><span class="err">)"</span> <span class="nt">&gt;&lt;/textarea&gt;</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">Component</span></div>
+<div class="highlight"><pre>  <span class="nx">indent</span><span class="p">(</span><span class="nx">$event</span><span class="p">,</span> <span class="nx">sampleTextAreaElement</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Tabキー押下時</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">$event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">9</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// 次の要素にフォーカスが移らないようにする</span>
+      <span class="nx">$event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+      <span class="c1">// 現在のキャレット位置を取得</span>
+      <span class="kd">const</span> <span class="nx">caretStart</span> <span class="o">=</span> <span class="nx">textareaElement</span><span class="p">.</span><span class="nx">selectionStart</span><span class="p">;</span>
+      <span class="kd">const</span> <span class="nx">caretEnd</span> <span class="o">=</span> <span class="nx">textareaElement</span><span class="p">.</span><span class="nx">selectionEnd</span><span class="p">;</span>
+
+      <span class="c1">// テキストエリアの値を取得し、キャレット位置にTabを挿入</span>
+      <span class="kd">const</span> <span class="nx">TAB</span> <span class="o">=</span> <span class="s1">'¥t'</span><span class="p">;</span>
+      <span class="nx">sampleTextAreaElement</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">sampleTextAreaElement</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">caretStart</span><span class="p">)</span>
+                     <span class="o">+</span> <span class="nx">TAB</span> <span class="o">+</span> <span class="nx">sampleTextAreaElement</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">caretStart</span><span class="p">,</span> <span class="nx">value</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+
+      <span class="c1">// キャレット位置をTab分ずらす</span>
+      <span class="nx">sampleTextAreaElement</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
+      <span class="nx">sampleTextAreaElement</span><span class="p">.</span><span class="nx">setSelectionRange</span><span class="p">(</span><span class="nx">caretStart</span> <span class="o">+</span> <span class="nx">TAB</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">caretEnd</span> <span class="o">+</span> <span class="nx">TAB</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+</pre></div>
+</div>
+
+<h2>
+<span id="markdownプレビューを表示したいソースコードはシンタックスハイライトさせたい" class="fragment"></span><a href="#markdown%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%97%E3%81%9F%E3%81%84%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AF%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>Markdownプレビューを表示したい、ソースコードはシンタックスハイライトさせたい</h2>
+
+<p><a href="https://github.com/chjj/marked" rel="nofollow noopener" target="_blank">marked</a>と<a href="https://github.com/isagalaev/highlight.js" rel="nofollow noopener" target="_blank">highlight.js</a>を組み合わせて使います。<br>
+<a href="https://github.com/chjj/marked" rel="nofollow noopener" target="_blank">marked</a>のReadmeを見ればなんとなくわかりますが、Angularの仕組みに乗せる必要があるのでPipeやらServiceやらを作ります。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">markdown-parse.service.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">marked</span> <span class="k">from</span> <span class="s1">'marked'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">hljs</span> <span class="k">from</span> <span class="s1">'highlight.js'</span><span class="p">;</span>
+
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MarkdownParseService</span> <span class="p">{</span>
+
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">marked</span><span class="p">.</span><span class="nx">setOptions</span><span class="p">({</span>
+      <span class="na">highlight</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">hljs</span><span class="p">.</span><span class="nx">highlightAuto</span><span class="p">(</span><span class="nx">code</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">parse</span><span class="p">(</span><span class="na">rawText</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">marked</span><span class="p">(</span><span class="nx">rawText</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">markdown.pipe.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="nx">marked</span> <span class="k">from</span> <span class="s1">'marked'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Pipe</span><span class="p">,</span> <span class="nx">PipeTransform</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MarkdownParseService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./markdown-parse.service'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Pipe</span><span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'toMarkdown'</span> <span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MarkdownParsePipe</span> <span class="kr">implements</span> <span class="nx">PipeTransform</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">markdownParseService</span><span class="p">:</span> <span class="nx">MarkdownParseService</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">transform</span><span class="p">(</span><span class="nx">value</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">any</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">markdownParseService</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p>HTMLで下記のように指定します。<code>{{}}</code>だとサニタイズされてしまうので<code>innerHTML</code>属性を指定します。</p>
+
+<div class="code-frame" data-lang="html"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="err">[</span><span class="na">innerHTML</span><span class="err">]="</span><span class="na">md</span> <span class="err">|</span> <span class="na">toMarkdown</span><span class="err">"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div></div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://qiita.com/daikiojm/items/e02e2aeb0231b3620a0b" id="reference-9001a931765f8f52acaf">Qiita AngularでMarkdownをHTMLとして表示するカスタムpipeを作成する</a></li>
+<li>Github <a href="https://github.com/chjj/marked" rel="nofollow noopener" target="_blank">chjj/marked</a>
+</li>
+</ul>
+
+<h2>
+<span id="絞り込み条件付きリストにおいてリストの要素が変更追加削除された時に絞り込み結果をリフレッシュしたい" class="fragment"></span><a href="#%E7%B5%9E%E3%82%8A%E8%BE%BC%E3%81%BF%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E8%A6%81%E7%B4%A0%E3%81%8C%E5%A4%89%E6%9B%B4%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%95%E3%82%8C%E3%81%9F%E6%99%82%E3%81%AB%E7%B5%9E%E3%82%8A%E8%BE%BC%E3%81%BF%E7%B5%90%E6%9E%9C%E3%82%92%E3%83%AA%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>絞り込み条件付きリストにおいて、リストの要素が変更、追加、削除された時に絞り込み結果をリフレッシュしたい</h2>
+
+<p>リストの絞り込みはPipeで実現しますが、通常Pipeはリストの要素が変更されても再び絞り込みが実施されることはありません。<br>
+このような場合はPipeアノテーションにて<strong>pureオプションをfalseに設定</strong>ましょう。</p>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">HTML</span></div>
+<div class="highlight"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="err">#</span><span class="na">searchUserName</span><span class="nt">&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li</span> <span class="err">*</span><span class="na">ngFor=</span><span class="s">"let user of (userList | searchUserFilter: searchUserName.value);"</span> <span class="nt">&gt;</span>{{user.name}}<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">search-user.pipe.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Pipe</span><span class="p">,</span> <span class="nx">PipeTransform</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">User</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./user'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Pipe</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="s1">'searchUserFilter'</span><span class="p">,</span>
+  <span class="na">pure</span><span class="p">:</span> <span class="kc">false</span> <span class="c1">// pureをfalseにすることでユーザが変更、追加、削除された時にリフレッシュできる</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">SearchFilterPipe</span> <span class="kr">implements</span> <span class="nx">PipeTransform</span> <span class="p">{</span>
+  <span class="nx">transform</span><span class="p">(</span><span class="nx">items</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">User</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">searchUserName</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">any</span><span class="p">[]</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">searchUserName</span><span class="p">)</span> <span class="k">return</span> <span class="nx">items</span><span class="p">;</span>
+
+    <span class="nx">searchUserName</span> <span class="o">=</span> <span class="nx">searchUserName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">items</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span> <span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">userId</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchUserName</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://angular.io/guide/pipes#pure-and-impure-pipes" rel="nofollow noopener" target="_blank">Angular公式サイト</a></li>
+</ul>
+
+<h2>
+<span id="グローバル定数を定義したい" class="fragment"></span><a href="#%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%AE%9A%E6%95%B0%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>グローバル定数を定義したい</h2>
+
+<p>いろんなクラスで使う定数を共通化する時は、単純に<strong>クラスを作ってstaticなメンバとして定数を定義</strong>します。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">app-settings.ts</span></div>
+<div class="highlight"><pre><span class="k">export</span> <span class="kd">class</span> <span class="nx">AppSettings</span> <span class="p">{</span>
+   <span class="kr">public</span> <span class="kr">static</span> <span class="nx">API_ENDPOINT</span><span class="o">=</span><span class="s1">'http://127.0.0.1:6666/api/'</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">SampleService</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span><span class="nx">Injectable</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'angular2/core'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">AppSettings</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'./app-settings'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">SampleService</span> <span class="p">{</span>
+    <span class="nx">sampleMethod</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">AppSettings</span><span class="p">.</span><span class="nx">API_ENDPOINT</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<p><strong>参考</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/34986922/define-global-constants-in-angular-2" rel="nofollow noopener" target="_blank">StackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="画像が多い画面の初期表示を早くしたい" class="fragment"></span><a href="#%E7%94%BB%E5%83%8F%E3%81%8C%E5%A4%9A%E3%81%84%E7%94%BB%E9%9D%A2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A1%A8%E7%A4%BA%E3%82%92%E6%97%A9%E3%81%8F%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>画像が多い画面の初期表示を早くしたい</h2>
+
+<p><a href="https://github.com/tjoskar/ng-lazyload-image" rel="nofollow noopener" target="_blank">ng-lazyload-image</a>を使えば画像の遅延ロードを実現できます。<br>
+使い方もとても簡単でimgタグにディレクティブを指定するだけです。</p>
+
+<div class="code-frame" data-lang="html">
+<div class="code-lang"><span class="bold">HTML</span></div>
+<div class="highlight"><pre> <span class="nt">&lt;img</span>
+  <span class="err">[</span><span class="na">defaultImage</span><span class="err">]="</span><span class="na">https:</span><span class="err">//</span><span class="na">images</span><span class="err">.</span><span class="na">sample</span><span class="err">.</span><span class="na">com</span><span class="err">/</span><span class="na">photo</span><span class="err">/</span><span class="na">defaultimage</span><span class="err">"</span> 
+  <span class="err">[</span><span class="na">lazyLoad</span><span class="err">]="</span><span class="na">https:</span><span class="err">//</span><span class="na">images</span><span class="err">.</span><span class="na">sample</span><span class="err">.</span><span class="na">com</span><span class="err">/</span><span class="na">photo</span><span class="err">/</span><span class="na">sampleimage</span><span class="err">"</span>
+  <span class="err">[</span><span class="na">offset</span><span class="err">]="</span><span class="na">30</span><span class="err">"</span>
+ <span class="nt">&gt;</span>
+</pre></div>
+</div>
+
+<p><em>defaultImage</em><br>
+　即時ロードされる画像のURL、遅延ロードする画像を読み込む間、表示される<br>
+<em>lazyLoad</em><br>
+　遅延ロードする画像のURL<br>
+<em>offset</em><br>
+　スクロールが発生する場合に画面下部の何ピクセル下に来た時にロードを開始するか<br>
+<em>errorImage</em><br>
+　遅延ロード失敗時に表示する画像URL</p>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://github.com/tjoskar/ng-lazyload-image" rel="nofollow noopener" target="_blank">ng-lazyload-image</a></li>
+</ul>
+
+<h2>
+<span id="angular-cliのng-serveコマンドでdistフォルダを一旦削除したくない" class="fragment"></span><a href="#angular-cli%E3%81%AEng-serve%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7dist%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%82%92%E4%B8%80%E6%97%A6%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84"><i class="fa fa-link"></i></a>Angular Cliの<code>ng serve</code>コマンドでdistフォルダを一旦削除したくない</h2>
+
+<p><code>ng serve</code>コマンドは<code>dist</code>フォルダを削除してからtsファイルをトランスコンパイルします。<br>
+それを防ぐためには、<strong>delete-output-pathオプションをfalse</strong>に指定します。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">package.json　ビルドスクリプト</span></div>
+<div class="highlight"><pre><span class="s2">"script"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="s2">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cp ./resource/* dist &amp;&amp; ng serve --delete-output-path=false"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://github.com/angular/angular-cli/issues/4366" rel="nofollow noopener" target="_blank">angular-cli github issue #4366</a></li>
+</ul>
+
+<h2>
+<span id="aotコンパイルが遅いのでなんとかしたい" class="fragment"></span><a href="#aot%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%81%8C%E9%81%85%E3%81%84%E3%81%AE%E3%81%A7%E3%81%AA%E3%82%93%E3%81%A8%E3%81%8B%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>AOTコンパイルが遅いのでなんとかしたい</h2>
+
+<p>なんとかできませんでした。。。(もしかしたら方法があるのかもしれません。誰か教えてください!!!)<br>
+AOTコンパイルはJITコンパイルが検出してくれないHTMLのエラーを警告してくれますが、その反面遅いです。特に<a href="https://material.angular.io/" rel="nofollow noopener" target="_blank">Angular Material</a>を使う場合は顕著です。<br>
+そのため、自分の場合は基本的にJITビルドを使い、issueのプルリクをする前など区切りのいいタイミングでAOTビルドしてエラーがないか確認するというように使い分けてました。</p>
+
+<h1>
+<span id="2-フロント側angularでのテスト周り" class="fragment"></span><a href="#2-%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E5%81%B4angular%E3%81%A7%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E5%91%A8%E3%82%8A"><i class="fa fa-link"></i></a>2. フロント側Angularでのテスト周り</h1>
+
+<h2>
+<span id="ci環境などでテストが終わらずにタイムアウトしてしまう" class="fragment"></span><a href="#ci%E7%92%B0%E5%A2%83%E3%81%AA%E3%81%A9%E3%81%A7%E3%83%86%E3%82%B9%E3%83%88%E3%81%8C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%9A%E3%81%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%A2%E3%82%A6%E3%83%88%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86"><i class="fa fa-link"></i></a>CI環境などでテストが終わらずにタイムアウトしてしまう</h2>
+
+<p>CirleCiなどでテストを実行する場合<code>ng test</code>コマンドだとプロセスが終了しないためタイムアウトで失敗してしまいます。<br>
+このような場合は<strong>watchオプションをfalseに設定</strong>します。</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>ng test --wtach=false
+</pre></div></div>
+
+<p><strong>参考サイト</strong><br>
+<a href="https://github.com/angular/angular-cli/issues/362" rel="nofollow noopener" target="_blank">Github isssue</a></p>
+
+<h2>
+<span id="テスト時にerror-timeout---async-callback-was-not-invoked-within-timeout-specified-by-jasminedefault_timeout_intervalやfailed-to-execute-send-on-xmlhttprequestのエラー" class="fragment"></span><a href="#%E3%83%86%E3%82%B9%E3%83%88%E6%99%82%E3%81%ABerror-timeout---async-callback-was-not-invoked-within-timeout-specified-by-jasminedefault_timeout_interval%E3%82%84failed-to-execute-send-on-xmlhttprequest%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC"><i class="fa fa-link"></i></a>テスト時に「Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.」や「Failed to execute 'send' on 'XMLHttpRequest'」のエラー</h2>
+
+<p>このような場合は、一時的に<code>ng test</code>コマンドのオプションに<strong><code>-sm=false</code>を追加</strong>してテストし直すと根本原因エラーメッセージで出力されるようになります。<br>
+大抵の場合は自作したモッククラスに必要なメソッドがないことが原因です。</p>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/45399079/angular-tests-failing-with-failed-to-execute-send-on-xmlhttprequest" rel="nofollow noopener" target="_blank">stackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="テスト用に子コンポーネントをモック化したい" class="fragment"></span><a href="#%E3%83%86%E3%82%B9%E3%83%88%E7%94%A8%E3%81%AB%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E3%83%A2%E3%83%83%E3%82%AF%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>テスト用に子コンポーネントをモック化したい</h2>
+
+<p>意外と簡単で、TestBed#configureTestingModuleで<br>
+declarationsに自作したモックの子コンポーネントを追加するだけです。<br>
+input,outputがあれば必要に応じてメンバ定義します。</p>
+
+<div class="code-frame" data-lang="typescript"><div class="highlight"><pre><span class="c1">// ※import文は省略</span>
+
+<span class="c1">// モックの子コンポーネントを定義</span>
+<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="p">:</span> <span class="s1">'app-child'</span><span class="p">,</span> <span class="c1">// 子コンポーネントと同じものを定義</span>
+  <span class="na">template</span><span class="p">:</span> <span class="s1">'&lt;p&gt;Mock Child Component&lt;/p&gt;'</span>
+<span class="p">})</span>
+<span class="kd">class</span> <span class="nx">MockClildComponent</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">Input</span><span class="p">()</span> <span class="nx">childInput</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="p">@</span><span class="nd">Output</span><span class="p">()</span> <span class="nx">childOutput</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EventEmitter</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// ...</span>
+
+<span class="nx">beforeEach</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">TestBed</span><span class="p">.</span><span class="nx">configureTestingModule</span><span class="p">({</span>
+    <span class="na">declarations</span><span class="p">:</span> <span class="p">[</span>
+      <span class="c1">// テスト時のdeclarationsにモックの定義を追加</span>
+      <span class="nx">MockProductSettingsComponent</span><span class="p">,</span>
+      <span class="c1">// ...</span>
+    <span class="p">],</span>
+    <span class="c1">// ...</span>
+  <span class="p">});</span>
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</pre></div></div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/41240163/mocking-child-components-angular-2" rel="nofollow noopener" target="_blank">stackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="テスト結果にangular-materilaのスタイルが反映されない" class="fragment"></span><a href="#%E3%83%86%E3%82%B9%E3%83%88%E7%B5%90%E6%9E%9C%E3%81%ABangular-materila%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%8C%E5%8F%8D%E6%98%A0%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84"><i class="fa fa-link"></i></a>テスト結果にAngular Materilaのスタイルが反映されない</h2>
+
+<p>UIフレームワークで<a href="https://material.angular.io/" rel="nofollow noopener" target="_blank">Angular Material</a>を使っている場合、<br>
+<code>karma.config.js</code>でAngular Materilaのcssを直接読み込んであげる必要あります。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">karma.conf.js</span></div>
+<div class="highlight"><pre><span class="nx">files</span><span class="p">:</span> <span class="p">[</span>
+      <span class="err">・・・</span>
+      <span class="c1">// Angular Materialのスタイルをテスト開始時に読み込んでおく</span>
+      <span class="p">{</span><span class="nl">pattern</span><span class="p">:</span> <span class="s1">'./node_modules/@angular/material/prebuilt-themes/indigo-pink.css'</span><span class="p">,</span> <span class="nx">included</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">watched</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>
+<span class="p">],</span>
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://github.com/angular/material2/issues/4056" rel="nofollow noopener" target="_blank">stackoverflow</a></li>
+</ul>
+
+<h2>
+<span id="テスト結果にstylesscssアプリ共通のスタイル定義のスタイルが反映されない" class="fragment"></span><a href="#%E3%83%86%E3%82%B9%E3%83%88%E7%B5%90%E6%9E%9C%E3%81%ABstylesscss%E3%82%A2%E3%83%97%E3%83%AA%E5%85%B1%E9%80%9A%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%AE%9A%E7%BE%A9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%8C%E5%8F%8D%E6%98%A0%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84"><i class="fa fa-link"></i></a>テスト結果にstyles.scss(アプリ共通のスタイル定義)のスタイルが反映されない</h2>
+
+<p>アプリ共通スタイルをSASS形式にしている場合<br>
+開発用ライブライに<code>karma-scss-preprocessor</code>と<code>node-sass</code>を追加して<code>karma.conf.js</code>を下記のように設定します。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">karma.conf.js</span></div>
+<div class="highlight"><pre><span class="nx">plugins</span><span class="p">:</span> <span class="p">[</span>
+  <span class="err">・・・</span>
+<span class="err">　</span> <span class="c1">// プラグインに`karma-scss-preprocessor`を追加</span>
+  <span class="nx">require</span><span class="p">(</span><span class="s1">'karma-scss-preprocessor'</span><span class="p">)</span>
+<span class="p">],</span>
+
+
+<span class="nx">files</span><span class="p">:</span> <span class="p">[</span>
+  <span class="err">・・・</span>
+  <span class="c1">// filesにアプリ共通スタイルを追加</span>
+  <span class="p">{</span> <span class="nl">pattern</span><span class="p">:</span> <span class="s1">'./src/styles.scss'</span><span class="p">,</span> <span class="nx">watched</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>  <span class="nx">included</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">served</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}</span>
+<span class="p">],</span>
+
+<span class="c1">// preprocessorsを追加</span>
+<span class="nx">preprocessors</span><span class="p">:</span> <span class="p">{</span>
+ <span class="s1">'./src/test.ts'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'@angular/cli'</span><span class="p">],</span>
+ <span class="s1">'./src/styles.scss'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'scss'</span><span class="p">]</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+
+<p><strong>参考サイト</strong>:</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/44460733/how-to-configure-karma-to-include-global-scss-files-for-an-angular-cli-project/44498689#44498689" rel="nofollow noopener" target="_blank">stackOverFlow</a></li>
+<li><a href="https://github.com/karma-runner/karma/issues/2700" rel="nofollow noopener" target="_blank">Github karma/issue/2700</a></li>
+</ul>
+
+<h1>
+<span id="3-バックエンド側-expressmongodb周り" class="fragment"></span><a href="#3-%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89%E5%81%B4-expressmongodb%E5%91%A8%E3%82%8A"><i class="fa fa-link"></i></a>3. バックエンド側 Express、MongoDB周り</h1>
+
+<p>※MongDBをNode.jsで扱う場合は<a href="https://github.com/Automattic/mongoose" rel="nofollow noopener" target="_blank">mongoose</a>という便利なライブラリがあるのでそれを使う前提のお話です。</p>
+
+<h2>
+<span id="mongooseのvirtualメソッドを使う" class="fragment"></span><a href="#mongoose%E3%81%AEvirtual%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%82%92%E4%BD%BF%E3%81%86"><i class="fa fa-link"></i></a>mongooseのvirtualメソッドを使う</h2>
+
+<p>例えば<code>記事</code>,<code>コメント</code>,<code>リプライ</code>などのモデルを定義する場合、<br>
+３つのモデルのライフサイクルは、記事追加 =&gt; 記事に対するコメント追加 =&gt; コメントに対するリプライ追加　のようになります。<br>
+このような場合は、コメントが記事の参照を持ち、リプライがコメントの参照を持つモデル構造が望ましいです。コメントやリプライ追加時に１つのモデルの更新だけですむからです。<br>
+<a href="https://camo.qiitausercontent.com/129a84bd908d87c7fcbda29704ad50ac10529129/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66393361633065362d333137652d316364662d626662612d3133353331653234353562612e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/129a84bd908d87c7fcbda29704ad50ac10529129/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f66393361633065362d333137652d316364662d626662612d3133353331653234353562612e706e67" alt="db構造_良.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/f93ac0e6-317e-1cdf-bfba-13531e2455ba.png"></a></p>
+
+<p>ただ記事の検索は少し工夫が必要で、<strong>mongooseのvirtualを使います</strong>。これによって記事からコメントへの参照、コメントからリプライへの参照を擬似的に定義できるため、<br>
+検索時に擬似要素をpopulateするだけで、記事に紐付くコメントとリプライを取得できるようになります。<br>
+<a href="https://camo.qiitausercontent.com/bd8d4eedcb08eeaca13290e8dc91b8b2e10c5dae/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34616162376633382d316631392d653030622d623335642d3233626162663336613735622e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/bd8d4eedcb08eeaca13290e8dc91b8b2e10c5dae/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f34616162376633382d316631392d653030622d623335642d3233626162663336613735622e706e67" alt="mongoose virtualのイメージ.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/4aab7f38-1f19-e00b-b35d-23babf36a75b.png"></a></p>
+
+<p>具体的なソースコードを示します。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">article.model.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">mongoose</span> <span class="k">from</span> <span class="s1">'mongoose'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">ArticleSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">content</span><span class="p">:</span> <span class="nb">String</span>
+<span class="p">},</span> <span class="p">{</span> <span class="na">toJSON</span><span class="p">:</span> <span class="p">{</span> <span class="na">virtuals</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">});</span>
+
+
+<span class="c1">// 記事に紐付くコメントモデルの配列をcommentsという擬似要素で定義する</span>
+<span class="nx">ArticleSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'comments'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">ref</span><span class="p">:</span> <span class="s1">'Comment'</span><span class="p">,</span>
+  <span class="na">localField</span><span class="p">:</span> <span class="s1">'_id'</span><span class="p">,</span>
+  <span class="na">foreignField</span><span class="p">:</span> <span class="s1">'articleId'</span><span class="p">,</span>
+  <span class="na">justOne</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">Article</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">'Article'</span><span class="p">,</span> <span class="nx">ArticleSchema</span><span class="p">);</span>
+
+<span class="k">export</span> <span class="p">{</span> <span class="nx">Article</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">comment.model.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">mongoose</span> <span class="k">from</span> <span class="s1">'mongoose'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">CommentSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">articleId</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectId</span><span class="p">,</span>
+    <span class="na">ref</span><span class="p">:</span> <span class="s1">'Article'</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="na">comment</span><span class="p">:</span> <span class="nb">String</span><span class="p">;</span>
+<span class="p">},</span> <span class="p">{</span> <span class="na">toJSON</span><span class="p">:</span> <span class="p">{</span> <span class="na">virtuals</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">});</span>
+
+<span class="c1">// コメントに紐付くリプライモデルの配列をrepliesという擬似要素で定義する</span>
+<span class="nx">CommentSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'replies'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">ref</span><span class="p">:</span> <span class="s1">'Reply'</span><span class="p">,</span>
+  <span class="na">localField</span><span class="p">:</span> <span class="s1">'_id'</span><span class="p">,</span>
+  <span class="na">foreignField</span><span class="p">:</span> <span class="s1">'commentId'</span><span class="p">,</span>
+  <span class="na">justOne</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">Comment</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">'Comment'</span><span class="p">,</span> <span class="nx">CommentSchema</span><span class="p">);</span>
+
+<span class="k">export</span> <span class="p">{</span> <span class="nx">Comment</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">reply.model.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">mongoose</span> <span class="k">from</span> <span class="s1">'mongoose'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">ReplySchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">commentId</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectId</span><span class="p">,</span>
+    <span class="na">ref</span><span class="p">:</span> <span class="s1">'Comment'</span>
+  <span class="p">},</span>
+  <span class="na">reply</span><span class="p">:</span> <span class="nb">String</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">Reply</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">'Reply'</span><span class="p">,</span> <span class="nx">ReplySchema</span><span class="p">);</span>
+
+<span class="k">export</span> <span class="p">{</span> <span class="nx">Reply</span> <span class="p">};</span>
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">検索処理</span></div>
+<div class="highlight"><pre><span class="nx">Article</span><span class="p">.</span><span class="nx">find</span><span class="p">()</span>
+<span class="p">.</span><span class="nx">populate</span><span class="p">({</span>
+  <span class="na">path</span><span class="p">:</span> <span class="s1">'comments'</span><span class="p">,</span> <span class="c1">// Articleモデルで定義した擬似要素commentsをpopulateする</span>
+  <span class="na">populate</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="na">path</span><span class="p">:</span> <span class="s1">'replies'</span><span class="p">,</span> <span class="c1">// Commentモデルで定義した擬似要素repliesをpopulateする</span>
+  <span class="p">}],</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+
+<h2>
+<span id="リクエストレスポンスのログ出力したい" class="fragment"></span><a href="#%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9%E3%81%AE%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>リクエスト、レスポンスのログ出力したい</h2>
+
+<p>Expressのuseにて実現します。<br>
+レスポンスオブジェクトのfinishイベントを監視することで、レスポンス時にログを出力しています。</p>
+
+<div class="code-frame" data-lang="javascript">
+<div class="code-lang"><span class="bold">リクエストとレスポンスのログ出力　※ここでは簡単のためコンソールに出力しています</span></div>
+<div class="highlight"><pre><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+<span class="nx">express</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="kd">function</span> <span class="nx">accessLogHandler</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">start</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="c1">// リクエスト時のログ　</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span>
+    <span class="s1">'start'</span><span class="p">,</span>
+    <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">[</span><span class="s1">'x-forwarded-for'</span><span class="p">]</span> <span class="o">||</span> <span class="nx">req</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">remoteAddress</span><span class="p">,</span>
+    <span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
+    <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+    <span class="s1">'-'</span><span class="p">,</span>
+    <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">referer</span> <span class="o">||</span> <span class="s1">'-'</span><span class="p">,</span>
+    <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">[</span><span class="s1">'user-agent'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'-'</span><span class="p">,</span>
+    <span class="s1">'--ms--'</span>
+  <span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">',</span><span class="err">\</span><span class="s1">t'</span><span class="p">));</span>
+
+  <span class="nx">res</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="s1">'finish'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="err">　　</span> <span class="c1">// レスポンス時のログ</span>
+    <span class="nx">accessLogger</span><span class="p">.</span><span class="nx">info</span><span class="p">([</span>
+      <span class="s1">'end'</span><span class="p">,</span>
+      <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">[</span><span class="s1">'x-forwarded-for'</span><span class="p">]</span> <span class="o">||</span> <span class="nx">req</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">remoteAddress</span><span class="p">,</span>
+      <span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
+      <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">,</span>
+      <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">referer</span> <span class="o">||</span> <span class="s1">'-'</span><span class="p">,</span>
+      <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">[</span><span class="s1">'user-agent'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'-'</span><span class="p">,</span>
+      <span class="s1">'--'</span> <span class="o">+</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getMilliseconds</span><span class="p">()</span> <span class="o">-</span> <span class="nx">start</span><span class="p">.</span><span class="nx">getMilliseconds</span><span class="p">())</span> <span class="o">+</span> <span class="s1">'ms--'</span>
+    <span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">',</span><span class="err">\</span><span class="s1">t'</span><span class="p">));</span>
+  <span class="p">});</span>
+
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+
+<p>実際のログはこんな感じで出力されます。</p>
+
+<div class="code-frame" data-lang="py3"><div class="highlight"><pre><span class="n">start</span><span class="p">,</span>  <span class="p">::</span><span class="n">ffff</span><span class="p">:</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">GET</span><span class="p">,</span> <span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">authenticate</span><span class="o">/</span><span class="n">check</span><span class="o">-</span><span class="n">state</span><span class="p">,</span>   <span class="o">-</span><span class="p">,</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">4200</span><span class="o">/</span><span class="p">,</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Macintosh</span><span class="p">;</span> <span class="n">Intel</span> <span class="n">Mac</span> <span class="n">OS</span> <span class="n">X</span> <span class="mi">10</span><span class="n">_12_6</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.36</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">62.0</span><span class="o">.</span><span class="mf">3202.94</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.36</span><span class="p">,</span> <span class="o">--</span><span class="n">ms</span><span class="o">--</span>
+<span class="n">end</span><span class="p">,</span>    <span class="p">::</span><span class="n">ffff</span><span class="p">:</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">GET</span><span class="p">,</span> <span class="o">/</span><span class="n">check</span><span class="o">-</span><span class="n">state</span><span class="p">,</span>                  <span class="mi">403</span><span class="p">,</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">4200</span><span class="o">/</span><span class="p">,</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Macintosh</span><span class="p">;</span> <span class="n">Intel</span> <span class="n">Mac</span> <span class="n">OS</span> <span class="n">X</span> <span class="mi">10</span><span class="n">_12_6</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.36</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">62.0</span><span class="o">.</span><span class="mf">3202.94</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.36</span><span class="p">,</span>  <span class="o">--</span><span class="mi">47</span><span class="n">ms</span><span class="o">--</span>
+</pre></div></div>
+
+<h2>
+<span id="ログ出力でオブジェクトの全プロパティを出力したい" class="fragment"></span><a href="#%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%A8%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>ログ出力でオブジェクトの全プロパティを出力したい</h2>
+
+<p>オブジェクトの中身をログで確認する時はNode.jsの<code>util.inspect()</code>を使います。</p>
+
+<div class="code-frame" data-lang="javascript"><div class="highlight"><pre><span class="kd">const</span> <span class="nx">util</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'util'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s2">"a"</span><span class="p">:</span><span class="s2">"a"</span><span class="p">,</span>
+   <span class="s2">"b"</span><span class="p">:{</span>
+      <span class="s2">"c"</span><span class="p">:</span><span class="s2">"c"</span><span class="p">,</span>
+      <span class="s2">"d"</span><span class="p">:{</span>
+         <span class="s2">"e"</span><span class="p">:</span><span class="s2">"e"</span><span class="p">,</span>
+         <span class="s2">"f"</span><span class="p">:{</span>
+            <span class="s2">"g"</span><span class="p">:</span><span class="s2">"g"</span><span class="p">,</span>
+            <span class="s2">"h"</span><span class="p">:{</span>
+               <span class="s2">"i"</span><span class="p">:</span><span class="s2">"i"</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">};</span> 
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">util</span><span class="p">.</span><span class="nx">inspect</span><span class="p">(</span><span class="nx">myObject</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">null</span><span class="p">));</span>
+</pre></div></div>
+
+<p>このようなログが出力されます</p>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>{ a: 'a', b: { c: 'c', d: { e: 'e', f: [Object] } } }
+</pre></div></div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/10729276/how-can-i-get-the-full-object-in-node-jss-console-log-rather-than-object" rel="nofollow noopener" target="_blank">StackOverFlow</a></li>
+</ul>
+
+<h2>
+<span id="環境変数で上書きできる定数を定義したい" class="fragment"></span><a href="#%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%81%A7%E4%B8%8A%E6%9B%B8%E3%81%8D%E3%81%A7%E3%81%8D%E3%82%8B%E5%AE%9A%E6%95%B0%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%97%E3%81%9F%E3%81%84"><i class="fa fa-link"></i></a>環境変数で上書きできる定数を定義したい</h2>
+
+<p>例えばサーバのポートなど環境個別に設定したくなるようなものは<br>
+環境変数で上書きできる定数にしておくと便利です。<br>
+Node.jsではprocess.env.変数名で環境変数が参照できるので下記のようにします。</p>
+
+<div class="code-frame" data-lang="typescript">
+<div class="code-lang"><span class="bold">定数定義</span></div>
+<div class="highlight"><pre><span class="k">export</span> <span class="kd">const</span> <span class="nx">SERVER_PORT</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">SERVER_PORT</span> <span class="o">||</span> <span class="s1">'3000'</span><span class="p">;</span><span class="err">　</span><span class="c1">// 環境変数SERVER_PORTが未指定の場合は3000となる</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">SERVER_HOST</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">SERVER_HOST</span> <span class="o">||</span> <span class="s1">'localhost'</span><span class="p">;</span> <span class="c1">// 環境変数SERVER_HOSTが未指定の場合はlocalhostとなる</span>
+</pre></div>
+</div>
+
+<h2>
+<span id="db初回アクセスに失敗した場合にリトライされない" class="fragment"></span><a href="#db%E5%88%9D%E5%9B%9E%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AB%E3%83%AA%E3%83%88%E3%83%A9%E3%82%A4%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84"><i class="fa fa-link"></i></a>DB初回アクセスに失敗した場合にリトライされない</h2>
+
+<p>mongooseを使っていると、DB初回接続時にエラーが起きた時に、なぜか再接続処理してくれません。<br>
+Dockerでアプリを配布する場合、アプリとMongoDBをdocker-composeで同時に立ち上げることがあると思いますが、まだMongoDBが起動しきってない状態でアプリからDBに接続しようとすると、アプリが異常終了してしまいます。これを防ぐには自力で再接続処理を実装する必要があります。</p>
+
+<div class="code-frame" data-lang="javascript"><div class="highlight"><pre><span class="kd">function</span> <span class="nx">createConnection</span> <span class="p">(</span><span class="nx">dbURL</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">createConnection</span><span class="p">(</span><span class="nx">dbURL</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+
+    <span class="nx">db</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span> <span class="o">&amp;&amp;</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/failed to connect to server .* on first connect/</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="nb">String</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+
+            <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Retrying first connect..."</span><span class="p">);</span>
+                <span class="nx">db</span><span class="p">.</span><span class="nx">openUri</span><span class="p">(</span><span class="nx">dbURL</span><span class="p">).</span><span class="k">catch</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{});</span>
+            <span class="c1">// 20秒後に再接続する</span>
+            <span class="p">},</span> <span class="mi">20</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="nb">String</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="nx">db</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="s1">'open'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Connection to db established."</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nx">db</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div>
+
+<p><strong>参考サイト</strong></p>
+
+<ul>
+<li><a href="https://github.com/Automattic/mongoose/issues/5169" rel="nofollow noopener" target="_blank">Github mongooseのissue5169</a></li>
+</ul>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/5644c24e-eade-50ca-aa11-83a4eaeba122/">← <!-- -->Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その２. テスト編</a></li><li><a rel="next" href="/gatsby-starter-qiita/b4c7d1b9-428f-569a-af40-527d89794a77/">TypeScriptで簡単にChrome Extensionを作る方法<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"e-0-ec-0869-f-368-5083-bdc-2-cdba-9-d-59427-a-a7c","path":"/e0ec0869-f368-5083-bdc2-cdba9d59427a/"};window.dataPath="427/path---e-0-ec-0869-f-368-5083-bdc-2-cdba-9-d-59427-a-a-7-c-8d0-QqZGdOVBq9MlT7FfGQN2iBpkA";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>

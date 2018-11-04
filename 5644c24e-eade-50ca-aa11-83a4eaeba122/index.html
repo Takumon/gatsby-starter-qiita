@@ -1,0 +1,785 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-starter-qiita/0.a327d153219dce8f5630.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-starter-qiita/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-starter-qiita/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-starter-qiita/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-starter-qiita/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-starter-qiita/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-starter-qiita/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-starter-qiita/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-starter-qiita/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-starter-qiita/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/gatsby-starter-qiita/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-starter-qiita/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-starter-qiita/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-starter-qiita/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-starter-qiita/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/gatsby-starter-qiita/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><style data-href="/gatsby-starter-qiita/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css">.code-lang{color:#eee;display:inline-block;background-color:#777;padding:2px 4px;-webkit-transform:translateY(-1em);transform:translateY(-1em);word-break:break-all}.code-frame,.highlight{background-color:#364549;color:#e3e3e3}.code-frame{margin:1.5em -32px;padding:1em 32px;font-size:.9em}.highlight .c,.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs,.highlight .gu{color:#9dabae}.highlight .k,.highlight .kc,.highlight .kd,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .no{color:#ebd247}.highlight .fm,.highlight .gi,.highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx{color:#8bdf4c}.highlight .gd,.highlight .kn,.highlight .nt,.highlight .o,.highlight .ow{color:#ff8095}.highlight .dl,.highlight .ld,.highlight .s,.highlight .s1,.highlight .s2,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#41b7d7}.highlight .il,.highlight .l,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .se{color:#a980f5}.highlight .bp,.highlight .n,.highlight .nb,.highlight .ni,.highlight .nl,.highlight .nn,.highlight .nv,.highlight .p,.highlight .py,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm,.highlight .w{color:#e3e3e3}.highlight .hll{background-color:#49483e}.highlight .err{border-bottom:2px dotted #c01b1b;color:#ddd}.highlight .ge{font-style:italic}.highlight .gs{font-style:bold}.highlight{padding:.5em;overflow-x:auto}</style><meta name="generator" content="Gatsby 2.0.19"/><link rel="alternate" type="application/rss+xml" href="/gatsby-starter-qiita/rss.xml"/><link rel="shortcut icon" href="/gatsby-starter-qiita/icons/icon-48x48.png"/><link rel="manifest" href="/gatsby-starter-qiita/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">undefined | Gatsby Starter Qiita</title><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/><meta data-react-helmet="true" name="description" content="やりたいことAngular CLI使って、MEANスタック(MongoDB + Express + Angular + NodeJS)のアプリを作りたい。どうせならサーバ側もTypeScriptで作りたい。フロント側とサーバ側の両方をweb..."/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/0-187f6b47a30213241321.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js"/><link as="script" rel="preload" href="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js"/><link rel="preload" href="/gatsby-starter-qiita/static/d/979/path---5644-c-24-e-eade-50-ca-aa-11-83-a-4-eaeba-122-856-654-fNmlhgbUpbS2LksdkslTPwK94fg.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/gatsby-starter-qiita/">Gatsby Starter Qiita</a></h3><h1>Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その２. テスト編</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">2017-07-24T07:12:10+09:00</p><div style="display:flex;margin-bottom:4.375rem"><img src="https://qiita-image-store.s3.amazonaws.com/0/49915/profile-images/1488080194" alt="Takumon" style="margin-right:0.875rem;margin-bottom:0;border-radius:1.75rem;width:3.5rem;height:3.5rem"/><div><div style="margin-top:0.175rem;font-size:1.05rem;line-height:1.05rem">Takumon</div><div style="font-size:0.875rem;margin-top:4px;line-height:0.875rem;opacity:0.5">SIer</div></div></div><div>
+<h2>
+<span id="やりたいこと" class="fragment"></span><a href="#%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8"><i class="fa fa-link"></i></a>やりたいこと</h2>
+
+<ul>
+<li>Angular CLI使って、MEANスタック(<strong>M</strong>ongoDB + <strong>E</strong>xpress + <strong>A</strong>ngular + <strong>N</strong>odeJS)のアプリを作りたい。どうせならサーバ側もTypeScriptで作りたい。</li>
+<li>フロント側とサーバ側の両方をwebpack、gulpなどは使わずにnpm scriptsだけでビルド、テストできるようにしたい。</li>
+<li>Dockerを使ってアプリを簡単に配布したい。</li>
+</ul>
+
+<p>これらを達成するための最小構成プロジェクトの作り方を３回に分けて紹介します。</p>
+
+<ul>
+<li><a href="http://qiita.com/Takumon/items/572438809384e2e11792" id="reference-fc6741a6eda3b7ffd9f1">その１. ビルド編</a></li>
+<li>その２. テスト編　⇦　今回はココ</li>
+<li>その３. Dockerビルド編</li>
+</ul>
+
+<h2>
+<span id="その２-テスト編" class="fragment"></span><a href="#%E3%81%9D%E3%81%AE%EF%BC%92-%E3%83%86%E3%82%B9%E3%83%88%E7%B7%A8"><i class="fa fa-link"></i></a>その２. テスト編</h2>
+
+<p><a href="http://qiita.com/Takumon/items/572438809384e2e11792">その１. ビルド編</a>では、Angular CLIで作成したプロジェクトをベースに、<br>
+MongoDBに登録しているメッセージを画面に一覧で表示するアプリを作成しました。<br>
+今回は、クライアント側とサーバ側の<a href="https://jasmine.github.io/" rel="nofollow noopener" target="_blank">Jasmine</a>を使った単体テスト、<a href="http://www.protractortest.org/#/" rel="nofollow noopener" target="_blank">Protractor</a>を使ったE2Eテスト、それらを実行するnpm scriptsを作成します。<br>
+最終的には下記のように<code>npm test</code>コマンドで単体テストが実行できるようになります。</p>
+
+<p><a href="https://camo.qiitausercontent.com/7f33351fc11e7394a52bb31fa317136827ea0735/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36343161363631662d333632342d633466312d333733662d6362343331393330346530322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/7f33351fc11e7394a52bb31fa317136827ea0735/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36343161363631662d333632342d633466312d333733662d6362343331393330346530322e706e67" alt="10_単体テスト実施イメージ.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/641a661f-3624-c4f1-373f-cb4319304e02.png"></a></p>
+
+<p>またE2Eテストは<code>npm run e2e</code>コマンドで実施できるようになります。<br>
+<a href="https://camo.qiitausercontent.com/7ed95d4b7e245fbb593b4c8c2895d30013489715/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35616438346136612d306538652d613830622d633763352d3533386237306161393235392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/7ed95d4b7e245fbb593b4c8c2895d30013489715/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35616438346136612d306538652d613830622d633763352d3533386237306161393235392e706e67" alt="20_E2Eテスト実施イメージ.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5ad84a6a-0e8e-a80b-c7c5-538b70aa9259.png"></a></p>
+
+<h3>
+<span id="プロジェクト構成" class="fragment"></span><a href="#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%A7%8B%E6%88%90"><i class="fa fa-link"></i></a>プロジェクト構成</h3>
+
+<p>今回のチュートリアル終了すると下記のようなプロジェクトの構成になります。<br>
+<a href="http://qiita.com/Takumon/items/572438809384e2e11792">その１. ビルド編</a>で作成したものをベースにテスト用の資産を追加します。詳細は<a href="https://github.com/Takumon/angular4-express4-typescritp2/tree/test" rel="nofollow noopener" target="_blank">リポジトリ</a>を参照してください。</p>
+
+<div class="code-frame" data-lang="">
+<div class="code-lang"><span class="bold">プロジェクト構成（完成イメージ）</span></div>
+<div class="highlight"><pre>.
+├── dist                              ・・・(1) コンパイル資産出力先
+│   ├── server
+│   │   ├── ...
+│   │   ...
+│   │ 
+│   └── server_test                      ・・・(1-1)　コンパイルされたサーバ側テスト資産
+│       ├── app.spec.js
+│       ├── app.spec.js.map
+│       ├── test.server.conf.js
+│       ├── test.server.conf.js.map
+│       ├── test.server.js
+│       └── test.server.js.map
+├── e2e                                ・・・(2)　E2Eテスト資産
+│   ├── app.e2e-spec.ts
+│   ├── app.po.ts
+│   └── tsconfig.e2e.json
+├── node_modules
+│   ├── ...
+│   ...
+│
+├── server
+│   ├── ...
+│   ...
+│
+├── server_test                         ・・・(3)　サーバ側テスト資産
+│   ├── app.spec.ts
+│   ├── test.server.conf.ts
+│   ├── test.server.ts
+│   └── tsconfig.server_test.json
+├── src
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts      ・・・(4)　クライアント側テスト資産
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   └── message
+│   │       ├── message.service.spec.ts ・・・(4)　クライアント側テスト資産
+│   │       └── message.service.ts
+│   ...
+│
+├── package-lock.json
+├── package.json
+├── protractor.conf.js                   ・・・(5)　E2Eテスト設定ファイル
+├── proxy.conf.json
+├── karma.conf.js
+├── tsconfig.json
+├── tslint.json
+└── README.md
+</pre></div>
+</div>
+
+<h4>
+<span id="各資産について" class="fragment"></span><a href="#%E5%90%84%E8%B3%87%E7%94%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><i class="fa fa-link"></i></a>各資産について</h4>
+
+<h5>
+<span id="1-dist" class="fragment"></span><a href="#1-dist"><i class="fa fa-link"></i></a>(1) dist</h5>
+
+<p>コンパイル資産出力先。</p>
+
+<h5>
+<span id="1-1-distserver_test" class="fragment"></span><a href="#1-1-distserver_test"><i class="fa fa-link"></i></a>(1-1) dist/server_test</h5>
+
+<p>コンパイルされたサーバ側テスト資産(JSファイル)の出力先。<br>
+デプロイを考慮して本資産(dist/server)とは別ディレクトリにしています。</p>
+
+<h5>
+<span id="2-server_test" class="fragment"></span><a href="#2-server_test"><i class="fa fa-link"></i></a>(2) server_test</h5>
+
+<p>サーバ側テスト資産のディレクトリ。<br>
+コンパイル用の設定ファイルとテスト用の設定ファイルもココに格納します。</p>
+
+<h5>
+<span id="3-e2e" class="fragment"></span><a href="#3-e2e"><i class="fa fa-link"></i></a>(3) e2e</h5>
+
+<p>E2Eテスト用資産のディレクトリ。</p>
+
+<h5>
+<span id="4-srcapp配下のspectsファイル" class="fragment"></span><a href="#4-srcapp%E9%85%8D%E4%B8%8B%E3%81%AEspects%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB"><i class="fa fa-link"></i></a>(4) src/app配下のspec.tsファイル</h5>
+
+<p>フロント側テスト資産。<br>
+コンパイルやテストは<code>ng</code>コマンドで実施します。</p>
+
+<h5>
+<span id="5-protractorconfjs" class="fragment"></span><a href="#5-protractorconfjs"><i class="fa fa-link"></i></a>(5) protractor.conf.js</h5>
+
+<p>E2Eテスト設定ファイル。<br>
+今回はAngular CLIでプロジェクトが作成するデフォルトから少しだけ修正します。</p>
+
+<h2>
+<span id="構築手順" class="fragment"></span><a href="#%E6%A7%8B%E7%AF%89%E6%89%8B%E9%A0%86"><i class="fa fa-link"></i></a>構築手順</h2>
+
+<h3>
+<span id="1-テストに必要なライブラリをインストール" class="fragment"></span><a href="#1-%E3%83%86%E3%82%B9%E3%83%88%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><i class="fa fa-link"></i></a>1. テストに必要なライブラリをインストール</h3>
+
+<div class="code-frame" data-lang="text"><div class="highlight"><pre>$ npm install --save zone.js@0.8.12
+$ npm install --save-dev @types/mongoose nodemon npm-run-all
+</pre></div></div>
+
+<ul>
+<li>
+<a href="https://www.npmjs.com/package/zone.js" rel="nofollow noopener" target="_blank"><code>zone.js@0.8.12</code></a>
+
+<ul>
+<li>クライアント側のテストで使用します。Angular CLIでプロジェクトを作成した時点でインストールされていますが、テスト実行時に<code>Failed: Cannot create property '__creationTrace__' on string '__zone_symbol__optimizedZoneEventTask'</code>のようなエラーが出ます。<a href="https://github.com/angular/zone.js/issues/832" rel="nofollow noopener" target="_blank">GitHubのissues</a>によるとv0.8.12はエラーが出ないそうなので、v0.8.12を再インストールします。</li>
+</ul>
+</li>
+<li>
+<a href="https://www.npmjs.com/package/supertest" rel="nofollow noopener" target="_blank"><code>supertest</code></a>
+
+<ul>
+<li>サーバ側のテストで使用します。APIテストを簡単にしてくれます。</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<span id="2-クライアント側を作成" class="fragment"></span><a href="#2-%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E5%81%B4%E3%82%92%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>2. クライアント側を作成</h3>
+
+<p>コンポーネント(app.component.ts)とサービス(message.service.ts)に対するテストコードを作成します。<br>
+クライアント側のテスト実行には<code>ng test</code>コマンドを使うので、ビルド周りの設定は不要です。</p>
+
+<h4>
+<span id="srcappappcomponentspects" class="fragment"></span><a href="#srcappappcomponentspects"><i class="fa fa-link"></i></a>src/app/app.component.spec.ts</h4>
+
+<p>コンポーネントは画面描画についてテストします。<br>
+コンポーネントで使うサービスは、<code>TestBed</code>の<code>overrideComponent</code>メソッドを使ってモック化します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.component.spec.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="k">async</span><span class="p">,</span> <span class="nx">ComponentFixture</span><span class="p">,</span> <span class="nx">TestBed</span><span class="p">,</span> <span class="nx">inject</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core/testing'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">FormsModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/forms'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'rxjs/Rx'</span><span class="p">;</span>
+<span class="k">import</span> <span class="s1">'rxjs/Rx'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">AppComponent</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./app.component'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MessageService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./message/message.service'</span><span class="p">;</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'AppComponent'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// テスト対象のComponent</span>
+  <span class="kd">let</span> <span class="na">component</span><span class="p">:</span> <span class="nx">AppComponent</span><span class="p">;</span>
+
+  <span class="c1">// テスト対象のFixture</span>
+  <span class="kd">let</span> <span class="na">fixture</span><span class="p">:</span> <span class="nx">ComponentFixture</span><span class="o">&lt;</span><span class="nx">AppComponent</span><span class="o">&gt;</span><span class="p">;</span>
+
+  <span class="c1">// MessageServiceのモック</span>
+  <span class="kd">class</span> <span class="nx">MessageServiceMock</span> <span class="p">{</span>
+    <span class="nx">getAll</span><span class="p">():</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">response</span> <span class="o">=</span>  <span class="p">{</span> <span class="na">messages</span> <span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ1'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ2'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ3'</span> <span class="p">}</span>
+      <span class="p">]};</span>
+
+      <span class="k">return</span> <span class="nx">Observable</span><span class="p">.</span><span class="k">from</span><span class="p">([</span><span class="nx">response</span><span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nx">beforeEach</span><span class="p">(</span><span class="k">async</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">TestBed</span><span class="p">.</span><span class="nx">configureTestingModule</span><span class="p">({</span>
+      <span class="na">imports</span><span class="p">:</span> <span class="p">[</span> <span class="nx">FormsModule</span> <span class="p">],</span>
+      <span class="na">declarations</span><span class="p">:</span> <span class="p">[</span>
+        <span class="nx">AppComponent</span>
+      <span class="p">],</span>
+    <span class="p">})</span>
+<span class="err">　　　　　　　　　</span><span class="c1">// MessageServiceのモックを設定</span>
+    <span class="p">.</span><span class="nx">overrideComponent</span><span class="p">(</span><span class="nx">AppComponent</span><span class="p">,</span> <span class="p">{</span>
+      <span class="na">set</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">providers</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span> <span class="na">provide</span><span class="p">:</span> <span class="nx">MessageService</span><span class="p">,</span> <span class="na">useClass</span><span class="p">:</span> <span class="nx">MessageServiceMock</span> <span class="p">},</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">compileComponents</span><span class="p">();</span>
+
+    <span class="nx">fixture</span> <span class="o">=</span> <span class="nx">TestBed</span><span class="p">.</span><span class="nx">createComponent</span><span class="p">(</span><span class="nx">AppComponent</span><span class="p">);</span>
+    <span class="nx">component</span> <span class="o">=</span> <span class="nx">fixture</span><span class="p">.</span><span class="nx">componentInstance</span><span class="p">;</span>
+    <span class="nx">fixture</span><span class="p">.</span><span class="nx">detectChanges</span><span class="p">();</span>
+  <span class="p">}));</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'オブジェクトが生成されるか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">fixture</span><span class="p">.</span><span class="nx">debugElement</span><span class="p">.</span><span class="nx">componentInstance</span><span class="p">;</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">app</span><span class="p">).</span><span class="nx">toBeTruthy</span><span class="p">();</span>
+  <span class="p">}));</span>
+
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'メッセージを３件保持しているか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">component</span><span class="p">.</span><span class="nx">messages</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">([</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ1'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ2'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ3'</span> <span class="p">}</span>
+    <span class="p">]);</span>
+  <span class="p">}));</span>
+
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'画面にメッセージが３件表示されているか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+    <span class="kd">const</span> <span class="nx">el</span> <span class="o">=</span> <span class="nx">fixture</span><span class="p">.</span><span class="nx">debugElement</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">;</span>
+
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'li'</span><span class="p">).</span><span class="nx">length</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'li'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">textContent</span><span class="p">).</span><span class="nx">toContain</span><span class="p">(</span><span class="s1">'テスト用メッセージ1'</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'li'</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="nx">textContent</span><span class="p">).</span><span class="nx">toContain</span><span class="p">(</span><span class="s1">'テスト用メッセージ2'</span><span class="p">);</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'li'</span><span class="p">)[</span><span class="mi">2</span><span class="p">].</span><span class="nx">textContent</span><span class="p">).</span><span class="nx">toContain</span><span class="p">(</span><span class="s1">'テスト用メッセージ3'</span><span class="p">);</span>
+  <span class="p">}));</span>
+<span class="p">});</span>
+
+</pre></div>
+</div>
+
+<h4>
+<span id="srcappmessagemessageservicespects一部抜粋" class="fragment"></span><a href="#srcappmessagemessageservicespects%E4%B8%80%E9%83%A8%E6%8A%9C%E7%B2%8B"><i class="fa fa-link"></i></a>src/app/message/message.service.spec.ts(一部抜粋)</h4>
+
+<p>サービスのテストです。<br>
+サーバとのやりとり(HTTP通信)については<code>MockBackend</code>を使ってモック化しています。<br>
+なお<code>Error</code>は別途モックを作らなければなりません。<br>
+全て載せると冗長なので<code>register</code>メソッドのテストは割愛しています。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">message.service.spec.ts(一部抜粋)</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">TestBed</span><span class="p">,</span> <span class="k">async</span><span class="p">,</span> <span class="nx">inject</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core/testing'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">HttpModule</span><span class="p">,</span> <span class="nx">BaseRequestOptions</span><span class="p">,</span> <span class="nx">Http</span><span class="p">,</span> <span class="nx">Response</span><span class="p">,</span> <span class="nx">ResponseOptions</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/http'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">MockConnection</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/http/testing'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">RequestMethod</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/http'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">MessageService</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./message.service'</span><span class="p">;</span>
+
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'MessageService'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="err">　　　　</span><span class="c1">// HTTP通信エラー用のモック</span>
+  <span class="kd">class</span> <span class="nx">MockError</span> <span class="kd">extends</span> <span class="nx">Response</span> <span class="kr">implements</span> <span class="nb">Error</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="nx">any</span><span class="p">;</span>
+    <span class="nl">message</span><span class="p">:</span> <span class="nx">any</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="err">　　　　</span><span class="c1">// HTTP通信はMockBackendでモック化</span>
+  <span class="nx">beforeEach</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">TestBed</span><span class="p">.</span><span class="nx">configureTestingModule</span><span class="p">({</span>
+      <span class="na">imports</span><span class="p">:</span> <span class="p">[</span><span class="nx">HttpModule</span><span class="p">],</span>
+      <span class="na">providers</span><span class="p">:</span> <span class="p">[</span><span class="nx">MessageService</span><span class="p">,</span> <span class="p">{</span>
+        <span class="na">provide</span><span class="p">:</span> <span class="nx">Http</span><span class="p">,</span>
+        <span class="na">useFactory</span><span class="p">:</span> <span class="p">(</span><span class="nx">backend</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">Http</span><span class="p">(</span><span class="nx">backend</span><span class="p">,</span> <span class="nx">options</span><span class="p">),</span>
+        <span class="na">deps</span><span class="p">:</span> <span class="p">[</span><span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">BaseRequestOptions</span><span class="p">]</span>
+      <span class="p">},</span> <span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">BaseRequestOptions</span><span class="p">]</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'オブジェクトが生成されるか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(</span><span class="nx">inject</span><span class="p">([</span><span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">MessageService</span><span class="p">],</span> <span class="p">(</span><span class="na">backend</span><span class="p">:</span> <span class="nx">MockBackend</span> <span class="p">,</span> <span class="na">service</span><span class="p">:</span> <span class="nx">MessageService</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">service</span><span class="p">).</span><span class="nx">toBeTruthy</span><span class="p">();</span>
+  <span class="p">})));</span>
+
+
+  <span class="nx">describe</span><span class="p">(</span><span class="s1">'getAll'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'メッセージが取得できるか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(</span><span class="nx">inject</span><span class="p">([</span><span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">MessageService</span><span class="p">],</span> <span class="p">(</span><span class="na">backend</span><span class="p">:</span> <span class="nx">MockBackend</span> <span class="p">,</span> <span class="na">service</span><span class="p">:</span> <span class="nx">MessageService</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// HTTP通信のモックで返す具体的な値の設定</span>
+      <span class="nx">backend</span><span class="p">.</span><span class="nx">connections</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">conn</span><span class="p">:</span> <span class="nx">MockConnection</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">body</span> <span class="o">=</span>  <span class="p">{</span> <span class="na">messages</span> <span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ1'</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ2'</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ3'</span> <span class="p">}</span>
+        <span class="p">]};</span>
+
+        <span class="kd">const</span> <span class="nx">ops</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ResponseOptions</span><span class="p">({</span>
+          <span class="na">status</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+          <span class="na">body</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+        <span class="p">});</span>
+
+        <span class="nx">conn</span><span class="p">.</span><span class="nx">mockRespond</span><span class="p">(</span><span class="k">new</span> <span class="nx">Response</span><span class="p">(</span><span class="nx">ops</span><span class="p">));</span>
+      <span class="p">});</span>
+
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// リクエストの内容を検証</span>
+      <span class="nx">backend</span><span class="p">.</span><span class="nx">connections</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">conn</span><span class="p">:</span> <span class="nx">MockConnection</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">conn</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">);</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">conn</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">method</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="nx">RequestMethod</span><span class="p">.</span><span class="nx">Get</span><span class="p">);</span>
+      <span class="p">});</span>
+
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// レスポンスの内容を検証</span>
+      <span class="nx">service</span><span class="p">.</span><span class="nx">getAll</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">length</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">messages</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">([</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ1'</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ2'</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="na">message</span> <span class="p">:</span> <span class="s1">'テスト用メッセージ3'</span> <span class="p">}</span>
+        <span class="p">]);</span>
+      <span class="p">});</span>
+    <span class="p">})));</span>
+
+
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'異常時にエラーハンドリングされるか'</span><span class="p">,</span> <span class="k">async</span><span class="p">(</span><span class="nx">inject</span><span class="p">([</span><span class="nx">MockBackend</span><span class="p">,</span> <span class="nx">MessageService</span><span class="p">],</span> <span class="p">(</span><span class="na">backend</span><span class="p">:</span> <span class="nx">MockBackend</span> <span class="p">,</span> <span class="na">service</span><span class="p">:</span> <span class="nx">MessageService</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// HTTP通信のモックで返す具体的な値の設定</span>
+      <span class="nx">backend</span><span class="p">.</span><span class="nx">connections</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">conn</span><span class="p">:</span> <span class="nx">MockConnection</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">body</span> <span class="o">=</span>  <span class="p">{</span>
+          <span class="na">title</span> <span class="p">:</span> <span class="s1">'エラーが発生しました。'</span><span class="p">,</span>
+          <span class="na">error</span><span class="p">:</span> <span class="s1">'エラー'</span>
+        <span class="p">};</span>
+
+        <span class="kd">const</span> <span class="nx">ops</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ResponseOptions</span><span class="p">({</span>
+          <span class="na">status</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+          <span class="na">body</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+        <span class="p">});</span>
+
+        <span class="nx">conn</span><span class="p">.</span><span class="nx">mockError</span><span class="p">(</span><span class="k">new</span> <span class="nx">MockError</span><span class="p">(</span><span class="nx">ops</span><span class="p">));</span>
+      <span class="p">});</span>
+
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// リクエストの内容を検証</span>
+      <span class="nx">backend</span><span class="p">.</span><span class="nx">connections</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="na">conn</span><span class="p">:</span> <span class="nx">MockConnection</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">conn</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">);</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">conn</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">method</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="nx">RequestMethod</span><span class="p">.</span><span class="nx">Get</span><span class="p">);</span>
+      <span class="p">});</span>
+
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// レスポンスの内容を検証</span>
+      <span class="nx">service</span><span class="p">.</span><span class="nx">getAll</span><span class="p">().</span><span class="nx">subscribe</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">fail</span><span class="p">(</span><span class="s1">'エラーハンドリングされなかった。'</span><span class="p">);</span>
+      <span class="p">},</span> <span class="nx">res</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">({</span>
+          <span class="na">title</span> <span class="p">:</span> <span class="s1">'エラーが発生しました。'</span><span class="p">,</span>
+          <span class="na">error</span><span class="p">:</span> <span class="s1">'エラー'</span>
+        <span class="p">});</span>
+      <span class="p">});</span>
+    <span class="p">})));</span>
+
+  <span class="p">});</span>
+
+
+<span class="p">});</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="3-サーバ側を作成" class="fragment"></span><a href="#3-%E3%82%B5%E3%83%BC%E3%83%90%E5%81%B4%E3%82%92%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>3. サーバ側を作成</h3>
+
+<p>プロジェクトの直下にserver_testディレクトリを作ってテストコードを書いていきます。<br>
+どちらかというと結合テストよりで、１つ１つの資産に対してではなくapp.tsに対して、実際にDBに接続しながらAPIテストを行います。規模が小さい場合はコレで充分だと思います。<br>
+またExpressのテストフレームワークは<a href="https://mochajs.org/" rel="nofollow noopener" target="_blank">Mocha</a>が一般的ですが、クライアント側と統一したいので、今回は<a href="https://jasmine.github.io/" rel="nofollow noopener" target="_blank">Jasmine</a>を使うことにします。</p>
+
+<h4>
+<span id="server_testappspects一部抜粋" class="fragment"></span><a href="#server_testappspects%E4%B8%80%E9%83%A8%E6%8A%9C%E7%B2%8B"><i class="fa fa-link"></i></a>server_test/app.spec.ts(一部抜粋)</h4>
+
+<p>ポイントとしてはテスト実行前にMessageモデルを使ってDBを初期化していることです。<br>
+それによりテストデータがテストメソッドごとに想定する形になるようにしています。<br>
+異常時のテストは、Messsageのfindメソッドでエラーが発生するようにJasmineの<code>spyOn</code>メソッドで処理を置き換えます。<br>
+全て載せると冗長なのでメッセージ登録のテストは割愛しています。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.spec.ts(一部抜粋)</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">supertest</span> <span class="k">from</span> <span class="s1">'supertest'</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="nx">app</span> <span class="k">from</span> <span class="s1">'../server/app'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Message</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'../server/models/message'</span><span class="p">;</span>
+
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'/api/messages'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">supertest</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">endpoint</span> <span class="o">=</span> <span class="s1">'/api/messages'</span><span class="p">;</span>
+
+  <span class="kd">const</span> <span class="nx">messageAscending</span> <span class="o">=</span> <span class="p">(</span><span class="nx">m1</span><span class="p">,</span> <span class="nx">m2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">m1</span><span class="p">.</span><span class="nx">message</span> <span class="o">&gt;</span> <span class="nx">m2</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">m1</span><span class="p">.</span><span class="nx">message</span> <span class="o">&lt;</span> <span class="nx">m2</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="c1">// テスト前にDBのmessagesを初期化する</span>
+  <span class="nx">beforeEach</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">Message</span><span class="p">.</span><span class="nx">remove</span><span class="p">({},</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{});</span>
+  <span class="p">});</span>
+
+
+  <span class="nx">describe</span><span class="p">(</span><span class="s1">'Get'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'レスポンスがjson形式でステータスコードが200か'</span><span class="p">,</span> <span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+<span class="err">　　　　　　　　　　　　　</span><span class="c1">// リクエストを投げる</span>
+      <span class="nx">request</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">endpoint</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">expect</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+<span class="err">　　　　　　　　　　　　　　　　　　　　</span><span class="c1">// 検証</span>
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">type</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'application/json'</span><span class="p">);</span>
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+        <span class="p">}).</span><span class="nx">end</span><span class="p">(</span><span class="nx">done</span><span class="p">);</span>
+    <span class="p">});</span>
+
+
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'メッセージ一覧が取得できるか'</span><span class="p">,</span> <span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+      <span class="kd">const</span> <span class="nx">testData</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span> <span class="na">message</span><span class="p">:</span> <span class="s1">'テスト用メッセージ１'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span><span class="p">:</span> <span class="s1">'テスト用メッセージ２'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">message</span><span class="p">:</span> <span class="s1">'テスト用メッセージ３'</span> <span class="p">},</span>
+      <span class="p">];</span>
+<span class="err">　　　　　　　　　　　　</span>
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// 事前準備（テストデータを作成）</span>
+      <span class="nx">Message</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">testData</span><span class="p">,</span> <span class="p">(</span><span class="nx">erro</span> <span class="p">,</span> <span class="nx">doc</span> <span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+<span class="err">　　　　　　　　　　　　　　　　　</span><span class="c1">// リクエストを投げる</span>
+        <span class="nx">request</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">endpoint</span><span class="p">)</span>
+          <span class="p">.</span><span class="nx">expect</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="err">　　　　　　　　　　　　　　　　　　　　　　　　</span>
+<span class="err">　　　　　　　　　　　　　　　　　　　　　　　　</span><span class="c1">// 検証</span>
+            <span class="kd">const</span> <span class="nx">sortedMessages</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">messageAscending</span><span class="p">);</span>
+
+            <span class="nx">expect</span><span class="p">(</span><span class="nx">sortedMessages</span><span class="p">.</span><span class="nx">length</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+            <span class="nx">expect</span><span class="p">(</span><span class="nx">sortedMessages</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">message</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'テスト用メッセージ１'</span><span class="p">);</span>
+            <span class="nx">expect</span><span class="p">(</span><span class="nx">sortedMessages</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nx">message</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'テスト用メッセージ２'</span><span class="p">);</span>
+            <span class="nx">expect</span><span class="p">(</span><span class="nx">sortedMessages</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="nx">message</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'テスト用メッセージ３'</span><span class="p">);</span>
+          <span class="p">})</span>
+          <span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="nx">done</span><span class="p">);</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+
+
+    <span class="nx">it</span><span class="p">(</span><span class="s1">'異常時にエラーハンドリングされるか'</span><span class="p">,</span> <span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+      <span class="c1">// エラーとなるようにMessageのfindメソッドを置き換える</span>
+      <span class="nx">spyOn</span><span class="p">(</span><span class="nx">Message</span><span class="p">,</span> <span class="s1">'find'</span><span class="p">).</span><span class="nx">and</span><span class="p">.</span><span class="nx">callFake</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">callback</span><span class="p">(</span><span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'エラー'</span><span class="p">),</span> <span class="kc">null</span><span class="p">);</span>
+      <span class="p">});</span>
+<span class="err">　　　　　　　　　　　　　</span>
+<span class="err">　　　　　　　　　　　　</span><span class="c1">// リクエストを投げる</span>
+      <span class="nx">request</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">endpoint</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">expect</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+          <span class="c1">// 検証</span>
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">type</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'application/json'</span><span class="p">);</span>
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">title</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'エラーが発生しました。'</span><span class="p">);</span>
+          <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">error</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'エラー'</span><span class="p">);</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="nx">done</span><span class="p">);</span>
+    <span class="p">});</span>
+
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="4-単体テスト周りの環境を整備" class="fragment"></span><a href="#4-%E5%8D%98%E4%BD%93%E3%83%86%E3%82%B9%E3%83%88%E5%91%A8%E3%82%8A%E3%81%AE%E7%92%B0%E5%A2%83%E3%82%92%E6%95%B4%E5%82%99"><i class="fa fa-link"></i></a>4. 単体テスト周りの環境を整備</h3>
+
+<p>E2Eの説明に入る前に、いったん単体テスト周りの環境を整備します。</p>
+
+<h4>
+<span id="packagejson" class="fragment"></span><a href="#packagejson"><i class="fa fa-link"></i></a>package.json</h4>
+
+<p><a href="http://qiita.com/Takumon/items/572438809384e2e11792#pakcagejson" id="reference-fc6741a6eda3b7ffd9f1">前回</a>作成したものをベースに単体テストのスクリプトを追加してください。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">package.json</span></div>
+<div class="highlight"><pre><span class="w"> </span><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"run-p test:*"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"test:client"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ng test"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"test:server"</span><span class="p">:</span><span class="w"> </span><span class="s2">"npm-run-all -s build:server_test -p watch:server_test  boot:server_test"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"watch:server_test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tsc -w -p ./server_test/tsconfig.server_test.json"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"boot:server_test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nodemon ./dist/server_test/test.server.js"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"build:server_test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tsc -p ./server/tsconfig.server.json"</span><span class="p">,</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span></pre></div>
+</div>
+
+<ul>
+<li>
+<strong>test</strong>でクライアント側とサーバ側のテストを実行します。</li>
+<li>
+<strong>test:client</strong>でクライアント側のテストを実行します。Angular CLIのngコマンドにお任せしています。</li>
+<li>
+<strong>watch:server_test</strong>でサーバ側テスト資産をウォッチして変更があればコンパイルするようにします。</li>
+<li>
+<strong>boot:server_test</strong>でコンパイルしたサーバ側テスト資産を起動します。nodeではなくnodemonを使うことで資産に更新があった場合でも即座に反映するようにしています。</li>
+<li>
+<strong>build:server_test</strong>でサーバ側テスト資産をコンパイルします。コンパイル時の設定は下で触れるserver_test/test.server.conf.tsを使います。</li>
+</ul>
+
+<h4>
+<span id="server_testtestserverts" class="fragment"></span><a href="#server_testtestserverts"><i class="fa fa-link"></i></a>server_test/test.server.ts</h4>
+
+<p>サーバ側テストの起動処理を書きます。<br>
+レポーターには<a href="https://www.npmjs.com/package/jasmine-spec-reporter" rel="nofollow noopener" target="_blank">jasmine-spec-reporter</a>を使いましょう。このライブラリはAngular CLIで作ったプロジェクトにはデフォルトでインストール済みです。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">test.server.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">SpecReporter</span><span class="p">,</span> <span class="nx">DisplayProcessor</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'jasmine-spec-reporter'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">Jasmine</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'jasmine'</span><span class="p">);</span>
+<span class="k">import</span> <span class="nx">SuiteInfo</span> <span class="o">=</span> <span class="nx">jasmine</span><span class="p">.</span><span class="nx">SuiteInfo</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="p">{</span> <span class="nx">config</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./test.server.conf'</span><span class="p">;</span>
+
+
+<span class="kd">class</span> <span class="nx">CustomProcessor</span> <span class="kd">extends</span> <span class="nx">DisplayProcessor</span> <span class="p">{</span>
+    <span class="kr">public</span> <span class="nx">displayJasmineStarted</span><span class="p">(</span><span class="nx">info</span><span class="p">:</span> <span class="nx">SuiteInfo</span><span class="p">,</span> <span class="nx">log</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">string</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">`TypeScript </span><span class="p">${</span><span class="nx">log</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">runner</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Jasmine</span><span class="p">();</span>
+<span class="nx">runner</span><span class="p">.</span><span class="nx">loadConfig</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+<span class="nx">runner</span><span class="p">.</span><span class="nx">addReporter</span><span class="p">(</span><span class="k">new</span> <span class="nx">SpecReporter</span><span class="p">({</span>
+    <span class="na">customProcessors</span><span class="p">:</span> <span class="p">[</span><span class="nx">CustomProcessor</span><span class="p">],</span>
+<span class="p">}));</span>
+<span class="nx">runner</span><span class="p">.</span><span class="nx">onComplete</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">passed</span><span class="p">){</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="nx">passed</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Success'</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Failed'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">runner</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="server_testtestserverconfts" class="fragment"></span><a href="#server_testtestserverconfts"><i class="fa fa-link"></i></a>server_test/test.server.conf.ts</h4>
+
+<p>サーバ側テスト起動時の設定です。<br>
+注意点として<code>spec_files</code>に指定する相対パスはプロジェクト直下が起点になります。そのため<code>__dirname</code>を使って指定してください。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">test.server.conf.ts</span></div>
+<div class="highlight"><pre><span class="k">export</span> <span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">spec_dir</span><span class="p">:</span> <span class="s1">'.'</span><span class="p">,</span>
+  <span class="na">spec_files</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">`</span><span class="p">${</span><span class="nx">__dirname</span><span class="p">}</span><span class="s2">/*spec.js`</span>
+  <span class="p">],</span>
+  <span class="s1">'stopSpecOnExpectationFailure'</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="s1">'random'</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+
+<h4>
+<span id="server_testtsconfigserver_testjson" class="fragment"></span><a href="#server_testtsconfigserver_testjson"><i class="fa fa-link"></i></a>server_test/tsconfig.server_test.json</h4>
+
+<p>サーバ側テスト資産をコンパイルする時の設定ファイルです。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">tsconfig.server_test.json</span></div>
+<div class="highlight"><pre><span class="p">{</span><span class="w">
+  </span><span class="s2">"extends"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../tsconfig.json"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"compilerOptions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"preserveConstEnums"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"outDir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../dist"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mapRoot"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../dist"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"module"</span><span class="p">:</span><span class="w"> </span><span class="s2">"commonjs"</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"**/*.spec.ts"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"./test.server.ts"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"./test.server.conf.ts"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></div>
+</div>
+
+<p><code>outDir</code>が<code>../dist/server_test</code>ではなく<code>../dist</code>であることに注意してください。<br>
+テスト資産は<code>server</code>ディレクトリ配下の資産に依存しているため、<code>../dist/server_test</code>を指定するとコンパイルした時に下記のように出力されてしまいます。</p>
+
+<div class="code-frame" data-lang="">
+<div class="code-lang"><span class="bold">（悪い例）outDirに"../dist/server_test"を指定したときのコンパイル結果</span></div>
+<div class="highlight"><pre>.
+└── dist
+    └── server_test
+        ├── server
+        └── server_test 
+</pre></div>
+</div>
+
+<div class="code-frame" data-lang="">
+<div class="code-lang"><span class="bold">（良い例）outDirに"../dist"を指定したときのコンパイル結果</span></div>
+<div class="highlight"><pre>.
+└── dist
+    ├── server
+    └── server_test 
+</pre></div>
+</div>
+
+<h3>
+<span id="5-e2eテストを作成" class="fragment"></span><a href="#5-e2e%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90"><i class="fa fa-link"></i></a>5. E2Eテストを作成</h3>
+
+<p>単体テストを作成したので次はE2Eテストを作りましょう。<br>
+Angular CLIで作成したプロジェクトにデフォルトで用意されている<a href="http://www.protractortest.org/#/" rel="nofollow noopener" target="_blank">Protractor</a>を使ったテストコードを作成します。</p>
+
+<h4>
+<span id="e2eappe2e-spects" class="fragment"></span><a href="#e2eappe2e-spects"><i class="fa fa-link"></i></a>e2e/app.e2e-spec.ts</h4>
+
+<p>基本的にelementメソッドで要素を取得して、sendKeysメソッドやclickメソッドで操作を行います。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">app.e2e-spec.ts</span></div>
+<div class="highlight"><pre><span class="k">import</span> <span class="p">{</span> <span class="nx">Angular4Express4Typescritp2Page</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./app.po'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">browser</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">by</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'protractor'</span><span class="p">;</span>
+
+
+<span class="nx">describe</span><span class="p">(</span><span class="s1">'E2Eテスト'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="na">page</span><span class="p">:</span> <span class="nx">Angular4Express4Typescritp2Page</span><span class="p">;</span>
+
+  <span class="nx">beforeEach</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">page</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Angular4Express4Typescritp2Page</span><span class="p">();</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'画面タイトルが正しいか'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">page</span><span class="p">.</span><span class="nx">navigateTo</span><span class="p">();</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">getParagraphText</span><span class="p">()).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">'メッセージ一覧'</span><span class="p">);</span>
+  <span class="p">});</span>
+
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">'メッセージが登録できるか'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">page</span><span class="p">.</span><span class="nx">navigateTo</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">newMessage</span> <span class="o">=</span> <span class="s2">`サンプルメッセージ </span><span class="p">${</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">toString</span><span class="p">()}</span><span class="s2">`</span><span class="p">;</span>
+    <span class="nx">element</span><span class="p">(</span><span class="nx">by</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="s1">'registerMessage'</span><span class="p">)).</span><span class="nx">sendKeys</span><span class="p">(</span><span class="nx">newMessage</span><span class="p">);</span>
+
+    <span class="nx">element</span><span class="p">(</span><span class="nx">by</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="s1">'registerMessageButton'</span><span class="p">)).</span><span class="nx">click</span><span class="p">();</span>
+
+    <span class="c1">// 登録後メッセージ入力項目が初期化されているか</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">element</span><span class="p">(</span><span class="nx">by</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="s1">'registerMessage'</span><span class="p">)).</span><span class="nx">getText</span><span class="p">()).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+
+    <span class="c1">// 登録後一覧に登録したメッセージが含まれているか</span>
+    <span class="kd">const</span> <span class="nx">messages</span> <span class="o">=</span> <span class="nx">element</span><span class="p">(</span><span class="nx">by</span><span class="p">.</span><span class="nx">id</span><span class="p">(</span><span class="s1">'messageList'</span><span class="p">)).</span><span class="nx">all</span><span class="p">(</span><span class="nx">by</span><span class="p">.</span><span class="nx">tagName</span><span class="p">(</span><span class="s1">'li'</span><span class="p">));</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">messages</span><span class="p">.</span><span class="nx">last</span><span class="p">().</span><span class="nx">getText</span><span class="p">()).</span><span class="nx">toEqual</span><span class="p">(</span><span class="nx">newMessage</span><span class="p">);</span>
+  <span class="p">});</span>
+
+<span class="p">});</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="6-e2eテスト周りの環境を整備" class="fragment"></span><a href="#6-e2e%E3%83%86%E3%82%B9%E3%83%88%E5%91%A8%E3%82%8A%E3%81%AE%E7%92%B0%E5%A2%83%E3%82%92%E6%95%B4%E5%82%99"><i class="fa fa-link"></i></a>6. E2Eテスト周りの環境を整備</h3>
+
+<h4>
+<span id="packagejson-1" class="fragment"></span><a href="#packagejson-1"><i class="fa fa-link"></i></a>package.json</h4>
+
+<p>Angular CILプロジェクトデフォルトの"e2e"コマンドは削除して、スクリプトに下記を追加してください。</p>
+
+<div class="code-frame" data-lang="json">
+<div class="code-lang"><span class="bold">package.json</span></div>
+<div class="highlight"><pre><span class="w"> </span><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"e2e"</span><span class="p">:</span><span class="w"> </span><span class="s2">"npm-run-all -s  webdriver:update -p webdriver:start protractor"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"webdriver:update"</span><span class="p">:</span><span class="w"> </span><span class="s2">"webdriver-manager update"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"webdriver:start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"webdriver-manager start"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"protractor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"protractor protractor.conf.js"</span><span class="p">,</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+</span></pre></div>
+</div>
+
+<ul>
+<li>
+<strong>e2e</strong>でE2Eテストを実行します。Angular CILプロジェクトデフォルトの<code>e2e</code>コマンド(= <code>ng e2e</code>コマンド)は使いません。<code>ng　e2e</code>はクライアント資産だけコンパイルして起動する処理が入っているからです。今回はビルドしたアプリ(クライアントとサーバが１つにまとまったアプリ)に対してテストします。</li>
+<li>
+<strong>webdriver:update</strong>でE2Eテストに必要なWebDriverをインストールまたは更新します。</li>
+<li>
+<strong>webdriver:start</strong>でWebDriverを起動します。Protractorのテストは事前にWebDriverを起動しておく必要があります。</li>
+<li>
+<strong>protractor</strong>でE2Eテストを実行します。起動時の設定は下で触れるprotractor.conf.jsを使います。</li>
+</ul>
+
+<h4>
+<span id="protractorconfjs" class="fragment"></span><a href="#protractorconfjs"><i class="fa fa-link"></i></a>protractor.conf.js</h4>
+
+<p>デフォルトでbaseUrlのポートは4200になっていますが、今回はビルドしたアプリに対してテストするので3000を指定します。</p>
+
+<div class="code-frame" data-lang="js">
+<div class="code-lang"><span class="bold">protractor.conf.js</span></div>
+<div class="highlight"><pre><span class="nx">exports</span><span class="p">.</span><span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="na">baseUrl</span><span class="p">:</span> <span class="s1">'http://localhost:3000/'</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+<h3>
+<span id="7-試してみる" class="fragment"></span><a href="#7-%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>7. 試してみる</h3>
+
+<h4>
+<span id="単体テストを実行してみる" class="fragment"></span><a href="#%E5%8D%98%E4%BD%93%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>単体テストを実行してみる</h4>
+
+<ul>
+<li>
+<p>MongoDBをローカルで立ち上げる</p>
+
+<ul>
+<li>具体的な方法について触れませんが、Dockerでもなんでもいいのでローカルにポート27017でMongoDBを立ち上げておいてください。DB、テーブルの作成などは不要です。</li>
+</ul>
+</li>
+<li><p>プロジェクト直下で<code>npm test</code>コマンドを実行するとテストが実行されます。クライアント側のテスト結果はブラウザに、サーバ側はターミナル（またはコンソール）に表示されます。資産はウォッチしているので、テストコードを修正すると、コンパイルされ再度テストが実行されるでしょう。</p></li>
+</ul>
+
+<p><a href="https://camo.qiitausercontent.com/7f33351fc11e7394a52bb31fa317136827ea0735/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36343161363631662d333632342d633466312d333733662d6362343331393330346530322e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/7f33351fc11e7394a52bb31fa317136827ea0735/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f36343161363631662d333632342d633466312d333733662d6362343331393330346530322e706e67" alt="10_単体テスト実施イメージ.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/641a661f-3624-c4f1-373f-cb4319304e02.png"></a></p>
+
+<h4>
+<span id="e2eテストを実行してみる" class="fragment"></span><a href="#e2e%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fa fa-link"></i></a>E2Eテストを実行してみる</h4>
+
+<ul>
+<li>
+<p>MongoDBをローカルで立ち上げる</p>
+
+<ul>
+<li>これも単体テストと同じでDBを事前に起動しておいてください。</li>
+</ul>
+</li>
+<li>
+<p>ビルドしたアプリを起動する</p>
+
+<ul>
+<li>プロジェクト直下で<code>npm run buildRun</code>を実行し、ビルド資産を起動します。</li>
+</ul>
+</li>
+<li>
+<p><code>npm run e2e</code>する</p>
+
+<ul>
+<li>別ターミナル（またはコマンドプロンプト）を開き、プロジェクト直下で<code>npm run e2e</code>コマンドを実行します。するとブラウザが立ち上がりテストが実行されます。
+<a href="https://camo.qiitausercontent.com/7ed95d4b7e245fbb593b4c8c2895d30013489715/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35616438346136612d306538652d613830622d633763352d3533386237306161393235392e706e67" target="_blank" rel="nofollow noopener"><img src="https://camo.qiitausercontent.com/7ed95d4b7e245fbb593b4c8c2895d30013489715/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34393931352f35616438346136612d306538652d613830622d633763352d3533386237306161393235392e706e67" alt="20_E2Eテスト実施イメージ.png" data-canonical-src="https://qiita-image-store.s3.amazonaws.com/0/49915/5ad84a6a-0e8e-a80b-c7c5-538b70aa9259.png"></a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<span id="終わりに" class="fragment"></span><a href="#%E7%B5%82%E3%82%8F%E3%82%8A%E3%81%AB"><i class="fa fa-link"></i></a>終わりに</h2>
+
+<p>今回はMEANスタックアプリの単体テスト、E2Eテストについて紹介しました。<br>
+これでビルドとテストができるようになったので、次回「その3. Dockerデプロイ編」では、Dockerでアプリを起動する方法とDockerでアプリのイメージを作ってデプロイする方法ついて紹介します。</p>
+</div><hr style="margin-bottom:1.75rem"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-starter-qiita/bb5bc899-9dfd-5e67-bc4c-bc422ba8d176/">← <!-- -->Angular4 + Express4 + MongoDB3 + TypeScript2 の最小構成プロジェクトをAngular CLIベースで構築する。(ビルド、テスト、Dockerデプロイまで)　その１. ビルド編</a></li><li><a rel="next" href="/gatsby-starter-qiita/e0ec0869-f368-5083-bdc2-cdba9d59427a/">フロントエンド初心者がMEANスタック(MongoDB+Express+Angular+Node.js)でアプリを作ってみて躓いたこと<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-qiita-post-js","jsonName":"5644-c-24-e-eade-50-ca-aa-11-83-a-4-eaeba-122-856","path":"/5644c24e-eade-50ca-aa11-83a4eaeba122/"};window.dataPath="979/path---5644-c-24-e-eade-50-ca-aa-11-83-a-4-eaeba-122-856-654-fNmlhgbUpbS2LksdkslTPwK94fg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1b1aadb11d2b90792575.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-9c88d686516c3299937a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-blog-post-js-7ecbb398daf1854b90b2.js"],"component---src-templates-qiita-post-js":["/component---src-templates-qiita-post-js.5b3dc63a45b213e05e7a.css","/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f28b7050d51a8c475c94.js"],"component---src-pages-index-js":["/component---src-pages-index-js.5b3dc63a45b213e05e7a.css","/component---src-pages-index-js-ad8f3d0b95dd4b85d744.js"]};/*]]>*/</script><script src="/gatsby-starter-qiita/webpack-runtime-65192cb16a9094ce31ae.js" async=""></script><script src="/gatsby-starter-qiita/app-1b1aadb11d2b90792575.js" async=""></script><script src="/gatsby-starter-qiita/0-187f6b47a30213241321.js" async=""></script><script src="/gatsby-starter-qiita/component---src-templates-qiita-post-js-2ffd488fa72a847d9af2.js" async=""></script></body></html>
