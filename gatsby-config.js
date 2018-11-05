@@ -16,6 +16,7 @@ module.exports = {
       options: {
         accessToken: process.env.ACCESS_TOKEN,
         userName: process.env.USER_NAME,
+        excludedPostIds: process.env.EXCLUDED_POST_IDS.split(',')
       }
     },
     {
