@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import moment from 'moment';
 
 import { rhythm } from '../utils/typography'
 
+const DATE_FORMAT = 'YYYY/MM/DD'
+
 class PostPreview extends React.Component {
+
+
   render() {
     const {
       title,
@@ -11,6 +16,8 @@ class PostPreview extends React.Component {
       excerpt,
       slug,
     } = this.props.post;
+
+    const formattedDate  = moment(date).format(DATE_FORMAT)
 
     return (
       <div key={slug}>
@@ -23,7 +30,7 @@ class PostPreview extends React.Component {
             {title}
           </Link>
         </h3>
-        <small>{date}</small>
+        <small>{formattedDate}</small>
         <p dangerouslySetInnerHTML={{ __html: excerpt }} />
       </div>
     )

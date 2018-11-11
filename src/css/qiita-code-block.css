@@ -14,9 +14,9 @@
 }
 
 .code-frame {
-  margin: 1.5em -32px;
-    padding: 1em 32px;
-    font-size: .9em;
+  margin: 1.5em 0;
+  padding: 1em 32px;
+  font-size: .9em;
 }
 
 .highlight .c, .highlight .ch, .highlight .cm, .highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs, .highlight .gu {

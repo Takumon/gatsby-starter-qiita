@@ -14,16 +14,19 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            minHeight: `8rem`,
+            fontSize: `3rem`,
+            padding: `1rem`,
+            margin: `-1rem -1rem 2rem -1rem`,
+            background: '#55c500',
+            borderRadius: '4px',
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
+              color: 'white',
               textDecoration: 'none',
-              color: 'inherit',
             }}
             to={'/'}
           >
@@ -62,6 +65,17 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <a href="https://github.com/Takumon/gatsby-starter-qiita">
+          <img
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              border: 0
+            }}
+            src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+            alt="Fork me on GitHub" />
+        </a>
         {header}
         {children}
       </div>

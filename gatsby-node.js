@@ -36,11 +36,6 @@ exports.createPages = ({ graphql, actions }) => {
                     date
                     excerpt
                   }
-                  frontmatter {
-                    title
-                    date
-                  }
-                  rawMarkdownBody
                 }
               }
             }
@@ -61,11 +56,6 @@ exports.createPages = ({ graphql, actions }) => {
                   created_at
                   likes_count
                   reactions_count
-                  tags {
-                    name
-                  }
-                  updated_at
-                  url
                   user {
                     id
                   }
@@ -84,7 +74,7 @@ exports.createPages = ({ graphql, actions }) => {
         const originalPosts = result.data.allMarkdownRemark.edges.map(p => {
           return {
             type: POST_TYPE.ORIGINAL,
-            date: new Date(p.node.frontmatter.date),
+            date: new Date(p.node.fields.date),
             node: p.node
           }
         })
@@ -92,7 +82,7 @@ exports.createPages = ({ graphql, actions }) => {
         const qiitaPosts = result.data.allQiitaPost.edges.map(p => {
           return {
             type: POST_TYPE.QIITA,
-            date: new Date(p.node.created_at),
+            date: new Date(p.node.fields.date),
             node: p.node
           }
         })
@@ -116,17 +106,16 @@ exports.createPages = ({ graphql, actions }) => {
             })
           } else if (type === POST_TYPE.QIITA) {
             createPage({
-              path: `/${node.id}/`,
+              path: node.fields.slug,
               component: qiitaPost,
               context: {
-                slug: `/${node.id}/`,
+                slug: node.fields.slug,
                 ...previouseAndNext(posts, index)
               },
             })
           } else {
             throw new Error(`Unexpected post type = ${type}`)
           }
-
         })
 
       })
@@ -166,30 +155,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       ]
 
 
-  createNodeField({
-    name: `slug`,
-    node,
-    value: slug,
-  })
-
-  createNodeField({
-    name: `title`,
-    node,
-    value: title,
-  })
-
-  createNodeField({
-    name: `date`,
-    node,
-    value: date,
-  })
-
-  createNodeField({
-    name: `excerpt`,
-    node,
-    value: excerpt,
-  })
+  createNodeField({ name: `slug`,     node,   value: slug     })
+  createNodeField({ name: `title`,    node,   value: title    })
+  createNodeField({ name: `date`,     node,   value: date     })
+  createNodeField({ name: `excerpt`,  node,   value: excerpt  })
 }
+
 
 function _excerptMarkdown(markdown, length) {
   const { contents: html } =

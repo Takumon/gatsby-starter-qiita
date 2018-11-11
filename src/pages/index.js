@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Author from '../components/Author'
+import Author from '../components/author'
 import Layout from '../components/layout'
 import PostPreview from '../components/post-preview'
 import { rhythm } from '../utils/typography'
